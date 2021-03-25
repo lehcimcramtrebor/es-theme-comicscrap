@@ -1,0 +1,1079 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Theme: 
+version: 1.0
+author: Lehcim Cram Trebor
+-->
+
+<theme defaultView="video">
+<formatVersion>7</formatVersion>
+
+<variables>
+
+<lang.randomVideos>systemview • diplay random video snaps</lang.randomVideos>
+<lang.randomVideos lang="fr">vue système • afficher les aperçus vidéo</lang.randomVideos>
+
+<lang.logos>carousel • logos style</lang.logos>
+<lang.logos lang="fr">caroussel • style des logos</lang.logos>
+
+<lang.comic>comic</lang.comic>
+<lang.comic lang="fr">bande dessinée</lang.comic>
+
+<lang.classic>classic</lang.classic>
+<lang.classic lang="fr">classique</lang.classic>
+
+<lang.text>text</lang.text>
+<lang.text lang="fr">texte</lang.text>
+
+<lang.yes>yes</lang.yes>
+<lang.yes lang="fr">oui</lang.yes>
+
+<lang.no>no</lang.no>
+<lang.no lang="fr">non</lang.no>
+
+<lang.allowCustomImages>systemview • allow custom images</lang.allowCustomImages>
+<lang.allowCustomImages lang="fr">vue système • autoriser les images personnalisées</lang.allowCustomImages>
+
+<lang.allowCustomVideos>systemview • allow custom videos</lang.allowCustomVideos>
+<lang.allowCustomVideos lang="fr">vue système • autoriser les vidéos personnalisées</lang.allowCustomVideos>
+
+<lang.imagesSource>systemview • pictures source</lang.imagesSource>
+<lang.imagesSource lang="fr">vue système • source des images</lang.imagesSource>
+
+<lang.screenshots>screenshots</lang.screenshots>
+<lang.screenshots lang="fr">captures d'écran</lang.screenshots>
+
+<lang.covers>covers</lang.covers>
+<lang.covers lang="fr">jaquettes</lang.covers>
+
+<lang.fanArts>fan arts</lang.fanArts>
+<lang.fanArts lang="fr">Œuvres de fans</lang.fanArts>
+
+<lang.marquees>games marquees</lang.marquees>
+<lang.marquees lang="fr">logos de jeux</lang.marquees>
+
+<lang.screenshotsCovers>mix • screenshots-covers</lang.screenshotsCovers>
+<lang.screenshotsCovers lang="fr">mix • captures-jaquettes</lang.screenshotsCovers>
+
+<lang.screenshotsFanArts>mix • screenshots-fan arts</lang.screenshotsFanArts>
+<lang.screenshotsFanArts lang="fr">mix • captures-Œuvres</lang.screenshotsFanArts>
+
+<lang.screenshotsMarquees>mix • screenshots-logos</lang.screenshotsMarquees>
+<lang.screenshotsMarquees lang="fr">mix • captures-logos</lang.screenshotsMarquees>
+
+<lang.coversFanArts>mix • covers-fan arts</lang.coversFanArts>
+<lang.coversFanArts lang="fr">mix • jaquettes-Œuvres</lang.coversFanArts>
+
+<lang.coversMarquees>mix • covers-logos</lang.coversMarquees>
+<lang.coversMarquees lang="fr">mix • jaquettes-logos</lang.coversMarquees>
+
+<lang.fanArtsMarquees>mix • fan arts-logos</lang.fanArtsMarquees>
+<lang.fanArtsMarquees lang="fr">mix • Œuvres-logos</lang.fanArtsMarquees>
+
+<lang.screenshotsCoversFanArts>mix • screenshots-covers-fan arts</lang.screenshotsCoversFanArts>
+<lang.screenshotsCoversFanArts lang="fr">mix • captures-jaquettes-Œuvres</lang.screenshotsCoversFanArts>
+
+<lang.screenshotsCoversMarquees>mix • screenshots-covers-logos</lang.screenshotsCoversMarquees>
+<lang.screenshotsCoversMarquees lang="fr">mix • captures-jaquettes-logos</lang.screenshotsCoversMarquees>
+
+<lang.coversFanArtsMarquees>mix • covers-fan arts-logos</lang.coversFanArtsMarquees>
+<lang.coversFanArtsMarquees lang="fr">mix • jaquettes-Œuvres-logos</lang.coversFanArtsMarquees>
+
+<lang.screenshotsCoversFanArtsMarquees>mix • screenshots-covers-fan arts-logos</lang.screenshotsCoversFanArtsMarquees>
+<lang.screenshotsCoversFanArtsMarquees lang="fr">mix • captures-jaquettes-Œuvres-logos</lang.screenshotsCoversFanArtsMarquees>
+
+<lang.maskColor>interface • choose color</lang.maskColor>
+<lang.maskColor lang="fr">interface • choisir la couleur</lang.maskColor>
+
+<lang.default>default</lang.default>
+<lang.default lang="fr">par défaut</lang.default>
+
+<lang.darkGrey>grey</lang.darkGrey>
+<lang.darkGrey lang="fr">gris</lang.darkGrey>
+
+<lang.oldPaper>old paper</lang.oldPaper>
+<lang.oldPaper lang="fr">vieux papier</lang.oldPaper>
+
+<lang.papyruss>papyruss</lang.papyruss>
+<lang.papyruss lang="fr">papyruss</lang.papyruss>
+
+<lang.blue>blue</lang.blue>
+<lang.blue lang="fr">bleu</lang.blue>
+
+<lang.defaultIcons>default buttons</lang.defaultIcons>
+<lang.defaultIcons lang="fr">boutons par défaut</lang.defaultIcons>
+
+<lang.arcadeIcons>arcade panel</lang.arcadeIcons>
+<lang.arcadeIcons lang="fr">panel d'arcade</lang.arcadeIcons>
+
+<lang.psxIcons>playstation controller</lang.psxIcons>
+<lang.psxIcons lang="fr">manette playstation</lang.psxIcons>
+
+<lang.snesIcons>super nes controller</lang.snesIcons>
+<lang.snesIcons region="jp">super famicom controller</lang.snesIcons>
+<lang.snesIcons lang="fr">manette super nes</lang.snesIcons>
+<lang.snesIcons region="jp" lang="fr">manette super famicom</lang.snesIcons>
+
+<lang.snesAltIcons>alternate super nes controller</lang.snesAltIcons>
+<lang.snesAltIcons region="jp">alternate super famicom controller</lang.snesAltIcons>
+<lang.snesAltIcons lang="fr">manette alternative super nes</lang.snesAltIcons>
+<lang.snesAltIcons region="jp" lang="fr">manette alternative super famicom</lang.snesAltIcons>
+
+<lang.helpIcons>buttons • icons style</lang.helpIcons>
+<lang.helpIcons lang="fr">boutons • style des icônes</lang.helpIcons>
+
+<lang.xboxIcons>xbox controller</lang.xboxIcons>
+<lang.xboxIcons lang="fr">manette xbox</lang.xboxIcons>
+
+<lang.xboxOneIcons>xbox one controller</lang.xboxOneIcons>
+<lang.xboxOneIcons lang="fr">manette xbox one</lang.xboxOneIcons>
+
+<logoTextColor>ff7b00</logoTextColor>
+<maskDefaultColor>ffffff</maskDefaultColor>
+<maskDarkGreyColor>808080</maskDarkGreyColor>
+<maskOldPaperColor>f5f5dc</maskOldPaperColor>
+<maskPapyrussColor>f2e7bf</maskPapyrussColor>
+<maskBlueColor>84dbf0</maskBlueColor>
+
+<v01.audio>false</v01.audio>
+<v02.audio>false</v02.audio>
+<v03.audio>false</v03.audio>
+<v04.audio>false</v04.audio>
+<v05.audio>false</v05.audio>
+<v06.audio>false</v06.audio>
+<v07.audio>false</v07.audio>
+
+</variables>
+
+<include>./_assets/variables/${system.theme}.xml</include>
+
+<subset name="randomVideos" displayName="${lang.randomVideos}" appliesTo="video">
+<include name="yes" displayName="${lang.yes}"/>
+<include name="no" displayName="${lang.no}"/>
+</subset>
+
+<subset name="imagesSource" displayName="${lang.imagesSource}" appliesTo="video">
+<include name="screenshots" displayName="${lang.screenshots}"/>
+<include name="covers" displayName="${lang.covers}"/>
+<include name="fanArts" displayName="${lang.fanArts}"/>
+<include name="marquees" displayName="${lang.marquees}"/>
+<include name="screenshotsCovers" displayName="${lang.screenshotsCovers}"/>
+<include name="screenshotsFanArts" displayName="${lang.screenshotsFanArts}"/>
+<include name="screenshotsMarquees" displayName="${lang.screenshotsMarquees}"/>
+<include name="coversFanArts" displayName="${lang.coversFanArts}"/>
+<include name="coversMarquees" displayName="${lang.coversMarquees}"/>
+<include name="fanArtsMarquees" displayName="${lang.fanArtsMarquees}"/>
+<include name="screenshotsCoversFanArts" displayName="${lang.screenshotsCoversFanArts}"/>
+<include name="screenshotsCoversMarquees" displayName="${lang.screenshotsCoversMarquees}"/>
+<include name="coversFanArtsMarquees" displayName="${lang.coversFanArtsMarquees}"/>
+<include name="screenshotsCoversFanArtsMarquees" displayName="${lang.screenshotsCoversFanArtsMarquees}"/>
+</subset>
+
+<subset name="allowCustomImages" displayName="${lang.allowCustomImages}" appliesTo="video">
+<include name="yes" displayName="${lang.yes}"/>
+<include name="no" displayName="${lang.no}"/>
+</subset>
+
+<subset name="allowCustomVideos" displayName="${lang.allowCustomVideos}" appliesTo="video">
+<include name="yes" displayName="${lang.yes}"/>
+<include name="no" displayName="${lang.no}"/>
+</subset>
+
+<subset name="logos" displayName="${lang.logos}">
+<include name="comic" displayName="${lang.comic}"/>
+<include name="classic" displayName="${lang.classic}"/>
+<include name="text" displayName="${lang.text}"/>
+</subset>
+
+<subset name="maskColor" displayName="${lang.maskColor}">
+<include name="default" displayName="${lang.default}"/>
+<include name="darkGrey" displayName="${lang.darkGrey}"/>
+<include name="oldPaper" displayName="${lang.oldPaper}"/>
+<include name="papyruss" displayName="${lang.papyruss}"/>
+<include name="blue" displayName="${lang.blue}"/>
+</subset>
+
+<subset name="helpIcons" displayName="${lang.helpIcons}">
+<include name="defaultIcons" displayName="${lang.defaultIcons}"/>
+<include name="arcadeIcons" displayName="${lang.arcadeIcons}"/>
+<include name="psxIcons" displayName="${lang.psxIcons}"/>
+<include name="snesIcons" displayName="${lang.snesIcons}"/>
+<include name="snesAltIcons" displayName="${lang.snesAltIcons}"/>
+<include name="xboxIcons" displayName="${lang.xboxIcons}"/>
+<include name="xboxOneIcons" displayName="${lang.xboxOneIcons}"/>
+</subset>
+	
+<view name="system">
+
+<sound name="bgsound">		
+<path>./_assets/comixZone.mp3</path>
+<path>./_assets/customMusics/${system.theme}.mp3</path>
+<path>./_assets/customMusics/${system.theme}.ogg</path>
+</sound>
+	
+<carousel name="systemcarousel">
+<defaultTransition>instant</defaultTransition>
+<zIndex>200</zIndex>
+<color>ffffff4d</color>
+<colorEnd>ffffffcc</colorEnd>
+<logoSize>0.25 0.16</logoSize>
+<scrollSound>./_assets/scroll.wav</scrollSound>
+</carousel>
+
+<carousel name="systemcarousel" ifSubset="logos:text">
+<logoSize>0.3 0.13</logoSize>
+<logoScale>1</logoScale>
+</carousel>
+
+<carousel name="systemcarousel" ifSubset="logos:classic">
+<logoSize>0.2 0.13</logoSize>
+<logoScale>1</logoScale>
+</carousel>
+
+<text name="systemInfo">
+<zIndex>200</zIndex>
+<backgroundColor>00000000</backgroundColor>
+<size>1 0.03</size>
+<color>121212</color>
+<fontPath>./_assets/Shaka_Pow.ttf</fontPath>
+<fontSize>0.022</fontSize>
+<glowSize>1</glowSize>
+<glowColor>0000000d</glowColor>
+<glowOffset>2</glowOffset>
+<opacity>0</opacity>
+<storyboard>
+<animation property="opacity" from="0" to="1" begin="100" duration="350" mode="EaseOut"/>
+<animation property="y" from="0.575" begin="100" duration="150" mode="EaseInOut"/>
+<animation property="opacity" from="1" to="0" begin="500" autoreverse="true" repeat="forever" duration="350" mode="EaseInOut"/>
+</storyboard>
+</text>
+
+<text name="systemInfo" ifSubset="logos:comic">
+<pos>0 0.58</pos>
+</text>
+
+<text name="systemInfo" ifSubset="logos:classic">
+<pos>0 0.57</pos>
+</text>
+
+<text name="systemInfo" ifSubset="logos:text">
+<pos>0 0.55</pos>
+</text>
+
+<image name="logo" ifSubset="logos:comic">
+<linearSmooth>true</linearSmooth>
+<path>./_assets/logos/${system.theme}.png</path>
+<path>./_assets/logos/${system.theme}-${lang}.png</path>
+</image>
+
+<image name="logo" ifSubset="logos:classic">
+<linearSmooth>true</linearSmooth>
+<path>./_assets/logosClassic/${system.theme}.png</path>
+<path>./_assets/logosClassic/${system.theme}.svg</path>
+<path>./_assets/logosClassic/${system.theme}-${lang}.png</path>
+<path>./_assets/logosClassic/${system.theme}-${lang}.svg</path>
+</image>
+
+<image name="logo" region="eu"></image>
+	
+<image name="logo" region="us" ifSubset="logos:comic">
+<path>./_assets/logos/us/${system.theme}.png</path>
+</image>
+
+<image name="logo" region="us" ifSubset="logos:classic">
+<path>./_assets/logosClassic/us/${system.theme}.png</path>
+<path>./_assets/logosClassic/us/${system.theme}.svg</path>
+</image>
+		
+<image name="logo" region="jp" ifSubset="logos:comic">
+<path>./_assets/logos/jp/${system.theme}.png</path>
+</image>
+
+<image name="logo" region="jp" ifSubset="logos:classic">
+<path>./_assets/logosClassic/jp/${system.theme}.png</path>
+<path>./_assets/logosClassic/jp/${system.theme}.svg</path>
+</image>
+
+<text name="logoText">
+<fontPath>./_assets/Shaka_Pow.ttf</fontPath>
+<fontSize>0.040</fontSize>
+<text>${system.name}</text>
+<color>${logoTextColor}</color>
+<glowColor>000000</glowColor>
+</text>		
+
+<image name="mask" extra="true">
+<linearSmooth>true</linearSmooth>
+<path>./_assets/mask.png</path>
+<size>1 1</size>
+<zIndex>100</zIndex>
+</image>
+
+<image name="mask" extra="true" ifSubset="maskColor:darkGrey">
+<color>${maskDarkGreyColor}</color>
+</image>
+
+<image name="mask" extra="true" ifSubset="maskColor:oldPaper">
+<color>${maskOldPaperColor}</color>
+</image>
+
+<image name="mask" extra="true" ifSubset="maskColor:papyruss">
+<color>${maskPapyrussColor}</color>
+</image>
+
+<image name="mask" extra="true" ifSubset="maskColor:blue">
+<color>${maskBlueColor}</color>
+</image>
+
+<image name="i01,i02,i03,i04,i05,i06,i07" extra="true" ifSubset="imagesSource:screenshots">
+<path>{random:image}</path>
+</image>
+
+<image name="i01,i02,i03,i04,i05,i06,i07" extra="true" ifSubset="imagesSource:covers">
+<path>{random:thumbnail}</path>
+</image>
+
+<image name="i01,i02,i03,i04,i05,i06,i07" extra="true" ifSubset="imagesSource:fanArts">
+<path>{random:fanart}</path>
+</image>
+
+<image name="i01,i02,i03,i04,i05,i06,i07" extra="true" ifSubset="imagesSource:marquees">
+<path>{random:marquee}</path>
+</image>
+
+<image name="i01" extra="true" ifSubset="imagesSource:screenshotsCovers">
+<path>{random:image}</path>
+</image>
+
+<image name="i02" extra="true" ifSubset="imagesSource:screenshotsCovers">
+<path>{random:thumbnail}</path>
+</image>
+
+<image name="i03" extra="true" ifSubset="imagesSource:screenshotsCovers">
+<path>{random:thumbnail}</path>
+</image>
+
+<image name="i04" extra="true" ifSubset="imagesSource:screenshotsCovers">
+<path>{random:image}</path>
+</image>
+
+<image name="i05" extra="true" ifSubset="imagesSource:screenshotsCovers">
+<path>{random:image}</path>
+</image>
+
+<image name="i06" extra="true" ifSubset="imagesSource:screenshotsCovers">
+<path>{random:thumbnail}</path>
+</image>
+
+<image name="i07" extra="true" ifSubset="imagesSource:screenshotsCovers">
+<path>{random:image}</path>
+</image>
+
+<image name="i01" extra="true" ifSubset="imagesSource:screenshotsFanArts">
+<path>{random:fanart}</path>
+</image>
+
+<image name="i02" extra="true" ifSubset="imagesSource:screenshotsFanArts">
+<path>{random:image}</path>
+</image>
+
+<image name="i03" extra="true" ifSubset="imagesSource:screenshotsFanArts">
+<path>{random:image}</path>
+</image>
+
+<image name="i04" extra="true" ifSubset="imagesSource:screenshotsFanArts">
+<path>{random:fanart}</path>
+</image>
+
+<image name="i05" extra="true" ifSubset="imagesSource:screenshotsFanArts">
+<path>{random:fanart}</path>
+</image>
+
+<image name="i06" extra="true" ifSubset="imagesSource:screenshotsFanArts">
+<path>{random:image}</path>
+</image>
+
+<image name="i07" extra="true" ifSubset="imagesSource:screenshotsFanArts">
+<path>{random:fanart}</path>
+</image>
+
+<image name="i01" extra="true" ifSubset="imagesSource:screenshotsMarquees">
+<path>{random:image}</path>
+</image>
+
+<image name="i02" extra="true" ifSubset="imagesSource:screenshotsMarquees">
+<path>{random:marquee}</path>
+</image>
+
+<image name="i03" extra="true" ifSubset="imagesSource:screenshotsMarquees">
+<path>{random:marquee}</path>
+</image>
+
+<image name="i04" extra="true" ifSubset="imagesSource:screenshotsMarquees">
+<path>{random:image}</path>
+</image>
+
+<image name="i05" extra="true" ifSubset="imagesSource:screenshotsMarquees">
+<path>{random:image}</path>
+</image>
+
+<image name="i06" extra="true" ifSubset="imagesSource:screenshotsMarquees">
+<path>{random:marquee}</path>
+</image>
+
+<image name="i07" extra="true" ifSubset="imagesSource:screenshotsMarquees">
+<path>{random:image}</path>
+</image>
+
+<image name="i01" extra="true" ifSubset="imagesSource:coversFanArts">
+<path>{random:fanart}</path>
+</image>
+
+<image name="i02" extra="true" ifSubset="imagesSource:coversFanArts">
+<path>{random:thumbnail}</path>
+</image>
+
+<image name="i03" extra="true" ifSubset="imagesSource:coversFanArts">
+<path>{random:thumbnail}</path>
+</image>
+
+<image name="i04" extra="true" ifSubset="imagesSource:coversFanArts">
+<path>{random:fanart}</path>
+</image>
+
+<image name="i05" extra="true" ifSubset="imagesSource:coversFanArts">
+<path>{random:fanart}</path>
+</image>
+
+<image name="i06" extra="true" ifSubset="imagesSource:coversFanArts">
+<path>{random:thumbnail}</path>
+</image>
+
+<image name="i07" extra="true" ifSubset="imagesSource:coversFanArts">
+<path>{random:fanart}</path>
+</image>
+
+<image name="i01" extra="true" ifSubset="imagesSource:coversMarquees">
+<path>{random:marquee}</path>
+</image>
+
+<image name="i02" extra="true" ifSubset="imagesSource:coversMarquees">
+<path>{random:marquee}</path>
+</image>
+
+<image name="i03" extra="true" ifSubset="imagesSource:coversMarquees">
+<path>{random:marquee}</path>
+</image>
+
+<image name="i04" extra="true" ifSubset="imagesSource:coversMarquees">
+<path>{random:marquee}</path>
+</image>
+
+<image name="i05" extra="true" ifSubset="imagesSource:coversMarquees">
+<path>{random:marquee}</path>
+</image>
+
+<image name="i06" extra="true" ifSubset="imagesSource:coversMarquees">
+<path>{random:marquee}</path>
+</image>
+
+<image name="i07" extra="true" ifSubset="imagesSource:coversMarquees">
+<path>{random:marquee}</path>
+</image>
+
+<image name="i01" extra="true" ifSubset="imagesSource:fanArtsMarquees">
+<path>{random:marquee}</path>
+</image>
+
+<image name="i02" extra="true" ifSubset="imagesSource:fanArtsMarquees">
+<path>{random:marquee}</path>
+</image>
+
+<image name="i03" extra="true" ifSubset="imagesSource:fanArtsMarquees">
+<path>{random:marquee}</path>
+</image>
+
+<image name="i04" extra="true" ifSubset="imagesSource:fanArtsMarquees">
+<path>{random:marquee}</path>
+</image>
+
+<image name="i05" extra="true" ifSubset="imagesSource:fanArtsMarquees">
+<path>{random:marquee}</path>
+</image>
+
+<image name="i06" extra="true" ifSubset="imagesSource:fanArtsMarquees">
+<path>{random:marquee}</path>
+</image>
+
+<image name="i07" extra="true" ifSubset="imagesSource:fanArtsMarquees">
+<path>{random:marquee}</path>
+</image>
+
+<image name="i01" extra="true" ifSubset="imagesSource:screenshotsCoversFanArts">
+<path>{random:fanart}</path>
+</image>
+
+<image name="i02" extra="true" ifSubset="imagesSource:screenshotsCoversFanArts">
+<path>{random:image}</path>
+</image>
+
+<image name="i03" extra="true" ifSubset="imagesSource:screenshotsCoversFanArts">
+<path>{random:thumbnail}</path>
+</image>
+
+<image name="i04" extra="true" ifSubset="imagesSource:screenshotsCoversFanArts">
+<path>{random:image}</path>
+</image>
+
+<image name="i05" extra="true" ifSubset="imagesSource:screenshotsCoversFanArts">
+<path>{random:thumbnail}</path>
+</image>
+
+<image name="i06" extra="true" ifSubset="imagesSource:screenshotsCoversFanArts">
+<path>{random:image}</path>
+</image>
+
+<image name="i07" extra="true" ifSubset="imagesSource:screenshotsCoversFanArts">
+<path>{random:fanart}</path>
+</image>
+
+<image name="i01" extra="true" ifSubset="imagesSource:screenshotsCoversMarquees">
+<path>{random:image}</path>
+</image>
+
+<image name="i02" extra="true" ifSubset="imagesSource:screenshotsCoversMarquees">
+<path>{random:thumbnail}</path>
+</image>
+
+<image name="i03" extra="true" ifSubset="imagesSource:screenshotsCoversMarquees">
+<path>{random:marquee}</path>
+</image>
+
+<image name="i04" extra="true" ifSubset="imagesSource:screenshotsCoversMarquees">
+<path>{random:thumbnail}</path>
+</image>
+
+<image name="i05" extra="true" ifSubset="imagesSource:screenshotsCoversMarquees">
+<path>{random:thumbnail}</path>
+</image>
+
+<image name="i06" extra="true" ifSubset="imagesSource:screenshotsCoversMarquees">
+<path>{random:image}</path>
+</image>
+
+<image name="i07" extra="true" ifSubset="imagesSource:screenshotsCoversMarquees">
+<path>{random:marquee}</path>
+</image>
+
+<image name="i01" extra="true" ifSubset="imagesSource:coversFanArtsMarquees">
+<path>{random:thumbnail}</path>
+</image>
+
+<image name="i02" extra="true" ifSubset="imagesSource:coversFanArtsMarquees">
+<path>{random:marquee}</path>
+</image>
+
+<image name="i03" extra="true" ifSubset="imagesSource:coversFanArtsMarquees">
+<path>{random:fanart}</path>
+</image>
+
+<image name="i04" extra="true" ifSubset="imagesSource:coversFanArtsMarquees">
+<path>{random:thumbnail}</path>
+</image>
+
+<image name="i05" extra="true" ifSubset="imagesSource:coversFanArtsMarquees">
+<path>{random:thumbnail}</path>
+</image>
+
+<image name="i06" extra="true" ifSubset="imagesSource:coversFanArtsMarquees">
+<path>{random:marquee}</path>
+</image>
+
+<image name="i07" extra="true" ifSubset="imagesSource:coversFanArtsMarquees">
+<path>{random:fanart}</path>
+</image>
+
+<image name="i01" extra="true" ifSubset="imagesSource:screenshotsCoversFanArtsMarquees">
+<path>{random:fanart}</path>
+</image>
+
+<image name="i02" extra="true" ifSubset="imagesSource:screenshotsCoversFanArtsMarquees">
+<path>{random:image}</path>
+</image>
+
+<image name="i03" extra="true" ifSubset="imagesSource:screenshotsCoversFanArtsMarquees">
+<path>{random:marquee}</path>
+</image>
+
+<image name="i04" extra="true" ifSubset="imagesSource:screenshotsCoversFanArtsMarquees">
+<path>{random:marquee}</path>
+</image>
+
+<image name="i05" extra="true" ifSubset="imagesSource:screenshotsCoversFanArtsMarquees">
+<path>{random:thumbnail}</path>
+</image>
+
+<image name="i06" extra="true" ifSubset="imagesSource:screenshotsCoversFanArtsMarquees">
+<path>{random:image}</path>
+</image>
+
+<image name="i07" extra="true" ifSubset="imagesSource:screenshotsCoversFanArtsMarquees">
+<path>{random:fanart}</path>
+</image>
+
+<image name="i01" extra="true" ifSubset="allowCustomImages:yes">
+<path>./_assets/customImages/${system.theme}/01.jpg</path>
+<path>./_assets/customImages/${system.theme}/01.png</path>
+</image>
+
+<image name="i02" extra="true" ifSubset="allowCustomImages:yes">
+<path>./_assets/customImages/${system.theme}/02.jpg</path>
+<path>./_assets/customImages/${system.theme}/02.png</path>
+</image>
+
+<image name="i03" extra="true" ifSubset="allowCustomImages:yes">
+<path>./_assets/customImages/${system.theme}/03.jpg</path>
+<path>./_assets/customImages/${system.theme}/03.png</path>
+</image>
+
+<image name="i04" extra="true" ifSubset="allowCustomImages:yes">
+<path>./_assets/customImages/${system.theme}/04.jpg</path>
+<path>./_assets/customImages/${system.theme}/04.png</path>
+</image>
+
+<image name="i05" extra="true" ifSubset="allowCustomImages:yes">
+<path>./_assets/customImages/${system.theme}/05.jpg</path>
+<path>./_assets/customImages/${system.theme}/05.png</path>
+</image>
+
+<image name="i06" extra="true" ifSubset="allowCustomImages:yes">
+<path>./_assets/customImages/${system.theme}/06.jpg</path>
+<path>./_assets/customImages/${system.theme}/06.png</path>
+</image>
+
+<image name="i07" extra="true" ifSubset="allowCustomImages:yes">
+<path>./_assets/customImages/${system.theme}/07.jpg</path>
+<path>./_assets/customImages/${system.theme}/07.png</path>
+</image>
+
+<image name="i01" extra="true">
+<linearSmooth>true</linearSmooth>
+<minSize>0.3739583333333333 0.3074074074074074</minSize>
+<origin>0.5 0.5</origin>
+<pos>0.2145833333333333 0.1916666666666667</pos>
+<zIndex>5</zIndex>
+<opacity>0</opacity>
+<storyboard>
+<animation property="opacity" from="0" to="1" begin="0" duration="350" mode="EaseOut"/>
+<animation property="scale" from="0.99" to="1" begin="0" duration="150" mode="EaseOut"/>
+<animation property="origin" from="0.5 0.49" to="0.5 0.5" begin="0" duration="150" mode="EaseOut"/>
+</storyboard>
+</image>
+
+<image name="i02" extra="true">
+<linearSmooth>true</linearSmooth>
+<minSize>0.5635416666666667 0.2787037037037037</minSize>
+<origin>0.5 0.5</origin>
+<pos>0.6916666666666667 0.1875</pos>
+<zIndex>5</zIndex>
+<opacity>0</opacity>
+<storyboard>
+<animation property="opacity" from="0" to="1" begin="80" duration="350" mode="EaseOut"/>
+<animation property="scale" from="0.99" to="1" begin="80" duration="150" mode="EaseOut"/>
+<animation property="origin" from="0.5 0.51" to="0.5 0.5" begin="80" duration="150" mode="EaseOut"/>
+</storyboard>
+</image>
+
+<image name="i03" extra="true">
+<linearSmooth>true</linearSmooth>
+<minSize>0.5401041666666667 0.237037037037037</minSize>
+<origin>0.5 0.5</origin>
+<pos>0.29765625 0.4916666666666667</pos>
+<zIndex>5</zIndex>
+<opacity>0</opacity>
+<storyboard>
+<animation property="opacity" from="0" to="1" begin="160" duration="350" mode="EaseOut"/>
+<animation property="scale" from="0.99" to="1" begin="160" duration="150" mode="EaseOut"/>
+<animation property="origin" from="0.49 0.5" to="0.5 0.5" begin="160" duration="150" mode="EaseOut"/>
+</storyboard>
+</image>
+
+<image name="i04" extra="true">
+<linearSmooth>true</linearSmooth>
+<minSize>0.3921875 0.2666666666666667</minSize>
+<origin>0.5 0.5</origin>
+<pos>0.77734375 0.4981481481481481</pos>
+<zIndex>5</zIndex>
+<opacity>0</opacity>
+<storyboard>
+<animation property="opacity" from="0" to="1" begin="240" duration="350" mode="EaseOut"/>
+<animation property="scale" from="0.99" to="1" begin="240" duration="150" mode="EaseOut"/>
+<animation property="origin" from="0.5 0.5" to="0.5 0.5" begin="240" duration="150" mode="EaseOut"/>
+</storyboard>
+</image>
+
+<image name="i05" extra="true">
+<linearSmooth>true</linearSmooth>
+<minSize>0.3098958333333333 0.2842592592592593</minSize>
+<origin>0.5 0.5</origin>
+<pos>0.1825520833333333 0.7837962962962963</pos>
+<zIndex>5</zIndex>
+<opacity>0</opacity>
+<storyboard>
+<animation property="opacity" from="0" to="1" begin="320" duration="350" mode="EaseOut"/>
+<animation property="scale" from="0.99" to="1" begin="320" duration="150" mode="EaseOut"/>
+<animation property="origin" from="0.5 0.49" to="0.5 0.5" begin="320" duration="150" mode="EaseOut"/>
+</storyboard>
+</image>
+
+<image name="i06" extra="true">
+<linearSmooth>true</linearSmooth>
+<minSize>0.2338541666666667 0.2555555555555556</minSize>
+<origin>0.5 0.5</origin>
+<pos>0.4674479166666667 0.7861111111111111</pos>
+<zIndex>5</zIndex>
+<opacity>0</opacity>
+<storyboard>
+<animation property="opacity" from="0" to="1" begin="400" duration="350" mode="EaseOut"/>
+<animation property="scale" from="0.99" to="1" begin="400" duration="150" mode="EaseOut"/>
+<animation property="origin" from="0.5 0.51" to="0.5 0.5" begin="400" duration="150" mode="EaseOut"/>
+</storyboard>
+</image>
+
+<image name="i07" extra="true">
+<linearSmooth>true</linearSmooth>
+<minSize>0.3765625 0.2324074074074074</minSize>
+<origin>0.5 0.5</origin>
+<pos>0.78515625 0.7856481481481481</pos>
+<zIndex>5</zIndex>
+<opacity>0</opacity>
+<storyboard>
+<animation property="opacity" from="0" to="1" begin="480" duration="350" mode="EaseOut"/>
+<animation property="scale" from="0.99" to="1" begin="480" duration="150" mode="EaseOut"/>
+<animation property="origin" from="0.51 0.49" to="0.5 0.5" begin="480" duration="150" mode="EaseOut"/>
+</storyboard>
+</image>
+
+<video name="v01" extra="true" ifSubset="randomVideos:yes">
+<path>{random}</path>
+<minSize>0.3739583333333333 0.3074074074074074</minSize>
+<origin>0.5 0.5</origin>
+<pos>0.2145833333333333 0.1916666666666667</pos>
+<audio>${v01.audio}</audio>
+<delay>4.8</delay>
+<effect>none</effect>
+<zIndex>10</zIndex>
+</video>
+
+<video name="v02" extra="true" ifSubset="randomVideos:yes">
+<path>{random}</path>
+<minSize>0.5635416666666667 0.2787037037037037</minSize>
+<origin>0.5 0.5</origin>
+<pos>0.6916666666666667 0.1875</pos>
+<audio>${v02.audio}</audio>
+<delay>0.6</delay>
+<effect>none</effect>
+<zIndex>10</zIndex>
+</video>
+
+<video name="v03" extra="true" ifSubset="randomVideos:yes">
+<path>{random}</path>
+<minSize>0.5401041666666667 0.237037037037037</minSize>
+<origin>0.5 0.5</origin>
+<pos>0.29765625 0.4916666666666667</pos>
+<audio>${v03.audio}</audio>
+<delay>6.8</delay>
+<effect>none</effect>
+<zIndex>10</zIndex>
+</video>
+
+<video name="v04" extra="true" ifSubset="randomVideos:yes">
+<path>{random}</path>
+<minSize>0.3921875 0.2666666666666667</minSize>
+<origin>0.5 0.5</origin>
+<pos>0.77734375 0.4981481481481481</pos>
+<audio>${v04.audio}</audio>
+<delay>8</delay>
+<effect>none</effect>
+<zIndex>10</zIndex>
+</video>
+
+<video name="v05" extra="true" ifSubset="randomVideos:yes">
+<path>{random}</path>
+<minSize>0.3098958333333333 0.2842592592592593</minSize>
+<origin>0.5 0.5</origin>
+<pos>0.1825520833333333 0.7837962962962963</pos>
+<audio>${v05.audio}</audio>
+<delay>2</delay>
+<effect>none</effect>
+<zIndex>10</zIndex>
+</video>
+
+<video name="v06" extra="true" ifSubset="randomVideos:yes">
+<path>{random}</path>
+<minSize>0.2338541666666667 0.2555555555555556</minSize>
+<origin>0.5 0.5</origin>
+<pos>0.4674479166666667 0.7861111111111111</pos>
+<audio>${v06.audio}</audio>
+<delay>5.4</delay>
+<effect>none</effect>
+<zIndex>10</zIndex>
+</video>
+
+<video name="v07" extra="true" ifSubset="randomVideos:yes">
+<path>{random}</path>
+<minSize>0.3765625 0.2324074074074074</minSize>
+<origin>0.5 0.5</origin>
+<pos>0.78515625 0.7856481481481481</pos>
+<audio>${v07.audio}</audio>
+<delay>3.6</delay>
+<effect>none</effect>
+<zIndex>10</zIndex>
+</video>
+
+<video name="v01" extra="true" ifSubset="randomVideos:yes,allowCustomVideos:yes">
+<path>./_assets/customVideos/${system.theme}/01.mp4</path>
+</video>
+
+<video name="v02" extra="true" ifSubset="randomVideos:yes,allowCustomVideos:yes">
+<path>./_assets/customVideos/${system.theme}/02.mp4</path>
+</video>
+
+<video name="v03" extra="true" ifSubset="randomVideos:yes,allowCustomVideos:yes">
+<path>./_assets/customVideos/${system.theme}/03.mp4</path>
+</video>
+
+<video name="v04" extra="true" ifSubset="randomVideos:yes,allowCustomVideos:yes">
+<path>./_assets/customVideos/${system.theme}/04.mp4</path>
+</video>
+
+<video name="v05" extra="true" ifSubset="randomVideos:yes,allowCustomVideos:yes">
+<path>./_assets/customVideos/${system.theme}/05.mp4</path>
+</video>
+
+<video name="v06" extra="true" ifSubset="randomVideos:yes,allowCustomVideos:yes">
+<path>./_assets/customVideos/${system.theme}/06.mp4</path>
+</video>
+
+<video name="v07" extra="true" ifSubset="randomVideos:yes,allowCustomVideos:yes">
+<path>./_assets/customVideos/${system.theme}/07.mp4</path>
+</video>
+
+</view>
+
+<view name="video">
+
+<image name="menu" extra="true">
+<linearSmooth>true</linearSmooth>
+<path>./_assets/menu.png</path>
+<size>1 1</size>
+<zIndex>100</zIndex>
+<storyboard>
+<animation property="y" from="-1" begin="0" duration="300" mode="EaseOut"/>
+</storyboard>
+</image>
+
+<image name="menu" extra="true" ifSubset="maskColor:darkGrey">
+<color>${maskDarkGreyColor}</color>
+</image>
+
+<image name="menu" extra="true" ifSubset="maskColor:oldPaper">
+<color>${maskOldPaperColor}</color>
+</image>
+
+<image name="menu" extra="true" ifSubset="maskColor:papyruss">
+<color>${maskPapyrussColor}</color>
+</image>
+
+<image name="menu" extra="true" ifSubset="maskColor:blue">
+<color>${maskBlueColor}</color>
+</image>
+
+<image name="menuBack" extra="true">
+<linearSmooth>true</linearSmooth>
+<path>./_assets/menuBack.png</path>
+<size>1 1</size>
+<zIndex>50</zIndex>
+<color>000000</color>
+<storyboard>
+<animation property="color" to="ffffff" begin="0" duration="650" mode="EaseOut"/>
+<animation property="y" from="-1" begin="0" duration="300" mode="EaseOut"/>
+</storyboard>
+</image>
+
+</view>
+
+<view name="system,video">
+
+<image name="paper" extra="true">
+<linearSmooth>true</linearSmooth>
+<path>./_assets/paper.png</path>
+<size>1 1</size>
+<color>1010091a</color>
+<zIndex>5000</zIndex>
+<tile>true</tile>
+</image>
+
+<image name="white" extra="true">
+<linearSmooth>true</linearSmooth>
+<path>./_assets/white.png</path>
+<size>1 1</size>
+<color>ffffffe6</color>
+<zIndex>1</zIndex>
+<tile>true</tile>
+</image>
+
+</view>
+
+<view name="menu">
+
+<menuText name="menutitle">
+<fontPath>./_assets/Staatliches-Regular.ttf</fontPath>
+<fontSize>0.035</fontSize>
+<color>202020</color>
+</menuText>
+
+<menuText name="menufooter">
+<fontPath>./_assets/Staatliches-Regular.ttf</fontPath>
+<fontSize>0.022</fontSize>
+<color>ffffff</color>
+</menuText>
+
+<menuText name="menutext">
+<fontPath>./_assets/Staatliches-Regular.ttf</fontPath>
+<fontSize>0.032</fontSize>
+<color>121212</color>
+<separatorColor>303030</separatorColor>
+<selectorColor>202020</selectorColor>
+<selectedColor>ffffff</selectedColor>		
+</menuText>
+	
+<menuTextSmall name="menutextsmall">
+<fontPath>./_assets/Staatliches-Regular.ttf</fontPath>
+<fontSize>0.025</fontSize>
+<color>ffffff</color>
+</menuTextSmall>
+
+<menuBackground name="menubg">
+<color>d7d4cccc</color>
+<cornerSize>16 16</cornerSize>
+</menuBackground>
+
+<menuGroup name="menugroup">
+<fontPath>./_assets/Staatliches-Regular.ttf</fontPath>
+<fontSize>0.032</fontSize>
+<color>ffffff</color>
+<separatorColor>505050</separatorColor>
+<backgroundColor>606060</backgroundColor>
+<lineSpacing>1.2</lineSpacing>
+</menuGroup>	
+
+</view>
+
+<view name="screen,menu,system,video">
+	
+<helpsystem name="help">
+<textColor>090909</textColor>
+<fontSize>0.02</fontSize>
+<origin>0 1</origin>
+<pos>0.004 0.99</pos>
+<fontPath>./_assets/Shaka_Pow.ttf</fontPath>
+</helpsystem>
+
+<helpsystem name="help" ifSubset="helpIcons:defaultIcons">
+<iconColor>090909</iconColor>
+</helpsystem>
+
+<helpsystem name="help" ifSubset="helpIcons:arcadeIcons">
+<iconColor>ffffff</iconColor>
+<iconUpDown>./../_assets/icons/icon_arcade_updown.png</iconUpDown>
+<iconLeftRight>./../_assets/icons/icon_arcade_leftright.png</iconLeftRight>
+<iconUpDownLeftRight>./../_assets/icons/icon_arcade_all.png</iconUpDownLeftRight>
+<iconA>./_assets/icons/icon_arcade_a.png</iconA>
+<iconB>./_assets/icons/icon_arcade_b.png</iconB>
+<iconX>./_assets/icons/icon_arcade_x.png</iconX>
+<iconY>./_assets/icons/icon_arcade_y.png</iconY>
+<iconL>./_assets/icons/icon_arcade_l.png</iconL>
+<iconR>./_assets/icons/icon_arcade_r.png</iconR>
+<iconStart>./_assets/icons/icon_arcade_start.png</iconStart>
+<iconSelect>./_assets/icons/icon_arcade_select.png</iconSelect>
+</helpsystem>
+
+<helpsystem name="help" ifSubset="helpIcons:psxIcons">
+<iconColor>ffffff</iconColor>
+<iconUpDown>./../_assets/icons/icon_psx_updown.png</iconUpDown>
+<iconLeftRight>./../_assets/icons/icon_psx_leftright.png</iconLeftRight>
+<iconUpDownLeftRight>./../_assets/icons/icon_psx_all.png</iconUpDownLeftRight>
+<iconA>./_assets/icons/icon_psx_a.png</iconA>
+<iconB>./_assets/icons/icon_psx_b.png</iconB>
+<iconX>./_assets/icons/icon_psx_x.png</iconX>
+<iconY>./_assets/icons/icon_psx_y.png</iconY>
+<iconL>./_assets/icons/icon_psx_l.png</iconL>
+<iconR>./_assets/icons/icon_psx_r.png</iconR>
+<iconStart>./_assets/icons/icon_psx_start.png</iconStart>
+<iconSelect>./_assets/icons/icon_psx_select.png</iconSelect>
+</helpsystem>
+
+<helpsystem name="help" ifSubset="helpIcons:snesIcons">
+<iconColor>ffffff</iconColor>
+<iconUpDown>./../_assets/icons/icon_snes_updown.png</iconUpDown>
+<iconLeftRight>./../_assets/icons/icon_snes_leftright.png</iconLeftRight>
+<iconUpDownLeftRight>./../_assets/icons/icon_snes_all.png</iconUpDownLeftRight>
+<iconA>./_assets/icons/icon_snes_a.png</iconA>
+<iconB>./_assets/icons/icon_snes_b.png</iconB>
+<iconX>./_assets/icons/icon_snes_x.png</iconX>
+<iconY>./_assets/icons/icon_snes_y.png</iconY>
+<iconL>./_assets/icons/icon_snes_l.png</iconL>
+<iconR>./_assets/icons/icon_snes_r.png</iconR>
+<iconStart>./_assets/icons/icon_snes_start.png</iconStart>
+<iconSelect>./_assets/icons/icon_snes_select.png</iconSelect>
+</helpsystem>
+
+<helpsystem name="help" ifSubset="helpIcons:snesAltIcons">
+<iconColor>ffffff</iconColor>
+<iconUpDown>./../_assets/icons/icon_snesalt_updown.png</iconUpDown>
+<iconLeftRight>./../_assets/icons/icon_snesalt_leftright.png</iconLeftRight>
+<iconUpDownLeftRight>./../_assets/icons/icon_snesalt_all.png</iconUpDownLeftRight>
+<iconA>./_assets/icons/icon_snesalt_a.png</iconA>
+<iconB>./_assets/icons/icon_snesalt_b.png</iconB>
+<iconX>./_assets/icons/icon_snesalt_x.png</iconX>
+<iconY>./_assets/icons/icon_snesalt_y.png</iconY>
+<iconL>./_assets/icons/icon_snesalt_l.png</iconL>
+<iconR>./_assets/icons/icon_snesalt_r.png</iconR>
+<iconStart>./_assets/icons/icon_snesalt_start.png</iconStart>
+<iconSelect>./_assets/icons/icon_snesalt_select.png</iconSelect>
+</helpsystem>
+
+<helpsystem name="help" ifSubset="helpIcons:xboxIcons">
+<iconColor>ffffff</iconColor>
+<iconUpDown>./../_assets/icons/icon_xbox_updown.png</iconUpDown>
+<iconLeftRight>./../_assets/icons/icon_xbox_leftright.png</iconLeftRight>
+<iconUpDownLeftRight>./../_assets/icons/icon_xbox_all.png</iconUpDownLeftRight>
+<iconA>./_assets/icons/icon_xbox_a.png</iconA>
+<iconB>./_assets/icons/icon_xbox_b.png</iconB>
+<iconX>./_assets/icons/icon_xbox_x.png</iconX>
+<iconY>./_assets/icons/icon_xbox_y.png</iconY>
+<iconL>./_assets/icons/icon_xbox_l.png</iconL>
+<iconR>./_assets/icons/icon_xbox_r.png</iconR>
+<iconStart>./_assets/icons/icon_xbox_start.png</iconStart>
+<iconSelect>./_assets/icons/icon_xbox_select.png</iconSelect>
+</helpsystem>
+
+<helpsystem name="help" ifSubset="helpIcons:xboxoneIcons">
+<iconColor>ffffff</iconColor>
+<iconUpDown>./../_assets/icons/icon_xboxone_updown.png</iconUpDown>
+<iconLeftRight>./../_assets/icons/icon_xboxone_leftright.png</iconLeftRight>
+<iconUpDownLeftRight>./../_assets/icons/icon_xboxone_all.png</iconUpDownLeftRight>
+<iconA>./_assets/icons/icon_xboxone_a.png</iconA>
+<iconB>./_assets/icons/icon_xboxone_b.png</iconB>
+<iconX>./_assets/icons/icon_xboxone_x.png</iconX>
+<iconY>./_assets/icons/icon_xboxone_y.png</iconY>
+<iconL>./_assets/icons/icon_xboxone_l.png</iconL>
+<iconR>./_assets/icons/icon_xboxone_r.png</iconR>
+<iconStart>./_assets/icons/icon_xboxone_start.png</iconStart>
+<iconSelect>./_assets/icons/icon_xboxone_select.png</iconSelect>
+</helpsystem>
+
+</view>
+
+</theme>
