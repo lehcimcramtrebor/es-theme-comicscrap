@@ -145,8 +145,6 @@ author: Lehcim Cram Trebor
 
 </variables>
 
-<include>./_assets/variables/${system.theme}.xml</include>
-
 <subset name="randomVideos" displayName="${lang.randomVideos}" appliesTo="video">
 <include name="yes" displayName="${lang.yes}"/>
 <include name="no" displayName="${lang.no}"/>
@@ -901,6 +899,240 @@ author: Lehcim Cram Trebor
 </storyboard>
 </image>
 
+<textlist name="gamelist">
+<origin>0.5 0.5</origin>
+<pos>0.2526041666666667 0.5550925925925926</pos>
+<size>0.4760416666666667 0.7546296296296296</size>
+<selectedColor>eeeeee</selectedColor>
+<primaryColor>090909</primaryColor>
+<secondaryColor>090909</secondaryColor>
+<selectorColor>33333399</selectorColor>	  		
+<fontPath>./_assets/Shaka_Pow.ttf</fontPath>
+<fontSize>0.0335</fontSize>
+<alignment>left</alignment>
+<horizontalMargin>0.025</horizontalMargin>
+<forceUppercase>false</forceUppercase>
+<scrollSound>./_assets/scrollg.wav</scrollSound>
+<zIndex>75</zIndex>
+<lines>12</lines>
+<storyboard>
+<animation property="y" from="-0.4449074074074074" begin="0" duration="300" mode="EaseOut"/>
+</storyboard>
+</textlist>
+
+<image name="logosClassics" extra="true">
+<linearSmooth>true</linearSmooth>
+<path>./_assets/logosClassic/${system.theme}.png</path>
+<path>./_assets/logosClassic/${system.theme}.svg</path>
+<path>./_assets/logosClassic/${system.theme}-${lang}.png</path>
+<path>./_assets/logosClassic/${system.theme}-${lang}.svg</path>
+<pos>0.91796875 0.0847222222222222</pos>
+<maxSize>0.12 0.08</maxSize>
+<origin>0.5 0.5</origin>
+<zIndex>76</zIndex>
+<storyboard>
+<animation property="y" from="-0.9152777777777778" begin="0" duration="300" mode="EaseOut"/>
+</storyboard>
+</image>
+
+<image name="md_marquee">
+<linearSmooth>true</linearSmooth>
+<pos>0.67109375 0.0847222222222222</pos>
+<maxSize>0.26 0.11</maxSize>
+<origin>0.5 0.5</origin>
+<zIndex>76</zIndex>
+<storyboard>
+<animation property="y" from="-0.9152777777777778" begin="0" duration="300" mode="EaseOut"/>
+</storyboard>
+</image>
+
+<image name="logoComics" extra="true">
+<linearSmooth>true</linearSmooth>
+<path>./_assets/logos/${system.theme}.png</path>
+<path>./_assets/logos/${system.theme}-${lang}.png</path>
+<pos>0.266 0.0847222222222222</pos>
+<maxSize>0.460 0.11</maxSize>
+<origin>0.5 0.5</origin>
+<zIndex>76</zIndex>
+<storyboard>
+<animation property="y" from="-0.9152777777777778" begin="0" duration="300" mode="EaseOut"/>
+</storyboard>
+</image>
+
+<video name="md_video">
+<origin>0.5 0.5</origin>
+<pos>0.67109375 0.3986111111111111</pos>
+<maxSize>0.3244791666666667 0.4416666666666667</maxSize>
+<delay>1</delay>
+<effect>none</effect>		
+<showSnapshotNoVideo>true</showSnapshotNoVideo>
+<showSnapshotDelay>true</showSnapshotDelay>
+<color>ffffff</color>
+<zIndex>90</zIndex>
+</video>
+
+<image name="md_thumbnail">
+<zIndex>90</zIndex>
+<origin>0.5 0.5</origin>
+<pos>0.91796875 0.3986111111111111</pos>
+<maxSize>0.1265625 0.4305555555555556</maxSize>
+<storyboard>
+<animation property="y" from="-0.6013888888888889" begin="0" duration="300" mode="EaseOut"/>
+</storyboard>
+</image>
+
+<image name="md_fanart">
+<zIndex>85</zIndex>
+<origin>0.5 0.5</origin>
+<pos>0.91796875 0.3986111111111111</pos>
+<minSize>0.1317708333333333 0.4398148148148148</minSize>
+<color>202020</color>
+<storyboard>
+<animation property="y" from="-0.6013888888888889" begin="0" duration="300" mode="EaseOut"/>
+</storyboard>
+</image>
+
+<text name="md_lbl_releasedate">
+<pos>0.513 0.64</pos>
+<size>0.085 0.02</size>
+<color>000000</color>
+<fontPath>./_assets/Shaka_Pow.ttf</fontPath>
+<fontSize>0.02</fontSize>
+<zIndex>90</zIndex>
+<storyboard>
+<animation property="y" from="-0.36" begin="0" duration="300" mode="EaseOut"/>
+</storyboard>
+</text>
+		
+<datetime name="md_releasedate">
+<zIndex>90</zIndex>
+<fontSize>0.02</fontSize>
+<y>0.625</y>
+<color>000000</color>
+<fontPath>./_assets/Shaka_Pow.ttf</fontPath>
+<storyboard>
+<animation property="y" from="-0.375" begin="0" duration="300" mode="EaseOut"/>
+</storyboard>
+</datetime>
+
+<text name="md_lbl_genre">
+<pos>0.513 0.667</pos>
+<size>0.085 0.02</size>
+<fontSize>0.02</fontSize>
+<zIndex>90</zIndex>
+<color>000000</color>
+<fontPath>./_assets/Shaka_Pow.ttf</fontPath>
+<storyboard>
+<animation property="y" from="-0.333" begin="0" duration="300" mode="EaseOut"/>
+</storyboard>
+</text>
+		
+<text name="md_genre">
+<fontSize>0.02</fontSize>
+<zIndex>90</zIndex>
+<color>000000</color>
+<fontPath>./_assets/Shaka_Pow.ttf</fontPath>
+<y>0.652</y>
+<storyboard>
+<animation property="y" from="-0.348" begin="0" duration="300" mode="EaseOut"/>
+</storyboard>
+</text>
+
+<text name="md_lbl_developer">
+<pos>0.513 0.694</pos>
+<size>0.085 0.02</size>
+<fontSize>0.02</fontSize>
+<zIndex>90</zIndex>
+<color>000000</color>
+<fontPath>./_assets/Shaka_Pow.ttf</fontPath>
+<storyboard>
+<animation property="y" from="-0.306" begin="0" duration="300" mode="EaseOut"/>
+</storyboard>
+</text>
+		
+<text name="md_developer">
+<fontSize>0.02</fontSize>
+<zIndex>90</zIndex>
+<color>000000</color>
+<fontPath>./_assets/Shaka_Pow.ttf</fontPath>
+<y>0.679</y>
+<storyboard>
+<animation property="y" from="-0.321" begin="0" duration="300" mode="EaseOut"/>
+</storyboard>
+</text>
+
+<text name="md_lbl_players">
+<pos>0.79 0.635</pos>
+<size>0.18 0</size>
+<fontSize>0.02</fontSize>
+<alignment>right</alignment>
+<zIndex>90</zIndex>
+<color>000000</color>
+<fontPath>./_assets/Shaka_Pow.ttf</fontPath>
+<storyboard>
+<animation property="y" from="-0.365" begin="0" duration="300" mode="EaseOut"/>
+</storyboard>
+</text>
+
+<text name="md_players">
+<fontSize>0.02</fontSize>
+<zIndex>90</zIndex>
+<color>000000</color>
+<fontPath>./_assets/Shaka_Pow.ttf</fontPath>
+<y>0.625</y>
+<storyboard>
+<animation property="y" from="-0.375" begin="0" duration="300" mode="EaseOut"/>
+</storyboard>
+</text>
+		
+<rating name="md_rating">
+<pos>0.87 0.66</pos>
+<size>0 0.038</size>
+<filledPath>./_assets/star_filled.png</filledPath>
+<unfilledPath>./_assets/star_empty.png</unfilledPath>
+<zIndex>90</zIndex>
+<storyboard>
+<animation property="y" from="-0.34" begin="0" duration="300" mode="EaseOut"/>
+</storyboard>
+</rating>
+		
+<text name="md_lbl_playcount">
+<pos>0.79 0.689</pos>
+<size>0.18 0.033</size>
+<fontSize>0.02</fontSize>
+<alignment>right</alignment>
+<color>000000</color>
+<fontPath>./_assets/Shaka_Pow.ttf</fontPath>
+<zIndex>90</zIndex>
+<storyboard>
+<animation property="y" from="-0.311" begin="0" duration="300" mode="EaseOut"/>
+</storyboard>
+</text>
+		
+<text name="md_playcount">
+<fontSize>0.02</fontSize>
+<color>000000</color>
+<fontPath>./_assets/Shaka_Pow.ttf</fontPath>
+<zIndex>90</zIndex>
+<y>0.678</y>
+<storyboard>
+<animation property="y" from="-0.311" begin="0" duration="300" mode="EaseOut"/>
+</storyboard>
+</text>
+
+<text name="md_description">
+<color>000000</color>
+<fontPath>./_assets/Shaka_Pow.ttf</fontPath>
+<fontSize>0.023</fontSize>
+<size>0.465 0.1916666666666667</size>
+<pos>0.746875 0.8365740740740741</pos>
+<origin>0.5 0.5</origin>
+<zIndex>90</zIndex>
+<storyboard>
+<animation property="y" from="-0.1634259259259259" begin="0" duration="300" mode="EaseOut"/>
+</storyboard>
+</text>
+	
 </view>
 
 <view name="system,video">
