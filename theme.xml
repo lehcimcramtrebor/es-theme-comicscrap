@@ -10,6 +10,8 @@ author: Lehcim Cram Trebor
 
 <variables>
 
+<defineDefault region="eu"></defineDefault>
+
 <lang.randomVideos>systemview • diplay random video snaps</lang.randomVideos>
 <lang.randomVideos lang="fr">vue système • afficher les aperçus vidéo</lang.randomVideos>
 
@@ -30,6 +32,18 @@ author: Lehcim Cram Trebor
 
 <lang.no>no</lang.no>
 <lang.no lang="fr">non</lang.no>
+
+<lang.jukebox>music</lang.jukebox>
+<lang.jukebox lang="fr">musique</lang.jukebox>
+
+<lang.comixZone>album • comix zone (1995-megadrive)</lang.comixZone>
+<lang.comixZone region="us">album • comix zone (1995-genesis)</lang.comixZone>
+
+<lang.customMusic>by system • custom music</lang.customMusic>
+<lang.customMusic lang="fr">par systèmes • musique personnalisée</lang.customMusic>
+
+<lang.noThemeMusic>no theme music</lang.noThemeMusic>
+<lang.noThemeMusic lang="fr">pas de musique via le thème</lang.noThemeMusic>
 
 <lang.allowCustomImages>systemview • allow custom images</lang.allowCustomImages>
 <lang.allowCustomImages lang="fr">vue système • autoriser les images personnalisées</lang.allowCustomImages>
@@ -145,6 +159,12 @@ author: Lehcim Cram Trebor
 
 </variables>
 
+<subset name="jukebox" displayName="${lang.jukebox}">
+<include name="comixZone" displayName="${lang.comixZone}"/>
+<include name="customMusic" displayName="${lang.customMusic}"/>
+<include name="noThemeMusic" displayName="${lang.noThemeMusic}"/>
+</subset>
+
 <subset name="randomVideos" displayName="${lang.randomVideos}" appliesTo="video">
 <include name="yes" displayName="${lang.yes}"/>
 <include name="no" displayName="${lang.no}"/>
@@ -203,8 +223,11 @@ author: Lehcim Cram Trebor
 	
 <view name="system">
 
-<sound name="bgsound">		
-<path>./_assets/comixZone.mp3</path>
+<sound name="directory" ifSubset="jukebox:comixZone">
+<path>./_assets/comixZone/</path>
+</sound>
+	
+<sound name="bgsound" ifSubset="jukebox:customMusic">		
 <path>./_assets/customMusics/${system.theme}.mp3</path>
 <path>./_assets/customMusics/${system.theme}.ogg</path>
 </sound>
