@@ -1017,7 +1017,7 @@ author: Lehcim Cram Trebor
 
 <text name="md_lbl_releasedate">
 <pos>0.513 0.64</pos>
-<size>0.085 0.02</size>
+<size>0.11 0.02</size>
 <color>000000</color>
 <fontPath>./_assets/Shaka_Pow.ttf</fontPath>
 <fontSize>0.02</fontSize>
@@ -1040,7 +1040,7 @@ author: Lehcim Cram Trebor
 
 <text name="md_lbl_genre">
 <pos>0.513 0.667</pos>
-<size>0.085 0.02</size>
+<size>0.11 0.02</size>
 <fontSize>0.02</fontSize>
 <zIndex>90</zIndex>
 <color>000000</color>
@@ -1063,7 +1063,7 @@ author: Lehcim Cram Trebor
 
 <text name="md_lbl_developer">
 <pos>0.513 0.694</pos>
-<size>0.085 0.02</size>
+<size>0.11 0.02</size>
 <fontSize>0.02</fontSize>
 <zIndex>90</zIndex>
 <color>000000</color>
