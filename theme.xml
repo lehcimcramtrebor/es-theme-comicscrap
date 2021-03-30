@@ -15,6 +15,36 @@ author: Lehcim Cram Trebor
 <lang.randomVideos>systemview • diplay random video snaps</lang.randomVideos>
 <lang.randomVideos lang="fr">vue système • afficher les aperçus vidéo</lang.randomVideos>
 
+<lang.all>all • 7 videos</lang.all>
+<lang.all lang="fr">toutes • 7 vidéos</lang.all>
+
+<lang.4corners>in corners • 4 videos</lang.4corners>
+<lang.4corners lang="fr">dans les coins • 4 vidéos</lang.4corners>
+
+<lang.3smallestThan>less than sign• 3 videos</lang.3smallestThan>
+<lang.3smallestThan lang="fr">signe inférieur à • 3 vidéos</lang.3smallestThan>
+
+<lang.3biggerThan>greater than sign• 3 videos</lang.3biggerThan>
+<lang.3biggerThan lang="fr">signe supérieur à • 3 vidéos</lang.3biggerThan>
+
+<lang.2cornersULBR>first and last corners • 2 videos</lang.2cornersULBR>
+<lang.2cornersULBR lang="fr">premier et dernier coins • 2 vidéos</lang.2cornersULBR>
+
+<lang.2cornersURBL>second and third corners • 2 videos</lang.2cornersURBL>
+<lang.2cornersURBL lang="fr">deuxième et troisième coins • 2 vidéos</lang.2cornersURBL>
+
+<lang.upperLeft>upper left corner • 1 video</lang.upperLeft>
+<lang.upperLeft lang="fr">coin en haut à gauche • 1 vidéo</lang.upperLeft>
+
+<lang.upperRight>upper right corner • 1 video</lang.upperRight>
+<lang.upperRight lang="fr">coin en haut à droite • 1 vidéo</lang.upperRight>
+
+<lang.bottomLeft>bottom left corner • 1 video</lang.bottomLeft>
+<lang.bottomLeft lang="fr">coin en bas à gauche • 1 vidéo</lang.bottomLeft>
+
+<lang.bottomRight>bottom right corner • 1 video</lang.bottomRight>
+<lang.bottomRight lang="fr">coin en bas à droite • 1 vidéo</lang.bottomRight>
+
 <lang.logos>carousel • logos style</lang.logos>
 <lang.logos lang="fr">caroussel • style des logos</lang.logos>
 
@@ -166,8 +196,17 @@ author: Lehcim Cram Trebor
 </subset>
 
 <subset name="randomVideos" displayName="${lang.randomVideos}" appliesTo="video">
-<include name="yes" displayName="${lang.yes}"/>
 <include name="no" displayName="${lang.no}"/>
+<include name="yes" displayName="${lang.all}"/>
+<include name="4corners" displayName="${lang.4corners}"/>
+<include name="3smallestThan" displayName="${lang.3smallestThan}"/>
+<include name="3biggerThan" displayName="${lang.3biggerThan}"/>
+<include name="2cornersULBR" displayName="${lang.2cornersULBR}"/>
+<include name="2cornersURBL" displayName="${lang.2cornersURBL}"/>
+<include name="upperLeft" displayName="${lang.upperLeft}"/>
+<include name="upperRight" displayName="${lang.upperRight}"/>
+<include name="bottomLeft" displayName="${lang.bottomLeft}"/>
+<include name="bottomRight" displayName="${lang.bottomRight}"/>
 </subset>
 
 <subset name="imagesSource" displayName="${lang.imagesSource}" appliesTo="video">
@@ -775,7 +814,7 @@ author: Lehcim Cram Trebor
 </storyboard>
 </image>
 
-<video name="v01" extra="true" ifSubset="randomVideos:yes">
+<video name="v01" extra="true" ifSubset="randomVideos:yes|4corners|2cornersULBR|upperLeft|3biggerThan">
 <path>{random}</path>
 <minSize>0.3739583333333333 0.3074074074074074</minSize>
 <origin>0.5 0.5</origin>
@@ -786,7 +825,7 @@ author: Lehcim Cram Trebor
 <zIndex>10</zIndex>
 </video>
 
-<video name="v02" extra="true" ifSubset="randomVideos:yes">
+<video name="v02" extra="true" ifSubset="randomVideos:yes|4corners|2cornersURBL|upperRight|3smallestThan">
 <path>{random}</path>
 <minSize>0.5635416666666667 0.2787037037037037</minSize>
 <origin>0.5 0.5</origin>
@@ -797,7 +836,7 @@ author: Lehcim Cram Trebor
 <zIndex>10</zIndex>
 </video>
 
-<video name="v03" extra="true" ifSubset="randomVideos:yes">
+<video name="v03" extra="true" ifSubset="randomVideos:yes|3smallestThan">
 <path>{random}</path>
 <minSize>0.5401041666666667 0.237037037037037</minSize>
 <origin>0.5 0.5</origin>
@@ -808,7 +847,7 @@ author: Lehcim Cram Trebor
 <zIndex>10</zIndex>
 </video>
 
-<video name="v04" extra="true" ifSubset="randomVideos:yes">
+<video name="v04" extra="true" ifSubset="randomVideos:yes|3biggerThan">
 <path>{random}</path>
 <minSize>0.3921875 0.2666666666666667</minSize>
 <origin>0.5 0.5</origin>
@@ -819,7 +858,7 @@ author: Lehcim Cram Trebor
 <zIndex>10</zIndex>
 </video>
 
-<video name="v05" extra="true" ifSubset="randomVideos:yes">
+<video name="v05" extra="true" ifSubset="randomVideos:yes|4corners|2cornersURBL|bottomLeft|3biggerThan">
 <path>{random}</path>
 <minSize>0.3098958333333333 0.2842592592592593</minSize>
 <origin>0.5 0.5</origin>
@@ -841,7 +880,7 @@ author: Lehcim Cram Trebor
 <zIndex>10</zIndex>
 </video>
 
-<video name="v07" extra="true" ifSubset="randomVideos:yes">
+<video name="v07" extra="true" ifSubset="randomVideos:yes|4corners|2cornersULBR||bottomRight|3smallestThan">
 <path>{random}</path>
 <minSize>0.3765625 0.2324074074074074</minSize>
 <origin>0.5 0.5</origin>
