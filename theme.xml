@@ -1261,37 +1261,30 @@ author: Lehcim Cram Trebor
 
 <image name="scanlines" extra="true" ifSubset="staticEffect:scanlines">
 <path>./_assets/scanlines.png</path>
-<tile>true</tile>
 </image>
 
 <image name="scanlines" extra="true" ifSubset="staticEffect:scanlinesFine">
 <path>./_assets/scanlinesFine.png</path>
-<tile>true</tile>
 </image>
 
 <image name="scanlines" extra="true" ifSubset="staticEffect:scanlinesVertical">
 <path>./_assets/scanlinesVertical.png</path>
-<tile>true</tile>
 </image>
 
 <image name="scanlines" extra="true" ifSubset="staticEffect:scanlinesVerticalFine">
 <path>./_assets/scanlinesVerticalFine.png</path>
-<tile>true</tile>
 </image>
 
 <image name="scanlines" extra="true" ifSubset="staticEffect:crt">
 <path>./_assets/crt.png</path>
-<tile>true</tile>
 </image>
 
 <image name="scanlines" extra="true" ifSubset="staticEffect:phosphore">
 <path>./_assets/phosphore.png</path>
-<tile>true</tile>
 </image>
 
 <image name="scanlines" extra="true" ifSubset="staticEffect:phosphorePlus">
 <path>./_assets/phosphorePlus.png</path>
-<tile>true</tile>
 </image>
 
 <image name="white" extra="true">
