@@ -48,6 +48,18 @@ author: Lehcim Cram Trebor
 <lang.logos>carousel • logos style</lang.logos>
 <lang.logos lang="fr">caroussel • style des logos</lang.logos>
 
+<lang.logosBackground>carousel • background</lang.logosBackground>
+<lang.logosBackground lang="fr">caroussel • arrière-plan</lang.logosBackground>
+
+<lang.logosBackgroundStandard>standard</lang.logosBackgroundStandard>
+<lang.logosBackgroundStandard lang="fr">standard</lang.logosBackgroundStandard>
+
+<lang.logosBackgroundTransparent>transparent</lang.logosBackgroundTransparent>
+<lang.logosBackgroundTransparent lang="fr">transparent</lang.logosBackgroundTransparent>
+
+<lang.logosBackgroundLight>animated light</lang.logosBackgroundLight>
+<lang.logosBackgroundLight lang="fr">lumière (animée)</lang.logosBackgroundLight>
+
 <lang.comic>comic</lang.comic>
 <lang.comic lang="fr">bande dessinée</lang.comic>
 
@@ -266,6 +278,12 @@ author: Lehcim Cram Trebor
 <include name="text" displayName="${lang.text}"/>
 </subset>
 
+<subset name="logosBackground" displayName="${lang.logosBackground}">
+<include name="logosBackgroundLight" displayName="${lang.logosBackgroundLight}"/>
+<include name="logosBackgroundTransparent" displayName="${lang.logosBackgroundTransparent}"/>
+<include name="logosBackgroundStandard" displayName="${lang.logosBackgroundStandard}"/>
+</subset>
+
 <subset name="maskColor" displayName="${lang.maskColor}">
 <include name="default" displayName="${lang.default}"/>
 <include name="darkGrey" displayName="${lang.darkGrey}"/>
@@ -294,6 +312,36 @@ author: Lehcim Cram Trebor
 <include name="phosphore" displayName="${lang.phosphore}"/>
 <include name="phosphorePlus" displayName="${lang.phosphorePlus}"/>
 </subset>
+
+<view name="screen">
+
+<text name="clock">
+<color>00000000</color>
+</text>	
+
+<controllerActivity name="controllerActivity">
+<pos>0.002 0</pos>
+<size>0.065 0.018</size>
+<itemSpacing>0.003</itemSpacing>
+<imagePath>./_assets/gamepad.svg</imagePath>
+<color>12121266</color>
+<activityColor>121212</activityColor>
+<hotkeyColor>125012</hotkeyColor>
+</controllerActivity>
+
+<batteryIndicator name="batteryIndicator">
+<pos>0.98 0</pos>
+<size>0.018 0.018</size>
+<incharge>./_assets/battery/incharge.svg</incharge>
+<full>./_assets/battery/full.svg</full>
+<at75>./_assets/battery/75.svg</at75>
+<at50>./_assets/battery/50.svg</at50>
+<at25>./_assets/battery/25.svg</at25>
+<empty>./_assets/battery/empty.svg</empty>
+<color>121212</color>
+</batteryIndicator>
+	
+</view>
 	
 <view name="system">
 
@@ -309,10 +357,18 @@ author: Lehcim Cram Trebor
 <carousel name="systemcarousel">
 <defaultTransition>instant</defaultTransition>
 <zIndex>200</zIndex>
-<color>ffffff4d</color>
-<colorEnd>ffffffcc</colorEnd>
 <logoSize>0.25 0.16</logoSize>
 <scrollSound>./_assets/scroll.wav</scrollSound>
+</carousel>
+
+<carousel name="systemcarousel" ifSubset="logosBackground:logosBackgroundStandard">
+<color>ffffff4d</color>
+<colorEnd>ffffffcc</colorEnd>
+</carousel>
+
+<carousel name="systemcarousel" ifSubset="logosBackground:logosBackgroundTransparent|logosBackgroundLight">
+<color>00000000</color>
+<colorEnd>00000000</colorEnd>
 </carousel>
 
 <carousel name="systemcarousel" ifSubset="logos:text">
@@ -329,9 +385,7 @@ author: Lehcim Cram Trebor
 <zIndex>200</zIndex>
 <backgroundColor>00000000</backgroundColor>
 <size>1 0.03</size>
-<color>121212</color>
 <fontPath>./_assets/Shaka_Pow.ttf</fontPath>
-<fontSize>0.022</fontSize>
 <glowSize>1</glowSize>
 <glowColor>0000000d</glowColor>
 <glowOffset>2</glowOffset>
@@ -345,15 +399,31 @@ author: Lehcim Cram Trebor
 
 <text name="systemInfo" ifSubset="logos:comic">
 <pos>0 0.58</pos>
+<color>121212</color>
+<fontSize>0.022</fontSize>
 </text>
 
 <text name="systemInfo" ifSubset="logos:classic">
 <pos>0 0.57</pos>
+<color>121212</color>
+<fontSize>0.022</fontSize>
 </text>
 
 <text name="systemInfo" ifSubset="logos:text">
 <pos>0 0.55</pos>
+<color>121212</color>
+<fontSize>0.022</fontSize>
 </text>
+
+<text name="systemInfo" ifSubset="logos:comic|classic|text,logosBackground:logosBackgroundLight|logosBackgroundTransparent">
+<fontSize>0.029</fontSize>
+<pos>-0.055 0.93</pos>
+<alignment>right</alignment>
+<color>090909</color>
+<storyboard>
+<animation property="opacity" from="0" to="1" begin="100" duration="350" mode="EaseOut"/>
+<animation property="opacity" from="1" to="0" begin="500" autoreverse="true" repeat="forever" duration="350" mode="EaseInOut"/>
+</storyboard></text>
 
 <image name="logo" ifSubset="logos:comic">
 <linearSmooth>true</linearSmooth>
@@ -396,6 +466,32 @@ author: Lehcim Cram Trebor
 <color>${logoTextColor}</color>
 <glowColor>000000</glowColor>
 </text>		
+
+<image name="logosBackground" extra="true" ifSubset="logosBackground:logosBackgroundLight">
+<linearSmooth>true</linearSmooth>
+<path>./_assets/logosBackground.png</path>
+<zIndex>110</zIndex>
+</image>
+
+<image name="logosLight" extra="true" ifSubset="logosBackground:logosBackgroundLight">
+<linearSmooth>true</linearSmooth>
+<path>./_assets/logosLight.png</path>
+<zIndex>210</zIndex>
+<color>ffffff33</color>
+</image>
+
+<image name="logosLight,logosBackground" extra="true" ifSubset="logosBackground:logosBackgroundLight">
+<origin>0.5 0.5</origin>
+<pos>0.5 0.5</pos>
+<size>1 1</size>
+<storyboard>
+<animation property="opacity" from="0" to="0" begin="0" duration="350" mode="EaseOut"/>
+<animation property="opacity" from="0" to="1" begin="350" duration="150" mode="EaseOut"/>
+<animation property="h" from="0" to="0" begin="0" duration="350" mode="EaseOut"/>
+<animation property="h" from="0" to="1" begin="350" duration="150" mode="EaseOut"/>
+<animation property="y" from="0.5" to="0.501" begin="0" duration="25" autoreverse="true" repeat="forever" mode="EaseOut"/>
+</storyboard>
+</image>
 
 <image name="mask" extra="true">
 <linearSmooth>true</linearSmooth>
