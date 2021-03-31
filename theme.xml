@@ -84,6 +84,30 @@ author: Lehcim Cram Trebor
 <lang.imagesSource>systemview • pictures source</lang.imagesSource>
 <lang.imagesSource lang="fr">vue système • source des images</lang.imagesSource>
 
+<lang.staticEffect>artworks • display effects</lang.staticEffect>
+<lang.staticEffect lang="fr">artworks • afficher l'effet</lang.staticEffect>
+
+<lang.scanlines>scanlines</lang.scanlines>
+<lang.scanlines lang="fr">balayage</lang.scanlines>
+
+<lang.scanlinesFine>scanlines fine</lang.scanlinesFine>
+<lang.scanlinesFine lang="fr">balayage fin</lang.scanlinesFine>
+
+<lang.scanlinesVertical>vertical scanlines</lang.scanlinesVertical>
+<lang.scanlinesVertical lang="fr">balayage vertical</lang.scanlinesVertical>
+
+<lang.scanlinesVerticalFine>vertical scanlines fine</lang.scanlinesVerticalFine>
+<lang.scanlinesVerticalFine lang="fr">balayage vertical fin</lang.scanlinesVerticalFine>
+
+<lang.crt>crt screen</lang.crt>
+<lang.crt lang="fr">écran crt</lang.crt>
+
+<lang.phosphore>phosphore screen</lang.phosphore>
+<lang.phosphore lang="fr">écran cathodique</lang.phosphore>
+
+<lang.phosphorePlus>phosphore screen +</lang.phosphorePlus>
+<lang.phosphorePlus lang="fr">écran cathodique +</lang.phosphorePlus>
+
 <lang.screenshots>screenshots</lang.screenshots>
 <lang.screenshots lang="fr">captures d'écran</lang.screenshots>
 
@@ -258,6 +282,17 @@ author: Lehcim Cram Trebor
 <include name="snesAltIcons" displayName="${lang.snesAltIcons}"/>
 <include name="xboxIcons" displayName="${lang.xboxIcons}"/>
 <include name="xboxOneIcons" displayName="${lang.xboxOneIcons}"/>
+</subset>
+
+<subset name="staticEffect" displayName="${lang.staticEffect}">
+<include name="no" displayName="${lang.no}"/>
+<include name="scanlines" displayName="${lang.scanlines}"/>
+<include name="scanlinesFine" displayName="${lang.scanlinesFine}"/>
+<include name="scanlinesVertical" displayName="${lang.scanlinesVertical}"/>
+<include name="scanlinesVerticalFine" displayName="${lang.scanlinesVerticalFine}"/>
+<include name="crt" displayName="${lang.crt}"/>
+<include name="phosphore" displayName="${lang.phosphore}"/>
+<include name="phosphorePlus" displayName="${lang.phosphorePlus}"/>
 </subset>
 	
 <view name="system">
@@ -919,6 +954,11 @@ author: Lehcim Cram Trebor
 <path>./_assets/customVideos/${system.theme}/07.mp4</path>
 </video>
 
+<image name="scanlines" extra="true">
+<size>1 1</size>
+<zIndex>11</zIndex>
+</image>
+
 </view>
 
 <view name="video">
@@ -1032,6 +1072,13 @@ author: Lehcim Cram Trebor
 <color>ffffff</color>
 <zIndex>90</zIndex>
 </video>
+
+<image name="scanlines" extra="true">
+<size>0.3296875 0.4509259259259259</size>
+<pos>0.67109375 0.3986111111111111</pos>
+<origin>0.5 0.5</origin>
+<zIndex>91</zIndex>
+</image>
 
 <image name="md_thumbnail">
 <zIndex>90</zIndex>
@@ -1205,6 +1252,45 @@ author: Lehcim Cram Trebor
 <size>1 1</size>
 <color>1010091a</color>
 <zIndex>5000</zIndex>
+<tile>true</tile>
+</image>
+
+<image name="scanlines" extra="true" ifSubset="staticEffect:scanlines|scanlinesFine|scanlinesVertical|scanlinesVerticalFine|crt|phosphore|phosphorePlus">
+<tile>true</tile>
+</image>
+
+<image name="scanlines" extra="true" ifSubset="staticEffect:scanlines">
+<path>./_assets/scanlines.png</path>
+<tile>true</tile>
+</image>
+
+<image name="scanlines" extra="true" ifSubset="staticEffect:scanlinesFine">
+<path>./_assets/scanlinesFine.png</path>
+<tile>true</tile>
+</image>
+
+<image name="scanlines" extra="true" ifSubset="staticEffect:scanlinesVertical">
+<path>./_assets/scanlinesVertical.png</path>
+<tile>true</tile>
+</image>
+
+<image name="scanlines" extra="true" ifSubset="staticEffect:scanlinesVerticalFine">
+<path>./_assets/scanlinesVerticalFine.png</path>
+<tile>true</tile>
+</image>
+
+<image name="scanlines" extra="true" ifSubset="staticEffect:crt">
+<path>./_assets/crt.png</path>
+<tile>true</tile>
+</image>
+
+<image name="scanlines" extra="true" ifSubset="staticEffect:phosphore">
+<path>./_assets/phosphore.png</path>
+<tile>true</tile>
+</image>
+
+<image name="scanlines" extra="true" ifSubset="staticEffect:phosphorePlus">
+<path>./_assets/phosphorePlus.png</path>
 <tile>true</tile>
 </image>
 
