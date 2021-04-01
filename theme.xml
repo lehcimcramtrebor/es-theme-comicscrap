@@ -393,7 +393,7 @@ author: Lehcim Cram Trebor
 </carousel>
 
 <carousel name="systemcarousel" ifSubset="logos:comic,logosBackground:logosBackgroundTransparent|logosBackgroundLight">
-<logoSize>0.2 0.15</logoSize>
+<logoSize>0.2 0.12</logoSize>
 <logoScale>2</logoScale>
 <size>1 1</size>
 <pos>0 0</pos>
@@ -434,9 +434,9 @@ author: Lehcim Cram Trebor
 </text>
 
 <text name="systemInfo" ifSubset="logos:comic|classic|text,logosBackground:logosBackgroundLight|logosBackgroundTransparent">
-<fontSize>0.029</fontSize>
-<pos>-0.055 0.93</pos>
-<alignment>right</alignment>
+<fontSize>0.022</fontSize>
+<pos>0 0.618</pos>
+<alignment>center</alignment>
 <color>090909</color>
 <storyboard>
 <animation property="opacity" from="0" to="1" begin="100" duration="350" mode="EaseOut"/>
