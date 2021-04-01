@@ -357,7 +357,6 @@ author: Lehcim Cram Trebor
 <carousel name="systemcarousel">
 <defaultTransition>instant</defaultTransition>
 <zIndex>200</zIndex>
-<logoSize>0.25 0.16</logoSize>
 <scrollSound>./_assets/scroll.wav</scrollSound>
 </carousel>
 
@@ -376,9 +375,28 @@ author: Lehcim Cram Trebor
 <logoScale>1</logoScale>
 </carousel>
 
-<carousel name="systemcarousel" ifSubset="logos:classic">
+<carousel name="systemcarousel" ifSubset="logos:classic,logosBackground:logosBackgroundStandard">
 <logoSize>0.2 0.13</logoSize>
 <logoScale>1</logoScale>
+</carousel>
+
+<carousel name="systemcarousel" ifSubset="logos:comic,logosBackground:logosBackgroundStandard">
+<logoSize>0.25 0.16</logoSize>
+<logoScale>1</logoScale>
+</carousel>
+
+<carousel name="systemcarousel" ifSubset="logos:classic,logosBackground:logosBackgroundTransparent|logosBackgroundLight">
+<logoSize>0.16 0.09</logoSize>
+<logoScale>2</logoScale>
+<size>1 1</size>
+<pos>0 0</pos>
+</carousel>
+
+<carousel name="systemcarousel" ifSubset="logos:comic,logosBackground:logosBackgroundTransparent|logosBackgroundLight">
+<logoSize>0.2 0.15</logoSize>
+<logoScale>2</logoScale>
+<size>1 1</size>
+<pos>0 0</pos>
 </carousel>
 
 <text name="systemInfo">
