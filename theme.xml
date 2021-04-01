@@ -180,6 +180,9 @@ author: Lehcim Cram Trebor
 <lang.blue>blue</lang.blue>
 <lang.blue lang="fr">bleu</lang.blue>
 
+<lang.green>green</lang.green>
+<lang.green lang="fr">vert</lang.green>
+
 <lang.defaultIcons>default buttons</lang.defaultIcons>
 <lang.defaultIcons lang="fr">boutons par défaut</lang.defaultIcons>
 
@@ -210,11 +213,11 @@ author: Lehcim Cram Trebor
 
 <logoTextColor>ff7b00</logoTextColor>
 <maskDefaultColor>ffffff</maskDefaultColor>
-<maskDarkGreyColor>808080</maskDarkGreyColor>
-<maskOldPaperColor>f5f5dc</maskOldPaperColor>
-<maskPapyrussColor>f2e7bf</maskPapyrussColor>
-<maskBlueColor>84dbf0</maskBlueColor>
-
+<maskDarkGreyColor>c4c9c7</maskDarkGreyColor>
+<maskOldPaperColor>ece6dc</maskOldPaperColor>
+<maskPapyrussColor>f6e2b9</maskPapyrussColor>
+<maskBlueColor>7591aa</maskBlueColor>
+<maskGreenColor>83a697</maskGreenColor>
 <v01.audio>false</v01.audio>
 <v02.audio>false</v02.audio>
 <v03.audio>false</v03.audio>
@@ -286,10 +289,11 @@ author: Lehcim Cram Trebor
 
 <subset name="maskColor" displayName="${lang.maskColor}">
 <include name="default" displayName="${lang.default}"/>
-<include name="darkGrey" displayName="${lang.darkGrey}"/>
 <include name="oldPaper" displayName="${lang.oldPaper}"/>
 <include name="papyruss" displayName="${lang.papyruss}"/>
 <include name="blue" displayName="${lang.blue}"/>
+<include name="green" displayName="${lang.green}"/>
+<include name="darkGrey" displayName="${lang.darkGrey}"/>
 </subset>
 
 <subset name="helpIcons" displayName="${lang.helpIcons}">
@@ -532,6 +536,10 @@ author: Lehcim Cram Trebor
 
 <image name="mask" extra="true" ifSubset="maskColor:blue">
 <color>${maskBlueColor}</color>
+</image>
+
+<image name="mask" extra="true" ifSubset="maskColor:green">
+<color>${maskGreenColor}</color>
 </image>
 
 <image name="i01,i02,i03,i04,i05,i06,i07" extra="true" ifSubset="imagesSource:screenshots">
@@ -1101,6 +1109,10 @@ author: Lehcim Cram Trebor
 
 <image name="menu" extra="true" ifSubset="maskColor:blue">
 <color>${maskBlueColor}</color>
+</image>
+
+<image name="menu" extra="true" ifSubset="maskColor:green">
+<color>${maskGreenColor}</color>
 </image>
 
 <image name="menuBack" extra="true">
