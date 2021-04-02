@@ -352,7 +352,7 @@ author: Lehcim Cram Trebor
 <sound name="directory" ifSubset="jukebox:comixZone">
 <path>./_assets/comixZone/</path>
 </sound>
-	
+
 <sound name="bgsound" ifSubset="jukebox:customMusic">		
 <path>./_assets/customMusics/${system.theme}.mp3</path>
 <path>./_assets/customMusics/${system.theme}.ogg</path>
