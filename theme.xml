@@ -114,11 +114,11 @@ author: Lehcim Cram Trebor
 <lang.crt>crt screen</lang.crt>
 <lang.crt lang="fr">écran crt</lang.crt>
 
-<lang.phosphore>phosphore screen</lang.phosphore>
-<lang.phosphore lang="fr">écran cathodique</lang.phosphore>
+<lang.phosphore>phosphore</lang.phosphore>
+<lang.phosphore lang="fr">phosphore</lang.phosphore>
 
-<lang.phosphorePlus>phosphore screen +</lang.phosphorePlus>
-<lang.phosphorePlus lang="fr">écran cathodique +</lang.phosphorePlus>
+<lang.phosphorePlus>phosphore+</lang.phosphorePlus>
+<lang.phosphorePlus lang="fr">phosphore+</lang.phosphorePlus>
 
 <lang.screenshots>screenshots</lang.screenshots>
 <lang.screenshots lang="fr">captures d'écran</lang.screenshots>
