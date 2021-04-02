@@ -96,8 +96,8 @@ author: Lehcim Cram Trebor
 <lang.imagesSource>systemview • pictures source</lang.imagesSource>
 <lang.imagesSource lang="fr">vue système • source des images</lang.imagesSource>
 
-<lang.staticEffect>artworks • display effects</lang.staticEffect>
-<lang.staticEffect lang="fr">artworks • afficher l'effet</lang.staticEffect>
+<lang.staticEffect>artworks • choose effect</lang.staticEffect>
+<lang.staticEffect lang="fr">artworks • choisir un effet</lang.staticEffect>
 
 <lang.scanlines>scanlines</lang.scanlines>
 <lang.scanlines lang="fr">balayage</lang.scanlines>
@@ -164,6 +164,9 @@ author: Lehcim Cram Trebor
 
 <lang.maskColor>interface • choose color</lang.maskColor>
 <lang.maskColor lang="fr">interface • choisir la couleur</lang.maskColor>
+
+<lang.texture>interface • display paper texture</lang.texture>
+<lang.texture lang="fr">interface • afficher la texture du papier</lang.texture>
 
 <lang.default>default</lang.default>
 <lang.default lang="fr">par défaut</lang.default>
@@ -296,14 +299,9 @@ author: Lehcim Cram Trebor
 <include name="darkGrey" displayName="${lang.darkGrey}"/>
 </subset>
 
-<subset name="helpIcons" displayName="${lang.helpIcons}">
-<include name="defaultIcons" displayName="${lang.defaultIcons}"/>
-<include name="arcadeIcons" displayName="${lang.arcadeIcons}"/>
-<include name="psxIcons" displayName="${lang.psxIcons}"/>
-<include name="snesIcons" displayName="${lang.snesIcons}"/>
-<include name="snesAltIcons" displayName="${lang.snesAltIcons}"/>
-<include name="xboxIcons" displayName="${lang.xboxIcons}"/>
-<include name="xboxOneIcons" displayName="${lang.xboxOneIcons}"/>
+<subset name="texture" displayName="${lang.texture}">
+<include name="yes" displayName="${lang.yes}"/>
+<include name="no" displayName="${lang.no}"/>
 </subset>
 
 <subset name="staticEffect" displayName="${lang.staticEffect}">
@@ -315,6 +313,16 @@ author: Lehcim Cram Trebor
 <include name="crt" displayName="${lang.crt}"/>
 <include name="phosphore" displayName="${lang.phosphore}"/>
 <include name="phosphorePlus" displayName="${lang.phosphorePlus}"/>
+</subset>
+
+<subset name="helpIcons" displayName="${lang.helpIcons}">
+<include name="defaultIcons" displayName="${lang.defaultIcons}"/>
+<include name="arcadeIcons" displayName="${lang.arcadeIcons}"/>
+<include name="psxIcons" displayName="${lang.psxIcons}"/>
+<include name="snesIcons" displayName="${lang.snesIcons}"/>
+<include name="snesAltIcons" displayName="${lang.snesAltIcons}"/>
+<include name="xboxIcons" displayName="${lang.xboxIcons}"/>
+<include name="xboxOneIcons" displayName="${lang.xboxOneIcons}"/>
 </subset>
 
 <view name="screen">
@@ -344,6 +352,15 @@ author: Lehcim Cram Trebor
 <empty>./_assets/battery/empty.svg</empty>
 <color>121212</color>
 </batteryIndicator>
+
+<image name="paper" extra="true" ifSubset="texture:yes">
+<linearSmooth>true</linearSmooth>
+<path>./_assets/paper.png</path>
+<size>1 1</size>
+<color>1010091a</color>
+<zIndex>5000</zIndex>
+<tile>true</tile>
+</image>
 	
 </view>
 	
@@ -1371,15 +1388,6 @@ author: Lehcim Cram Trebor
 </view>
 
 <view name="system,video">
-
-<image name="paper" extra="true">
-<linearSmooth>true</linearSmooth>
-<path>./_assets/paper.png</path>
-<size>1 1</size>
-<color>1010091a</color>
-<zIndex>5000</zIndex>
-<tile>true</tile>
-</image>
 
 <image name="scanlines" extra="true" ifSubset="staticEffect:scanlines|scanlinesFine|scanlinesVertical|scanlinesVerticalFine|crt|phosphore|phosphorePlus">
 <tile>true</tile>
