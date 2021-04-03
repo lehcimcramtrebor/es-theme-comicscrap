@@ -1439,6 +1439,7 @@ author: Lehcim Cram Trebor
 
 <image name="scanlines" extra="true" ifSubset="staticEffect:crt">
 <path>./_assets/crt.png</path>
+<color>ffffff90</color>
 </image>
 
 <image name="scanlines" extra="true" ifSubset="staticEffect:phosphore">
