@@ -96,8 +96,17 @@ author: Lehcim Cram Trebor
 <lang.imagesSource>systemview • pictures source</lang.imagesSource>
 <lang.imagesSource lang="fr">vue système • source des images</lang.imagesSource>
 
-<lang.staticEffect>artworks • choose effect</lang.staticEffect>
-<lang.staticEffect lang="fr">artworks • choisir un effet</lang.staticEffect>
+<lang.staticEffect>effect • choose</lang.staticEffect>
+<lang.staticEffect lang="fr">effet • choisir</lang.staticEffect>
+
+<lang.staticEffectApply>effect • applies</lang.staticEffectApply>
+<lang.staticEffectApply lang="fr">effet • appliquer</lang.staticEffectApply>
+
+<lang.artworksApply>to artworks</lang.artworksApply>
+<lang.artworksApply lang="fr">aux éléments</lang.artworksApply>
+
+<lang.screenApply>to screen</lang.screenApply>
+<lang.screenApply lang="fr">à l'écran</lang.screenApply>
 
 <lang.scanlines>scanlines</lang.scanlines>
 <lang.scanlines lang="fr">balayage</lang.scanlines>
@@ -313,6 +322,11 @@ author: Lehcim Cram Trebor
 <include name="crt" displayName="${lang.crt}"/>
 <include name="phosphore" displayName="${lang.phosphore}"/>
 <include name="phosphorePlus" displayName="${lang.phosphorePlus}"/>
+</subset>
+
+<subset name="staticEffectApply" displayName="${lang.staticEffectApply}" ifSubset="staticEffect:scanlines|scanlinesFine|scanlinesVertical|scanlinesVerticalFine|crt|phosphore|phosphorePlus">
+<include name="artworksApply" displayName="${lang.artworksApply}"/>
+<include name="screenApply" displayName="${lang.screenApply}"/>
 </subset>
 
 <subset name="helpIcons" displayName="${lang.helpIcons}">
@@ -1095,7 +1109,14 @@ author: Lehcim Cram Trebor
 
 <image name="scanlines" extra="true">
 <size>1 1</size>
+</image>
+
+<image name="scanlines" extra="true" ifSubset="staticEffectApply:artworksApply">
 <zIndex>11</zIndex>
+</image>
+
+<image name="scanlines" extra="true" ifSubset="staticEffectApply:screenApply">
+<zIndex>6000</zIndex>
 </image>
 
 </view>
@@ -1216,11 +1237,18 @@ author: Lehcim Cram Trebor
 <zIndex>90</zIndex>
 </video>
 
-<image name="scanlines" extra="true">
+<image name="scanlines" extra="true" ifSubset="staticEffectApply:artworksApply">
 <size>0.3296875 0.4509259259259259</size>
 <pos>0.67109375 0.3986111111111111</pos>
 <origin>0.5 0.5</origin>
 <zIndex>91</zIndex>
+</image>
+
+<image name="scanlines" extra="true" ifSubset="staticEffectApply:screenApply">
+<size>1 1</size>
+<pos>0.5 0.5</pos>
+<origin>0.5 0.5</origin>
+<zIndex>6000</zIndex>
 </image>
 
 <image name="md_thumbnail">
