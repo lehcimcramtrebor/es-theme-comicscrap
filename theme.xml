@@ -262,7 +262,10 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 </subset>
 
 <subset name="imagesSource" displayName="${lang.imagesSource}" appliesTo="video">
-<include name="screenshots" displayName="${lang.screenshots}"/>
+<include name="screenshotsCoversFanArts" displayName="${lang.screenshotsCoversFanArts}"/>
+<include name="screenshotsCoversMarquees" displayName="${lang.screenshotsCoversMarquees}"/>
+<include name="coversFanArtsMarquees" displayName="${lang.coversFanArtsMarquees}"/>
+<include name="screenshotsCoversFanArtsMarquees" displayName="${lang.screenshotsCoversFanArtsMarquees}"/><include name="screenshots" displayName="${lang.screenshots}"/>
 <include name="covers" displayName="${lang.covers}"/>
 <include name="fanArts" displayName="${lang.fanArts}"/>
 <include name="marquees" displayName="${lang.marquees}"/>
@@ -272,10 +275,7 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <include name="coversFanArts" displayName="${lang.coversFanArts}"/>
 <include name="coversMarquees" displayName="${lang.coversMarquees}"/>
 <include name="fanArtsMarquees" displayName="${lang.fanArtsMarquees}"/>
-<include name="screenshotsCoversFanArts" displayName="${lang.screenshotsCoversFanArts}"/>
-<include name="screenshotsCoversMarquees" displayName="${lang.screenshotsCoversMarquees}"/>
-<include name="coversFanArtsMarquees" displayName="${lang.coversFanArtsMarquees}"/>
-<include name="screenshotsCoversFanArtsMarquees" displayName="${lang.screenshotsCoversFanArtsMarquees}"/>
+
 </subset>
 
 <subset name="allowCustomImages" displayName="${lang.allowCustomImages}" appliesTo="video">
