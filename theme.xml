@@ -1613,4 +1613,6 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 
 </view>
 
+<include>./_assets/specifics/${system.theme}.xml</include>
+
 </theme>
