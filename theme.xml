@@ -311,6 +311,7 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <include name="blue" displayName="${lang.blue}"/>
 <include name="green" displayName="${lang.green}"/>
 <include name="darkGrey" displayName="${lang.darkGrey}"/>
+<include name="tmnt" displayName="${lang.tmnt}"/>
 </subset>
 
 <subset name="texture" displayName="${lang.texture}">
@@ -360,6 +361,10 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <hotkeyColor>125012</hotkeyColor>
 </controllerActivity>
 
+<controllerActivity name="controllerActivity" ifSubset="maskColor:tmnt">
+<color>ffffff66</color>
+</controllerActivity>
+
 <batteryIndicator name="batteryIndicator">
 <pos>0.98 0</pos>
 <size>0.018 0.018</size>
@@ -370,6 +375,10 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <at25>./_assets/battery/25.svg</at25>
 <empty>./_assets/battery/empty.svg</empty>
 <color>121212</color>
+</batteryIndicator>
+
+<batteryIndicator name="batteryIndicator" ifSubset="maskColor:tmnt">
+<color>ffffff</color>
 </batteryIndicator>
 
 <image name="paper" extra="true" ifSubset="texture:yes">
@@ -481,7 +490,12 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <storyboard>
 <animation property="opacity" from="0" to="1" begin="100" duration="350" mode="EaseOut"/>
 <animation property="opacity" from="1" to="0" begin="500" autoreverse="true" repeat="forever" duration="350" mode="EaseInOut"/>
-</storyboard></text>
+</storyboard>
+</text>
+
+<text name="systemInfo" ifSubset="maskColor:tmnt,logosBackground:logosBackgroundLight|logosBackgroundTransparent">
+<color>ffffff</color>
+</text>
 
 <image name="logo" ifSubset="logos:comic">
 <linearSmooth>true</linearSmooth>
@@ -556,6 +570,10 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <path>./_assets/mask.png</path>
 <size>1 1</size>
 <zIndex>100</zIndex>
+</image>
+
+<image name="mask" extra="true" ifSubset="maskColor:tmnt">
+<path>./_assets/maskTmnt.png</path>
 </image>
 
 <image name="mask" extra="true" ifSubset="maskColor:darkGrey">
@@ -1133,9 +1151,10 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <path>./_assets/menu.png</path>
 <size>1 1</size>
 <zIndex>100</zIndex>
-<storyboard>
-<animation property="y" from="-1" begin="0" duration="300" mode="EaseOut"/>
-</storyboard>
+</image>
+
+<image name="menu" extra="true" ifSubset="maskColor:tmnt">
+<path>./_assets/menuTmnt.png</path>
 </image>
 
 <image name="menu" extra="true" ifSubset="maskColor:darkGrey">
@@ -1163,11 +1182,7 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <path>./_assets/menuBack.png</path>
 <size>1 1</size>
 <zIndex>50</zIndex>
-<color>000000</color>
-<storyboard>
-<animation property="color" to="ffffff" begin="0" duration="650" mode="EaseOut"/>
-<animation property="y" from="-1" begin="0" duration="300" mode="EaseOut"/>
-</storyboard>
+<color>ffffff</color>
 </image>
 
 <textlist name="gamelist">
@@ -1186,9 +1201,6 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <scrollSound>./_assets/scrollg.wav</scrollSound>
 <zIndex>75</zIndex>
 <lines>12</lines>
-<storyboard>
-<animation property="y" from="-0.4449074074074074" begin="0" duration="300" mode="EaseOut"/>
-</storyboard>
 </textlist>
 
 <image name="logosClassics" extra="true">
@@ -1201,9 +1213,6 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <maxSize>0.12 0.08</maxSize>
 <origin>0.5 0.5</origin>
 <zIndex>76</zIndex>
-<storyboard>
-<animation property="y" from="-0.9152777777777778" begin="0" duration="300" mode="EaseOut"/>
-</storyboard>
 </image>
 
 <image name="md_marquee">
@@ -1212,9 +1221,6 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <maxSize>0.26 0.11</maxSize>
 <origin>0.5 0.5</origin>
 <zIndex>76</zIndex>
-<storyboard>
-<animation property="y" from="-0.9152777777777778" begin="0" duration="300" mode="EaseOut"/>
-</storyboard>
 </image>
 
 <image name="logoComics" extra="true">
@@ -1225,9 +1231,6 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <maxSize>0.460 0.11</maxSize>
 <origin>0.5 0.5</origin>
 <zIndex>76</zIndex>
-<storyboard>
-<animation property="y" from="-0.9152777777777778" begin="0" duration="300" mode="EaseOut"/>
-</storyboard>
 </image>
 
 <video name="md_video">
@@ -1261,9 +1264,6 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <origin>0.5 0.5</origin>
 <pos>0.91796875 0.3986111111111111</pos>
 <maxSize>0.1265625 0.4305555555555556</maxSize>
-<storyboard>
-<animation property="y" from="-0.6013888888888889" begin="0" duration="300" mode="EaseOut"/>
-</storyboard>
 </image>
 
 <image name="md_fanart">
@@ -1272,9 +1272,6 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <pos>0.91796875 0.3986111111111111</pos>
 <minSize>0.1317708333333333 0.4398148148148148</minSize>
 <color>202020</color>
-<storyboard>
-<animation property="y" from="-0.6013888888888889" begin="0" duration="300" mode="EaseOut"/>
-</storyboard>
 </image>
 
 <text name="md_lbl_releasedate">
@@ -1284,9 +1281,6 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <fontPath>./_assets/Shaka_Pow.ttf</fontPath>
 <fontSize>0.02</fontSize>
 <zIndex>90</zIndex>
-<storyboard>
-<animation property="y" from="-0.36" begin="0" duration="300" mode="EaseOut"/>
-</storyboard>
 </text>
 		
 <datetime name="md_releasedate">
@@ -1295,9 +1289,6 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <y>0.625</y>
 <color>000000</color>
 <fontPath>./_assets/Shaka_Pow.ttf</fontPath>
-<storyboard>
-<animation property="y" from="-0.375" begin="0" duration="300" mode="EaseOut"/>
-</storyboard>
 </datetime>
 
 <text name="md_lbl_genre">
@@ -1307,9 +1298,6 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <zIndex>90</zIndex>
 <color>000000</color>
 <fontPath>./_assets/Shaka_Pow.ttf</fontPath>
-<storyboard>
-<animation property="y" from="-0.333" begin="0" duration="300" mode="EaseOut"/>
-</storyboard>
 </text>
 		
 <text name="md_genre">
@@ -1318,9 +1306,6 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <color>000000</color>
 <fontPath>./_assets/Shaka_Pow.ttf</fontPath>
 <y>0.652</y>
-<storyboard>
-<animation property="y" from="-0.348" begin="0" duration="300" mode="EaseOut"/>
-</storyboard>
 </text>
 
 <text name="md_lbl_developer">
@@ -1330,9 +1315,6 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <zIndex>90</zIndex>
 <color>000000</color>
 <fontPath>./_assets/Shaka_Pow.ttf</fontPath>
-<storyboard>
-<animation property="y" from="-0.306" begin="0" duration="300" mode="EaseOut"/>
-</storyboard>
 </text>
 		
 <text name="md_developer">
@@ -1341,9 +1323,6 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <color>000000</color>
 <fontPath>./_assets/Shaka_Pow.ttf</fontPath>
 <y>0.679</y>
-<storyboard>
-<animation property="y" from="-0.321" begin="0" duration="300" mode="EaseOut"/>
-</storyboard>
 </text>
 
 <text name="md_lbl_players">
@@ -1354,9 +1333,6 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <zIndex>90</zIndex>
 <color>000000</color>
 <fontPath>./_assets/Shaka_Pow.ttf</fontPath>
-<storyboard>
-<animation property="y" from="-0.365" begin="0" duration="300" mode="EaseOut"/>
-</storyboard>
 </text>
 
 <text name="md_players">
@@ -1365,9 +1341,6 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <color>000000</color>
 <fontPath>./_assets/Shaka_Pow.ttf</fontPath>
 <y>0.625</y>
-<storyboard>
-<animation property="y" from="-0.375" begin="0" duration="300" mode="EaseOut"/>
-</storyboard>
 </text>
 		
 <rating name="md_rating">
@@ -1376,9 +1349,6 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <filledPath>./_assets/star_filled.png</filledPath>
 <unfilledPath>./_assets/star_empty.png</unfilledPath>
 <zIndex>90</zIndex>
-<storyboard>
-<animation property="y" from="-0.34" begin="0" duration="300" mode="EaseOut"/>
-</storyboard>
 </rating>
 		
 <text name="md_lbl_playcount">
@@ -1389,9 +1359,6 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <color>000000</color>
 <fontPath>./_assets/Shaka_Pow.ttf</fontPath>
 <zIndex>90</zIndex>
-<storyboard>
-<animation property="y" from="-0.311" begin="0" duration="300" mode="EaseOut"/>
-</storyboard>
 </text>
 		
 <text name="md_playcount">
@@ -1400,9 +1367,6 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <fontPath>./_assets/Shaka_Pow.ttf</fontPath>
 <zIndex>90</zIndex>
 <y>0.678</y>
-<storyboard>
-<animation property="y" from="-0.311" begin="0" duration="300" mode="EaseOut"/>
-</storyboard>
 </text>
 
 <text name="md_description">
@@ -1413,9 +1377,6 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <pos>0.746875 0.8365740740740741</pos>
 <origin>0.5 0.5</origin>
 <zIndex>90</zIndex>
-<storyboard>
-<animation property="y" from="-0.1634259259259259" begin="0" duration="300" mode="EaseOut"/>
-</storyboard>
 </text>
 	
 </view>
@@ -1523,6 +1484,15 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 
 <helpsystem name="help" ifSubset="helpIcons:defaultIcons">
 <iconColor>090909</iconColor>
+</helpsystem>
+
+<helpsystem name="help" ifSubset="helpIcons:defaultIcons,maskColor:tmnt">
+<textColor>ffffff</textColor>
+<iconColor>ffffff</iconColor>
+</helpsystem>
+
+<helpsystem name="help" ifSubset="maskColor:tmnt">
+<textColor>ffffff</textColor>
 </helpsystem>
 
 <helpsystem name="help" ifSubset="helpIcons:arcadeIcons">
