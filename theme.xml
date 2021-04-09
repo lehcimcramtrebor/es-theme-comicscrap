@@ -19,6 +19,9 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <lang.all>all • 7 videos</lang.all>
 <lang.all lang="fr">toutes • 7 vidéos</lang.all>
 
+<lang.5upDown>up and down • 5 videos</lang.5upDown>
+<lang.5upDown lang="fr">alex express mode • 5 vidéos</lang.5upDown>
+
 <lang.4corners>in corners • 4 videos</lang.4corners>
 <lang.4corners lang="fr">dans les coins • 4 vidéos</lang.4corners>
 
@@ -250,6 +253,7 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <subset name="randomVideos" displayName="${lang.randomVideos}" appliesTo="video">
 <include name="no" displayName="${lang.no}"/>
 <include name="yes" displayName="${lang.all}"/>
+<include name="5upDown" displayName="${lang.5upDown}"/>
 <include name="4corners" displayName="${lang.4corners}"/>
 <include name="3smallestThan" displayName="${lang.3smallestThan}"/>
 <include name="3biggerThan" displayName="${lang.3biggerThan}"/>
@@ -1003,7 +1007,7 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 </storyboard>
 </image>
 
-<video name="v01" extra="true" ifSubset="randomVideos:yes|4corners|2cornersULBR|upperLeft|3biggerThan">
+<video name="v01" extra="true" ifSubset="randomVideos:yes|4corners|2cornersULBR|upperLeft|3biggerThan|5upDown">
 <path>{random}</path>
 <minSize>0.3739583333333333 0.3074074074074074</minSize>
 <origin>0.5 0.5</origin>
@@ -1014,7 +1018,7 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <zIndex>10</zIndex>
 </video>
 
-<video name="v02" extra="true" ifSubset="randomVideos:yes|4corners|2cornersURBL|upperRight|3smallestThan">
+<video name="v02" extra="true" ifSubset="randomVideos:yes|4corners|2cornersURBL|upperRight|3smallestThan|5upDown">
 <path>{random}</path>
 <minSize>0.5635416666666667 0.2787037037037037</minSize>
 <origin>0.5 0.5</origin>
@@ -1047,7 +1051,7 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <zIndex>10</zIndex>
 </video>
 
-<video name="v05" extra="true" ifSubset="randomVideos:yes|4corners|2cornersURBL|bottomLeft|3biggerThan">
+<video name="v05" extra="true" ifSubset="randomVideos:yes|4corners|2cornersURBL|bottomLeft|3biggerThan|5upDown">
 <path>{random}</path>
 <minSize>0.3098958333333333 0.2842592592592593</minSize>
 <origin>0.5 0.5</origin>
@@ -1058,7 +1062,7 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <zIndex>10</zIndex>
 </video>
 
-<video name="v06" extra="true" ifSubset="randomVideos:yes">
+<video name="v06" extra="true" ifSubset="randomVideos:yes|5upDown">
 <path>{random}</path>
 <minSize>0.2338541666666667 0.2555555555555556</minSize>
 <origin>0.5 0.5</origin>
@@ -1069,7 +1073,7 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <zIndex>10</zIndex>
 </video>
 
-<video name="v07" extra="true" ifSubset="randomVideos:yes|4corners|2cornersULBR||bottomRight|3smallestThan">
+<video name="v07" extra="true" ifSubset="randomVideos:yes|4corners|2cornersULBR||bottomRight|3smallestThan|5upDown">
 <path>{random}</path>
 <minSize>0.3765625 0.2324074074074074</minSize>
 <origin>0.5 0.5</origin>
