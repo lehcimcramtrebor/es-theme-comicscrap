@@ -199,8 +199,8 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <lang.green>green</lang.green>
 <lang.green lang="fr">vert</lang.green>
 
-<lang.themed>by system skins</lang.themed>
-<lang.themed lang="fr">par système</lang.themed>
+<lang.themed>by system skins (work in progress)</lang.themed>
+<lang.themed lang="fr">par système (travail en cours)</lang.themed>
 
 <lang.defaultIcons>default buttons</lang.defaultIcons>
 <lang.defaultIcons lang="fr">boutons par défaut</lang.defaultIcons>
@@ -315,7 +315,7 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <include name="green" displayName="${lang.green}"/>
 <include name="darkGrey" displayName="${lang.darkGrey}"/>
 <include name="tmnt" displayName="${lang.tmnt}"/>
-<!----DESACTIVED>
+<!---->
 <include name="themed" displayName="${lang.themed}"/>
 <!---->
 </subset>
