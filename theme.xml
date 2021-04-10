@@ -175,8 +175,8 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <lang.screenshotsCoversFanArtsMarquees>mix • screenshots-covers-fan arts-logos</lang.screenshotsCoversFanArtsMarquees>
 <lang.screenshotsCoversFanArtsMarquees lang="fr">mix • captures-jaquettes-Œuvres-logos</lang.screenshotsCoversFanArtsMarquees>
 
-<lang.maskColor>interface • choose color</lang.maskColor>
-<lang.maskColor lang="fr">interface • choisir la couleur</lang.maskColor>
+<lang.maskColor>interface • choose style</lang.maskColor>
+<lang.maskColor lang="fr">interface • choisir le style</lang.maskColor>
 
 <lang.texture>interface • display paper texture</lang.texture>
 <lang.texture lang="fr">interface • afficher la texture du papier</lang.texture>
@@ -198,6 +198,9 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 
 <lang.green>green</lang.green>
 <lang.green lang="fr">vert</lang.green>
+
+<lang.themed>by system skins</lang.themed>
+<lang.themed lang="fr">par système</lang.themed>
 
 <lang.defaultIcons>default buttons</lang.defaultIcons>
 <lang.defaultIcons lang="fr">boutons par défaut</lang.defaultIcons>
@@ -312,6 +315,9 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <include name="green" displayName="${lang.green}"/>
 <include name="darkGrey" displayName="${lang.darkGrey}"/>
 <include name="tmnt" displayName="${lang.tmnt}"/>
+<!----DESACTIVED>
+<include name="themed" displayName="${lang.themed}"/>
+<!---->
 </subset>
 
 <subset name="texture" displayName="${lang.texture}">
@@ -361,7 +367,7 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <hotkeyColor>125012</hotkeyColor>
 </controllerActivity>
 
-<controllerActivity name="controllerActivity" ifSubset="maskColor:tmnt">
+<controllerActivity name="controllerActivity" ifSubset="maskColor:tmnt|themed">
 <color>ffffff66</color>
 </controllerActivity>
 
@@ -377,7 +383,7 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <color>121212</color>
 </batteryIndicator>
 
-<batteryIndicator name="batteryIndicator" ifSubset="maskColor:tmnt">
+<batteryIndicator name="batteryIndicator" ifSubset="maskColor:tmnt|themed">
 <color>ffffff</color>
 </batteryIndicator>
 
@@ -493,7 +499,7 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 </storyboard>
 </text>
 
-<text name="systemInfo" ifSubset="maskColor:tmnt,logosBackground:logosBackgroundLight|logosBackgroundTransparent">
+<text name="systemInfo" ifSubset="maskColor:tmnt|themed,logosBackground:logosBackgroundLight|logosBackgroundTransparent">
 <color>ffffff</color>
 </text>
 
@@ -574,6 +580,11 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 
 <image name="mask" extra="true" ifSubset="maskColor:tmnt">
 <path>./_assets/maskTmnt.png</path>
+</image>
+
+<image name="mask" extra="true" ifSubset="maskColor:themed">
+<path>./_assets/themedSkins/mask/default.png</path>
+<path>./_assets/themedSkins/mask/${system.theme}.png</path>
 </image>
 
 <image name="mask" extra="true" ifSubset="maskColor:darkGrey">
@@ -1157,6 +1168,11 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <path>./_assets/menuTmnt.png</path>
 </image>
 
+<image name="menu" extra="true" ifSubset="maskColor:themed">
+<path>./_assets/themedSkins/menu/default.png</path>
+<path>./_assets/themedSkins/menu/${system.theme}.png</path>
+</image>
+
 <image name="menu" extra="true" ifSubset="maskColor:darkGrey">
 <color>${maskDarkGreyColor}</color>
 </image>
@@ -1486,12 +1502,12 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <iconColor>090909</iconColor>
 </helpsystem>
 
-<helpsystem name="help" ifSubset="helpIcons:defaultIcons,maskColor:tmnt">
+<helpsystem name="help" ifSubset="helpIcons:defaultIcons,maskColor:tmnt|themed">
 <textColor>ffffff</textColor>
 <iconColor>ffffff</iconColor>
 </helpsystem>
 
-<helpsystem name="help" ifSubset="maskColor:tmnt">
+<helpsystem name="help" ifSubset="maskColor:tmnt|themed">
 <textColor>ffffff</textColor>
 </helpsystem>
 

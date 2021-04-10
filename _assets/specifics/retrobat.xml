@@ -12,15 +12,20 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <view name="video">
 
 <image name="menu" extra="true">
-<path>./_assets/menuBasic.png</path>
+<path>./../menuBasic.png</path>
 </image>
 
 <image name="menu" extra="true" ifSubset="maskColor:tmnt">
-<path>./_assets/menuBasicTmnt.png</path>
+<path>./../menuBasicTmnt.png</path>
+</image>
+
+<image name="menu" extra="true" ifSubset="maskColor:themed">
+<path>./../themedSkins/menu/defaultBase.png</path>
+<path>./../themedSkins/menu/${system.theme}.png</path>
 </image>
 
 <image name="menuBack" extra="true">
-<path>./_assets/menuBackBasic.png</path>
+<path>./../menuBackBasic.png</path>
 </image>
 
 <image name="md_marquee">
