@@ -199,8 +199,8 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <lang.green>green</lang.green>
 <lang.green lang="fr">vert</lang.green>
 
-<lang.themed>by system skins (work in progress)</lang.themed>
-<lang.themed lang="fr">par système (travail en cours)</lang.themed>
+<lang.themed>custom skin(s) • diy</lang.themed>
+<lang.themed lang="fr">personnalisé(s)• diy</lang.themed>
 
 <lang.defaultIcons>default buttons</lang.defaultIcons>
 <lang.defaultIcons lang="fr">boutons par défaut</lang.defaultIcons>
