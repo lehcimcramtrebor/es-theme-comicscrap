@@ -1215,7 +1215,7 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <horizontalMargin>0.025</horizontalMargin>
 <forceUppercase>false</forceUppercase>
 <scrollSound>./_assets/scrollg.wav</scrollSound>
-<zIndex>75</zIndex>
+<zIndex>110</zIndex>
 <lines>12</lines>
 </textlist>
 
