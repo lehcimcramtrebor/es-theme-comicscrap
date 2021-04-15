@@ -362,13 +362,13 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <size>0.065 0.018</size>
 <itemSpacing>0.003</itemSpacing>
 <imagePath>./_assets/gamepad.svg</imagePath>
-<color>12121266</color>
-<activityColor>121212</activityColor>
+<color>121212fc</color>
+<activityColor>12121266</activityColor>
 <hotkeyColor>125012</hotkeyColor>
 </controllerActivity>
 
 <controllerActivity name="controllerActivity" ifSubset="maskColor:tmnt|themed">
-<color>ffffff66</color>
+<color>fffffffc</color>
 </controllerActivity>
 
 <batteryIndicator name="batteryIndicator">
@@ -380,11 +380,11 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <at50>./_assets/battery/50.svg</at50>
 <at25>./_assets/battery/25.svg</at25>
 <empty>./_assets/battery/empty.svg</empty>
-<color>121212</color>
+<color>121212fc</color>
 </batteryIndicator>
 
 <batteryIndicator name="batteryIndicator" ifSubset="maskColor:tmnt|themed">
-<color>ffffff</color>
+<color>fffffffc</color>
 </batteryIndicator>
 
 <image name="paper" extra="true" ifSubset="texture:yes">
@@ -1294,9 +1294,10 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 
 <image name="md_thumbnail">
 <zIndex>90</zIndex>
-<origin>0.5 0.5</origin>
-<pos>0.91796875 0.3986111111111111</pos>
-<maxSize>0.1265625 0.4305555555555556</maxSize>
+<origin>0.5 0</origin>
+<pos>0.91796875 0.19</pos>
+<!--<maxSize>0.1265625 0.4305555555555556</maxSize>-->
+<maxSize>0.12 0.35</maxSize>
 </image>
 
 <image name="md_fanart">
@@ -1304,7 +1305,58 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <origin>0.5 0.5</origin>
 <pos>0.91796875 0.3986111111111111</pos>
 <minSize>0.1317708333333333 0.4398148148148148</minSize>
-<color>202020</color>
+<color>999999</color>
+<colorEnd>000000</colorEnd>
+<gradientType>vertical</gradientType>
+</image>
+
+<image name="md_manual,md_nomanual">
+<origin>0 1</origin>
+<pos>0.895 0.61</pos>
+<path>./_assets/book.png</path>
+<maxSize>0.02 0.03</maxSize>
+<color>dddddd</color>
+<zIndex>90</zIndex>
+</image>
+
+<image name="md_nomanual">
+<color>80808040</color>
+</image>
+
+<image name="md_savestate,md_nosavestate">
+<origin>0 1</origin>
+<path>./_assets/SaveState.png</path>
+<pos>0.927 0.61</pos>
+<maxSize>0.02 0.03</maxSize>
+<color>dddddd</color>
+<zIndex>90</zIndex>
+</image>
+
+    
+<image name="md_nosavestate">
+<color>80808040</color>
+</image>
+	
+<image name="md_kidgame, md_notkidgame"> 
+<origin>0 1</origin>
+<pos>0.96 0.61</pos>
+<path>./_assets/kid.svg</path>
+<maxSize>0.02 0.03</maxSize>
+<color>dddddd</color>
+<zIndex>90</zIndex>
+<linearSmooth>true</linearSmooth>
+</image>
+
+<image name="md_notkidgame"> 
+<color>80808040</color>
+</image>
+
+<image name="md_flag">
+<origin>0 1</origin>
+<pos>0.858 0.61</pos>
+<maxSize>0.022 0.05</maxSize>
+<linearSmooth>true</linearSmooth>
+<zIndex>90</zIndex>
 </image>
 
 <text name="md_lbl_releasedate">

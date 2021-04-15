@@ -97,7 +97,23 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <text name="md_description">
 <visible>false</visible>
 </text>
-	
+
+<text name="md_flag">
+<visible>false</visible>
+</text>
+
+<text name="md_manual,md_nomanual">
+<visible>false</visible>
+</text>
+
+<text name="md_savestate,md_nosavestate">
+<visible>false</visible>
+</text>
+
+<text name="md_kidgame, md_notkidgame">
+<visible>false</visible>
+</text>
+
 </view>
 
 </theme>
