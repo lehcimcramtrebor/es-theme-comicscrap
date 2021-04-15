@@ -1146,12 +1146,29 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 </image>
 
 <image name="scanlines" extra="true" ifSubset="staticEffectApply:artworksApply">
-<zIndex>11</zIndex>
+<zIndex>20</zIndex>
 </image>
 
 <image name="scanlines" extra="true" ifSubset="staticEffectApply:screenApply">
 <zIndex>6000</zIndex>
 </image>
+
+<text name="systemText" extra="true">
+<text>${system.fullName}<!--!${system.releaseYear}--></text>
+<origin>1 1</origin>
+<pos>0.97 1.015</pos>
+<!--<pos>0.97 1</pos>-->
+<size>0.5 0.085</size>
+<color>090909</color>
+<fontPath>./_assets/Shaka_Pow.ttf</fontPath>
+<fontSize>0.02</fontSize>
+<alignment>right</alignment>
+<zIndex>500</zIndex>
+</text>
+
+<text name="systemText" extra="true" ifSubset="maskColor:tmnt|themed">
+<color>ffffff</color>
+</text>
 
 </view>
 
