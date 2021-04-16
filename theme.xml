@@ -1326,7 +1326,7 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <image name="md_savestate,md_nosavestate">
 <origin>0 1</origin>
 <path>./_assets/SaveState.png</path>
-<pos>0.927 0.61</pos>
+<pos>0.96 0.61</pos>
 <maxSize>0.02 0.03</maxSize>
 <color>dddddd</color>
 <zIndex>90</zIndex>
@@ -1339,7 +1339,7 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 	
 <image name="md_kidgame, md_notkidgame"> 
 <origin>0 1</origin>
-<pos>0.96 0.61</pos>
+<pos>0.927 0.61</pos>
 <path>./_assets/kid.svg</path>
 <maxSize>0.02 0.03</maxSize>
 <color>dddddd</color>
