@@ -1308,15 +1308,17 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <color>999999</color>
 <colorEnd>000000</colorEnd>
 <gradientType>vertical</gradientType>
+<flipX>true</flipX>
 </image>
 
 <image name="md_manual,md_nomanual">
 <origin>0 1</origin>
-<pos>0.895 0.61</pos>
+<pos>0.897 0.61</pos>
 <path>./_assets/book.png</path>
 <maxSize>0.02 0.03</maxSize>
 <color>dddddd</color>
 <zIndex>90</zIndex>
+<reflexion>0.3 0</reflexion>
 </image>
 
 <image name="md_nomanual">
@@ -1330,6 +1332,7 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <maxSize>0.02 0.03</maxSize>
 <color>dddddd</color>
 <zIndex>90</zIndex>
+<reflexion>0.3 0</reflexion>
 </image>
 
     
@@ -1339,12 +1342,13 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 	
 <image name="md_kidgame, md_notkidgame"> 
 <origin>0 1</origin>
-<pos>0.927 0.61</pos>
+<pos>0.931 0.61</pos>
 <path>./_assets/kid.svg</path>
 <maxSize>0.02 0.03</maxSize>
 <color>dddddd</color>
 <zIndex>90</zIndex>
 <linearSmooth>true</linearSmooth>
+<reflexion>0.3 0</reflexion>
 </image>
 
 <image name="md_notkidgame"> 
@@ -1357,6 +1361,7 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <maxSize>0.022 0.05</maxSize>
 <linearSmooth>true</linearSmooth>
 <zIndex>90</zIndex>
+<reflexion>0.1 0</reflexion>
 </image>
 
 <text name="md_lbl_releasedate">
