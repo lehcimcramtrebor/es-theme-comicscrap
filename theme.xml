@@ -79,6 +79,12 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <lang.no>no</lang.no>
 <lang.no lang="fr">non</lang.no>
 
+<lang.force>force all</lang.force>
+<lang.force lang="fr">forcer toutes</lang.force>
+
+<lang.forceAs>only force AS video</lang.forceAs>
+<lang.forceAs lang="fr">forcer uniquement les AS</lang.forceAs>
+
 <lang.jukebox>music</lang.jukebox>
 <lang.jukebox lang="fr">musique</lang.jukebox>
 
@@ -293,6 +299,8 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <subset name="allowCustomVideos" displayName="${lang.allowCustomVideos}" appliesTo="video">
 <include name="yes" displayName="${lang.yes}"/>
 <include name="no" displayName="${lang.no}"/>
+<include name="force" displayName="${lang.force}"/>
+<include name="forceAs" displayName="${lang.forceAs}"/>
 </subset>
 
 <subset name="logos" displayName="${lang.logos}">
@@ -410,7 +418,7 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 </sound>
 	
 <carousel name="systemcarousel">
-<defaultTransition>instant</defaultTransition>
+<defaultTransition>fade</defaultTransition>
 <zIndex>200</zIndex>
 <scrollSound>./_assets/scroll.wav</scrollSound>
 </carousel>
@@ -1113,33 +1121,503 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <zIndex>10</zIndex>
 </video>
 
-<video name="v01" extra="true" ifSubset="randomVideos:yes,allowCustomVideos:yes">
+<video name="v01" extra="true" ifSubset="randomVideos:yes|4corners|2cornersULBR|upperLeft|3biggerThan|5upDown,allowCustomVideos:yes">
 <path>./_assets/customVideos/${system.theme}/01.mp4</path>
 </video>
 
-<video name="v02" extra="true" ifSubset="randomVideos:yes,allowCustomVideos:yes">
+<video name="v02" extra="true" ifSubset="randomVideos:yes|4corners|2cornersURBL|upperRight|3smallestThan|5upDown,allowCustomVideos:yes">
 <path>./_assets/customVideos/${system.theme}/02.mp4</path>
 </video>
 
-<video name="v03" extra="true" ifSubset="randomVideos:yes,allowCustomVideos:yes">
+<video name="v03" extra="true" ifSubset="randomVideos:yes|3smallestThan,allowCustomVideos:yes">
 <path>./_assets/customVideos/${system.theme}/03.mp4</path>
 </video>
 
-<video name="v04" extra="true" ifSubset="randomVideos:yes,allowCustomVideos:yes">
+<video name="v04" extra="true" ifSubset="randomVideos:yes|3biggerThan,allowCustomVideos:yes">
 <path>./_assets/customVideos/${system.theme}/04.mp4</path>
 </video>
 
-<video name="v05" extra="true" ifSubset="randomVideos:yes,allowCustomVideos:yes">
+<video name="v05" extra="true" ifSubset="randomVideos:yes|4corners|2cornersURBL|bottomLeft|3biggerThan|5upDown,allowCustomVideos:yes">
 <path>./_assets/customVideos/${system.theme}/05.mp4</path>
 </video>
 
-<video name="v06" extra="true" ifSubset="randomVideos:yes,allowCustomVideos:yes">
+<video name="v06" extra="true" ifSubset="randomVideos:yes|5upDown,allowCustomVideos:yes">
 <path>./_assets/customVideos/${system.theme}/06.mp4</path>
 </video>
 
-<video name="v07" extra="true" ifSubset="randomVideos:yes,allowCustomVideos:yes">
+<video name="v07" extra="true" ifSubset="randomVideos:yes|4corners|2cornersULBR||bottomRight|3smallestThan|5upDown,allowCustomVideos:yes">
 <path>./_assets/customVideos/${system.theme}/07.mp4</path>
 </video>
+
+<video name="v01a" extra="true" ifSubset="randomVideos:yes|4corners|2cornersULBR|upperLeft|3biggerThan|5upDown,allowCustomVideos:yes">
+<path>./_assets/customVideos/${system.theme}/01a.mp4</path>
+<minSize>0.3739583333333333 0.3074074074074074</minSize>
+<origin>0.5 0.5</origin>
+<pos>0.2145833333333333 0.1916666666666667</pos>
+<audio>true</audio>
+<delay>4.8</delay>
+<effect>none</effect>
+<zIndex>10</zIndex>
+</video>
+
+<video name="v02a" extra="true" ifSubset="randomVideos:yes|4corners|2cornersURBL|upperRight|3smallestThan|5upDown,allowCustomVideos:yes">
+<path>./_assets/customVideos/${system.theme}/02a.mp4</path>
+<minSize>0.5635416666666667 0.2787037037037037</minSize>
+<origin>0.5 0.5</origin>
+<pos>0.6916666666666667 0.1875</pos>
+<audio>true</audio>
+<delay>0.6</delay>
+<effect>none</effect>
+<zIndex>10</zIndex>
+</video>
+
+<video name="v03a" extra="true" ifSubset="randomVideos:yes|3smallestThan,allowCustomVideos:yes">
+<path>./_assets/customVideos/${system.theme}/03a.mp4</path>
+<minSize>0.5401041666666667 0.237037037037037</minSize>
+<origin>0.5 0.5</origin>
+<pos>0.29765625 0.4916666666666667</pos>
+<audio>true</audio>
+<delay>6.8</delay>
+<effect>none</effect>
+<zIndex>10</zIndex>
+</video>
+
+<video name="v04a" extra="true" ifSubset="randomVideos:yes|3biggerThan,allowCustomVideos:yes">
+<path>./_assets/customVideos/${system.theme}/04a.mp4</path>
+<minSize>0.3921875 0.2666666666666667</minSize>
+<origin>0.5 0.5</origin>
+<pos>0.77734375 0.4981481481481481</pos>
+<audio>true</audio>
+<delay>8</delay>
+<effect>none</effect>
+<zIndex>10</zIndex>
+</video>
+
+<video name="v05a" extra="true" ifSubset="randomVideos:yes|4corners|2cornersURBL|bottomLeft|3biggerThan|5upDown,allowCustomVideos:yes">
+<path>./_assets/customVideos/${system.theme}/05a.mp4</path>
+<minSize>0.3098958333333333 0.2842592592592593</minSize>
+<origin>0.5 0.5</origin>
+<pos>0.1825520833333333 0.7837962962962963</pos>
+<audio>true</audio>
+<delay>2</delay>
+<effect>none</effect>
+<zIndex>10</zIndex>
+</video>
+
+<video name="v06a" extra="true" ifSubset="randomVideos:yes|5upDown,allowCustomVideos:yes">
+<path>./_assets/customVideos/${system.theme}/06a.mp4</path>
+<minSize>0.2338541666666667 0.2555555555555556</minSize>
+<origin>0.5 0.5</origin>
+<pos>0.4674479166666667 0.7861111111111111</pos>
+<audio>true</audio>
+<delay>5.4</delay>
+<effect>none</effect>
+<zIndex>10</zIndex>
+</video>
+
+<video name="v07a" extra="true" ifSubset="randomVideos:yes|4corners|2cornersULBR||bottomRight|3smallestThan|5upDown,allowCustomVideos:yes">
+<path>./_assets/customVideos/${system.theme}/07a.mp4</path>
+<minSize>0.3765625 0.2324074074074074</minSize>
+<origin>0.5 0.5</origin>
+<pos>0.78515625 0.7856481481481481</pos>
+<audio>true</audio>
+<delay>3.6</delay>
+<effect>none</effect>
+<zIndex>10</zIndex>
+</video>
+
+<video name="v01as" extra="true" ifSubset="randomVideos:yes|4corners|2cornersULBR|upperLeft|3biggerThan|5upDown,allowCustomVideos:yes">
+<path>./_assets/customVideos/${system.theme}/01as.mp4</path>
+<minSize>0.3739583333333333 0.3074074074074074</minSize>
+<origin>0.5 0.5</origin>
+<pos>0.2145833333333333 0.1916666666666667</pos>
+<audio>true</audio>
+<delay>0</delay>
+<effect>none</effect>
+<zIndex>10</zIndex>
+</video>
+
+<video name="v02as" extra="true" ifSubset="randomVideos:yes|4corners|2cornersURBL|upperRight|3smallestThan|5upDown,allowCustomVideos:yes">
+<path>./_assets/customVideos/${system.theme}/02as.mp4</path>
+<minSize>0.5635416666666667 0.2787037037037037</minSize>
+<origin>0.5 0.5</origin>
+<pos>0.6916666666666667 0.1875</pos>
+<audio>true</audio>
+<delay>0</delay>
+<effect>none</effect>
+<zIndex>10</zIndex>
+</video>
+
+<video name="v03as" extra="true" ifSubset="randomVideos:yes|3smallestThan,allowCustomVideos:yes">
+<path>./_assets/customVideos/${system.theme}/03as.mp4</path>
+<minSize>0.5401041666666667 0.237037037037037</minSize>
+<origin>0.5 0.5</origin>
+<pos>0.29765625 0.4916666666666667</pos>
+<audio>true</audio>
+<delay>0</delay>
+<effect>none</effect>
+<zIndex>10</zIndex>
+</video>
+
+<video name="v04as" extra="true" ifSubset="randomVideos:yes|3biggerThan,allowCustomVideos:yes">
+<path>./_assets/customVideos/${system.theme}/04as.mp4</path>
+<minSize>0.3921875 0.2666666666666667</minSize>
+<origin>0.5 0.5</origin>
+<pos>0.77734375 0.4981481481481481</pos>
+<audio>true</audio>
+<delay>0</delay>
+<effect>none</effect>
+<zIndex>10</zIndex>
+</video>
+
+<video name="v05as" extra="true" ifSubset="randomVideos:yes|4corners|2cornersURBL|bottomLeft|3biggerThan|5upDown,allowCustomVideos:yes">
+<path>./_assets/customVideos/${system.theme}/05as.mp4</path>
+<minSize>0.3098958333333333 0.2842592592592593</minSize>
+<origin>0.5 0.5</origin>
+<pos>0.1825520833333333 0.7837962962962963</pos>
+<audio>true</audio>
+<delay>0</delay>
+<effect>none</effect>
+<zIndex>10</zIndex>
+</video>
+
+<video name="v06as" extra="true" ifSubset="randomVideos:yes|5upDown,allowCustomVideos:yes">
+<path>./_assets/customVideos/${system.theme}/06as.mp4</path>
+<minSize>0.2338541666666667 0.2555555555555556</minSize>
+<origin>0.5 0.5</origin>
+<pos>0.4674479166666667 0.7861111111111111</pos>
+<audio>true</audio>
+<delay>0</delay>
+<effect>none</effect>
+<zIndex>10</zIndex>
+</video>
+
+<video name="v07as" extra="true" ifSubset="randomVideos:yes|4corners|2cornersULBR||bottomRight|3smallestThan|5upDown,allowCustomVideos:yes">
+<path>./_assets/customVideos/${system.theme}/07as.mp4</path>
+<minSize>0.3765625 0.2324074074074074</minSize>
+<origin>0.5 0.5</origin>
+<pos>0.78515625 0.7856481481481481</pos>
+<audio>true</audio>
+<delay>0</delay>
+<effect>none</effect>
+<zIndex>10</zIndex>
+</video>
+
+<!-- FORCE ALL CUSTOM VIDEOS -->
+
+<video name="v01" extra="true" ifSubset="allowCustomVideos:force">
+<path>./_assets/customVideos/${system.theme}/01.mp4</path>
+<minSize>0.3739583333333333 0.3074074074074074</minSize>
+<origin>0.5 0.5</origin>
+<pos>0.2145833333333333 0.1916666666666667</pos>
+<audio>${v01.audio}</audio>
+<delay>4.8</delay>
+<effect>none</effect>
+<zIndex>10</zIndex>
+</video>
+
+<video name="v02" extra="true" ifSubset="allowCustomVideos:force">
+<path>./_assets/customVideos/${system.theme}/02.mp4</path>
+<minSize>0.5635416666666667 0.2787037037037037</minSize>
+<origin>0.5 0.5</origin>
+<pos>0.6916666666666667 0.1875</pos>
+<audio>${v02.audio}</audio>
+<delay>0.6</delay>
+<effect>none</effect>
+<zIndex>10</zIndex>
+</video>
+
+<video name="v03" extra="true" ifSubset="allowCustomVideos:force">
+<path>./_assets/customVideos/${system.theme}/03.mp4</path>
+<minSize>0.5401041666666667 0.237037037037037</minSize>
+<origin>0.5 0.5</origin>
+<pos>0.29765625 0.4916666666666667</pos>
+<audio>${v03.audio}</audio>
+<delay>6.8</delay>
+<effect>none</effect>
+<zIndex>10</zIndex>
+</video>
+
+<video name="v04" extra="true" ifSubset="allowCustomVideos:force">
+<path>./_assets/customVideos/${system.theme}/04.mp4</path>
+<minSize>0.3921875 0.2666666666666667</minSize>
+<origin>0.5 0.5</origin>
+<pos>0.77734375 0.4981481481481481</pos>
+<audio>${v04.audio}</audio>
+<delay>8</delay>
+<effect>none</effect>
+<zIndex>10</zIndex>
+</video>
+
+<video name="v05" extra="true" ifSubset="allowCustomVideos:force">
+<path>./_assets/customVideos/${system.theme}/05.mp4</path>
+<minSize>0.3098958333333333 0.2842592592592593</minSize>
+<origin>0.5 0.5</origin>
+<pos>0.1825520833333333 0.7837962962962963</pos>
+<audio>${v05.audio}</audio>
+<delay>2</delay>
+<effect>none</effect>
+<zIndex>10</zIndex>
+</video>
+
+<video name="v06" extra="true" ifSubset="allowCustomVideos:force">
+<path>./_assets/customVideos/${system.theme}/06.mp4</path>
+<minSize>0.2338541666666667 0.2555555555555556</minSize>
+<origin>0.5 0.5</origin>
+<pos>0.4674479166666667 0.7861111111111111</pos>
+<audio>${v06.audio}</audio>
+<delay>5.4</delay>
+<effect>none</effect>
+<zIndex>10</zIndex>
+</video>
+
+<video name="v07" extra="true" ifSubset="allowCustomVideos:force">
+<path>./_assets/customVideos/${system.theme}/07.mp4</path>
+<minSize>0.3765625 0.2324074074074074</minSize>
+<origin>0.5 0.5</origin>
+<pos>0.78515625 0.7856481481481481</pos>
+<audio>${v07.audio}</audio>
+<delay>3.6</delay>
+<effect>none</effect>
+<zIndex>10</zIndex>
+</video>
+
+<video name="v01a" extra="true" ifSubset="allowCustomVideos:force">
+<path>./_assets/customVideos/${system.theme}/01a.mp4</path>
+<minSize>0.3739583333333333 0.3074074074074074</minSize>
+<origin>0.5 0.5</origin>
+<pos>0.2145833333333333 0.1916666666666667</pos>
+<audio>true</audio>
+<delay>4.8</delay>
+<effect>none</effect>
+<zIndex>10</zIndex>
+</video>
+
+<video name="v02a" extra="true" ifSubset="allowCustomVideos:force">
+<path>./_assets/customVideos/${system.theme}/02a.mp4</path>
+<minSize>0.5635416666666667 0.2787037037037037</minSize>
+<origin>0.5 0.5</origin>
+<pos>0.6916666666666667 0.1875</pos>
+<audio>true</audio>
+<delay>0.6</delay>
+<effect>none</effect>
+<zIndex>10</zIndex>
+</video>
+
+<video name="v03a" extra="true" ifSubset="allowCustomVideos:force">
+<path>./_assets/customVideos/${system.theme}/03a.mp4</path>
+<minSize>0.5401041666666667 0.237037037037037</minSize>
+<origin>0.5 0.5</origin>
+<pos>0.29765625 0.4916666666666667</pos>
+<audio>true</audio>
+<delay>6.8</delay>
+<effect>none</effect>
+<zIndex>10</zIndex>
+</video>
+
+<video name="v04a" extra="true" ifSubset="allowCustomVideos:force">
+<path>./_assets/customVideos/${system.theme}/04a.mp4</path>
+<minSize>0.3921875 0.2666666666666667</minSize>
+<origin>0.5 0.5</origin>
+<pos>0.77734375 0.4981481481481481</pos>
+<audio>true</audio>
+<delay>8</delay>
+<effect>none</effect>
+<zIndex>10</zIndex>
+</video>
+
+<video name="v05a" extra="true" ifSubset="allowCustomVideos:force">
+<path>./_assets/customVideos/${system.theme}/05a.mp4</path>
+<minSize>0.3098958333333333 0.2842592592592593</minSize>
+<origin>0.5 0.5</origin>
+<pos>0.1825520833333333 0.7837962962962963</pos>
+<audio>true</audio>
+<delay>2</delay>
+<effect>none</effect>
+<zIndex>10</zIndex>
+</video>
+
+<video name="v06a" extra="true" ifSubset="allowCustomVideos:force">
+<path>./_assets/customVideos/${system.theme}/06a.mp4</path>
+<minSize>0.2338541666666667 0.2555555555555556</minSize>
+<origin>0.5 0.5</origin>
+<pos>0.4674479166666667 0.7861111111111111</pos>
+<audio>true</audio>
+<delay>5.4</delay>
+<effect>none</effect>
+<zIndex>10</zIndex>
+</video>
+
+<video name="v07a" extra="true" ifSubset="allowCustomVideos:force">
+<path>./_assets/customVideos/${system.theme}/07a.mp4</path>
+<minSize>0.3765625 0.2324074074074074</minSize>
+<origin>0.5 0.5</origin>
+<pos>0.78515625 0.7856481481481481</pos>
+<audio>true</audio>
+<delay>3.6</delay>
+<effect>none</effect>
+<zIndex>10</zIndex>
+</video>
+
+<video name="v01as" extra="true" ifSubset="allowCustomVideos:force">
+<path>./_assets/customVideos/${system.theme}/01as.mp4</path>
+<minSize>0.3739583333333333 0.3074074074074074</minSize>
+<origin>0.5 0.5</origin>
+<pos>0.2145833333333333 0.1916666666666667</pos>
+<audio>true</audio>
+<delay>0</delay>
+<effect>none</effect>
+<zIndex>10</zIndex>
+</video>
+
+<video name="v02as" extra="true" ifSubset="allowCustomVideos:force">
+<path>./_assets/customVideos/${system.theme}/02as.mp4</path>
+<minSize>0.5635416666666667 0.2787037037037037</minSize>
+<origin>0.5 0.5</origin>
+<pos>0.6916666666666667 0.1875</pos>
+<audio>true</audio>
+<delay>0</delay>
+<effect>none</effect>
+<zIndex>10</zIndex>
+</video>
+
+<video name="v03as" extra="true" ifSubset="allowCustomVideos:force">
+<path>./_assets/customVideos/${system.theme}/03as.mp4</path>
+<minSize>0.5401041666666667 0.237037037037037</minSize>
+<origin>0.5 0.5</origin>
+<pos>0.29765625 0.4916666666666667</pos>
+<audio>true</audio>
+<delay>0</delay>
+<effect>none</effect>
+<zIndex>10</zIndex>
+</video>
+
+<video name="v04as" extra="true" ifSubset="allowCustomVideos:force">
+<path>./_assets/customVideos/${system.theme}/04as.mp4</path>
+<minSize>0.3921875 0.2666666666666667</minSize>
+<origin>0.5 0.5</origin>
+<pos>0.77734375 0.4981481481481481</pos>
+<audio>true</audio>
+<delay>0</delay>
+<effect>none</effect>
+<zIndex>10</zIndex>
+</video>
+
+<video name="v05as" extra="true" ifSubset="allowCustomVideos:force">
+<path>./_assets/customVideos/${system.theme}/05as.mp4</path>
+<minSize>0.3098958333333333 0.2842592592592593</minSize>
+<origin>0.5 0.5</origin>
+<pos>0.1825520833333333 0.7837962962962963</pos>
+<audio>true</audio>
+<delay>0</delay>
+<effect>none</effect>
+<zIndex>10</zIndex>
+</video>
+
+<video name="v06as" extra="true" ifSubset="allowCustomVideos:force">
+<path>./_assets/customVideos/${system.theme}/06as.mp4</path>
+<minSize>0.2338541666666667 0.2555555555555556</minSize>
+<origin>0.5 0.5</origin>
+<pos>0.4674479166666667 0.7861111111111111</pos>
+<audio>true</audio>
+<delay>0</delay>
+<effect>none</effect>
+<zIndex>10</zIndex>
+</video>
+
+<video name="v07as" extra="true" ifSubset="allowCustomVideos:force">
+<path>./_assets/customVideos/${system.theme}/07as.mp4</path>
+<minSize>0.3765625 0.2324074074074074</minSize>
+<origin>0.5 0.5</origin>
+<pos>0.78515625 0.7856481481481481</pos>
+<audio>true</audio>
+<delay>0</delay>
+<effect>none</effect>
+<zIndex>10</zIndex>
+</video>
+
+<!-- END FORCE ALL -->
+
+<!-- FORCE AS CUSTOM VIDEOS -->
+
+<video name="v01as" extra="true" ifSubset="allowCustomVideos:forceAs">
+<path>./_assets/customVideos/${system.theme}/01as.mp4</path>
+<minSize>0.3739583333333333 0.3074074074074074</minSize>
+<origin>0.5 0.5</origin>
+<pos>0.2145833333333333 0.1916666666666667</pos>
+<audio>true</audio>
+<delay>0</delay>
+<effect>none</effect>
+<zIndex>10</zIndex>
+</video>
+
+<video name="v02as" extra="true" ifSubset="allowCustomVideos:forceAs">
+<path>./_assets/customVideos/${system.theme}/02as.mp4</path>
+<minSize>0.5635416666666667 0.2787037037037037</minSize>
+<origin>0.5 0.5</origin>
+<pos>0.6916666666666667 0.1875</pos>
+<audio>true</audio>
+<delay>0</delay>
+<effect>none</effect>
+<zIndex>10</zIndex>
+</video>
+
+<video name="v03as" extra="true" ifSubset="allowCustomVideos:forceAs">
+<path>./_assets/customVideos/${system.theme}/03as.mp4</path>
+<minSize>0.5401041666666667 0.237037037037037</minSize>
+<origin>0.5 0.5</origin>
+<pos>0.29765625 0.4916666666666667</pos>
+<audio>true</audio>
+<delay>0</delay>
+<effect>none</effect>
+<zIndex>10</zIndex>
+</video>
+
+<video name="v04as" extra="true" ifSubset="allowCustomVideos:forceAs">
+<path>./_assets/customVideos/${system.theme}/04as.mp4</path>
+<minSize>0.3921875 0.2666666666666667</minSize>
+<origin>0.5 0.5</origin>
+<pos>0.77734375 0.4981481481481481</pos>
+<audio>true</audio>
+<delay>0</delay>
+<effect>none</effect>
+<zIndex>10</zIndex>
+</video>
+
+<video name="v05as" extra="true" ifSubset="allowCustomVideos:forceAs">
+<path>./_assets/customVideos/${system.theme}/05as.mp4</path>
+<minSize>0.3098958333333333 0.2842592592592593</minSize>
+<origin>0.5 0.5</origin>
+<pos>0.1825520833333333 0.7837962962962963</pos>
+<audio>true</audio>
+<delay>0</delay>
+<effect>none</effect>
+<zIndex>10</zIndex>
+</video>
+
+<video name="v06as" extra="true" ifSubset="allowCustomVideos:forceAs">
+<path>./_assets/customVideos/${system.theme}/06as.mp4</path>
+<minSize>0.2338541666666667 0.2555555555555556</minSize>
+<origin>0.5 0.5</origin>
+<pos>0.4674479166666667 0.7861111111111111</pos>
+<audio>true</audio>
+<delay>0</delay>
+<effect>none</effect>
+<zIndex>10</zIndex>
+</video>
+
+<video name="v07as" extra="true" ifSubset="allowCustomVideos:forceAs">
+<path>./_assets/customVideos/${system.theme}/07as.mp4</path>
+<minSize>0.3765625 0.2324074074074074</minSize>
+<origin>0.5 0.5</origin>
+<pos>0.78515625 0.7856481481481481</pos>
+<audio>true</audio>
+<delay>0</delay>
+<effect>none</effect>
+<zIndex>10</zIndex>
+</video>
+
+<!-- END FORCE AS -->
 
 <image name="scanlines" extra="true">
 <size>1 1</size>
