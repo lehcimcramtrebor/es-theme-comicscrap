@@ -1700,10 +1700,12 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <origin>0.5 0.5</origin>
 <pos>0.2526041666666667 0.5550925925925926</pos>
 <size>0.4760416666666667 0.7546296296296296</size>
+<selectorImagePath>./_assets/selector.png</selectorImagePath>
 <selectedColor>eeeeee</selectedColor>
 <primaryColor>090909</primaryColor>
 <secondaryColor>090909</secondaryColor>
-<selectorColor>33333399</selectorColor>	  		
+<!--<selectorColor>33333399</selectorColor>-->
+<selectorColor>ffffff</selectorColor>	  		
 <fontPath>./_assets/Shaka_Pow.ttf</fontPath>
 <fontSize>0.0335</fontSize>
 <alignment>left</alignment>
@@ -1789,6 +1791,19 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <flipX>true</flipX>
 </image>
 
+<image name="md_cheevos,md_notcheevos">
+<origin>0.5 0.5</origin>
+<path>./_assets/Contest.png</path>
+<pos>0.48 0.2</pos>
+<maxSize>0.02 0.03</maxSize>     
+<color>090909</color>
+<zIndex>110</zIndex>
+</image>
+    
+<image name="md_notcheevos">
+<color>09090933</color>
+</image> 
+		
 <image name="md_manual,md_nomanual">
 <origin>0 1</origin>
 <pos>0.897 0.61</pos>
