@@ -107,7 +107,7 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <lang.imagesSource lang="fr">vue système • source des images</lang.imagesSource>
 
 <lang.staticEffect>effect • choose</lang.staticEffect>
-<lang.staticEffect lang="fr">effet • choisir</lang.staticEffect>
+<lang.staticEffect lang="fr">effet • choisir le type</lang.staticEffect>
 
 <lang.staticEffectApply>effect • applies</lang.staticEffectApply>
 <lang.staticEffectApply lang="fr">effet • appliquer</lang.staticEffectApply>
