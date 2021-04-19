@@ -1791,6 +1791,18 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <flipX>true</flipX>
 </image>
 
+<image name="md_hidden">
+<origin>0.5 0.5</origin>
+<pos>0.479 0.917</pos>
+<path>./_assets/hidden.svg</path>
+<maxSize>0.02 0.03</maxSize>
+<color>090909</color>
+<zIndex>110</zIndex>
+<storyboard>
+<animation property="opacity" to="0" autoreverse="true" repeat="forever" duration="150" mode="Linear"/>
+</storyboard>
+</image>
+		
 <image name="md_cheevos,md_notcheevos">
 <origin>0.5 0.5</origin>
 <path>./_assets/Contest.png</path>
