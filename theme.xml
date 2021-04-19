@@ -1815,6 +1815,12 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <image name="md_notcheevos">
 <color>09090933</color>
 </image> 
+    
+<image name="md_cheevos">
+<storyboard>
+<animation property="opacity" to="0" autoreverse="true" repeat="forever" duration="150" mode="Linear"/>
+</storyboard>
+</image> 
 		
 <image name="md_manual,md_nomanual">
 <origin>0 1</origin>
