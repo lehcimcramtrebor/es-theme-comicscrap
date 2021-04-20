@@ -255,6 +255,13 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <lang.systemTextLabel>just custom label</lang.systemTextLabel>
 <lang.systemTextLabel lang="fr">juste le label perso</lang.systemTextLabel>
 
+<lang.manufacturer>manufacturer</lang.manufacturer>
+<lang.manufacturer lang="fr">fabricant</lang.manufacturer>
+
+<lang.releasedYear>released year</lang.releasedYear>
+<lang.releasedYear lang="fr">année de sortie</lang.releasedYear>
+
+
 <logoTextColor>ff7b00</logoTextColor>
 <maskDefaultColor>ffffff</maskDefaultColor>
 <maskDarkGreyColor>c4c9c7</maskDarkGreyColor>
@@ -1670,16 +1677,18 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <fontSize>0.02</fontSize>
 <alignment>right</alignment>
 <zIndex>500</zIndex>
-<pos>0.97 0.99</pos>
+<pos>0.975 0.99</pos>
+<storyboard>
+<animation property="opacity" from="0" to="0" duration="1000" mode="Linear"/>
+<animation property="opacity" from="0" to="1" begin="1000" duration="150" mode="Linear"/>
+<animation property="x" from="0.9775" begin="1000" duration="150" mode="Linear"/>
+</storyboard>
 </text>
 
 <text name="systemText" extra="true" ifSubset="systemText:systemTextFull">
 <text>${label.custom}
-manufacturer: ${system.fullName}
-released year: ${system.releaseYear}</text>
-<text lang="fr">${label.custom}
-fabriquant: ${system.fullName}
-année de sortie: ${system.releaseYear}</text>
+${lang.manufacturer}: ${system.fullName}
+${lang.releasedYear}: ${system.releaseYear}</text>
 <size>0.5 0.085</size>
 </text>
 
