@@ -236,6 +236,16 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <lang.xboxOneIcons>xbox one controller</lang.xboxOneIcons>
 <lang.xboxOneIcons lang="fr">manette xbox one</lang.xboxOneIcons>
 
+
+<lang.gamelistRatio>gamelist video snap • choose ratio</lang.gamelistRatio>
+<lang.gamelistRatio lang="fr">aperçus vidéos de la liste des jeux • choisir le ratio</lang.gamelistRatio>
+
+<lang.original>original</lang.original>
+<lang.original lang="fr">respecté</lang.original>
+
+<lang.fill>stretched</lang.fill>
+<lang.fill lang="fr">étiré</lang.fill>
+
 <logoTextColor>ff7b00</logoTextColor>
 <maskDefaultColor>ffffff</maskDefaultColor>
 <maskDarkGreyColor>c4c9c7</maskDarkGreyColor>
@@ -357,6 +367,11 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <include name="snesAltIcons" displayName="${lang.snesAltIcons}"/>
 <include name="xboxIcons" displayName="${lang.xboxIcons}"/>
 <include name="xboxOneIcons" displayName="${lang.xboxOneIcons}"/>
+</subset>
+
+<subset name="gamelistRatio" displayName="${lang.gamelistRatio}" appliesTo="video">
+<include name="original" displayName="${lang.original}"/>
+<include name="fill" displayName="${lang.fill}"/>
 </subset>
 
 <view name="screen">
@@ -1749,13 +1764,21 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <video name="md_video">
 <origin>0.5 0.5</origin>
 <pos>0.67109375 0.3986111111111111</pos>
-<maxSize>0.3244791666666667 0.4416666666666667</maxSize>
 <delay>1</delay>
 <effect>none</effect>		
 <showSnapshotNoVideo>true</showSnapshotNoVideo>
 <showSnapshotDelay>true</showSnapshotDelay>
 <color>ffffff</color>
 <zIndex>90</zIndex>
+</video>
+
+<video name="md_video" ifSubset="gamelistRatio:original">
+<maxSize>0.3244791666666667 0.4416666666666667</maxSize>
+</video>
+
+
+<video name="md_video" ifSubset="gamelistRatio:fill">
+<size>0.3244791666666667 0.4416666666666667</size>
 </video>
 
 <image name="scanlines" extra="true" ifSubset="staticEffectApply:artworksApply">
