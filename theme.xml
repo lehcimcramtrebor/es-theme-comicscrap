@@ -1976,7 +1976,7 @@ ${system.releaseYear}</text>
 </text>
 
 <text name="md_lbl_players">
-<pos>0.79 0.635</pos>
+<pos>0.655 0.635</pos>
 <size>0.18 0</size>
 <fontSize>0.02</fontSize>
 <alignment>right</alignment>
@@ -1994,7 +1994,7 @@ ${system.releaseYear}</text>
 </text>
 		
 <rating name="md_rating">
-<pos>0.87 0.66</pos>
+<pos>0.825 0.66</pos>
 <size>0 0.038</size>
 <filledPath>./_assets/star_filled.png</filledPath>
 <unfilledPath>./_assets/star_empty.png</unfilledPath>
@@ -2002,7 +2002,7 @@ ${system.releaseYear}</text>
 </rating>
 		
 <text name="md_lbl_playcount">
-<pos>0.79 0.689</pos>
+<pos>0.78 0.689</pos>
 <size>0.18 0.033</size>
 <fontSize>0.02</fontSize>
 <alignment>right</alignment>
