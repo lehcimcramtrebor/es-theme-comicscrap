@@ -246,6 +246,15 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <lang.fill>stretched</lang.fill>
 <lang.fill lang="fr">étiré</lang.fill>
 
+<lang.systemText>info • select</lang.systemText>
+<lang.systemText lang="fr">informations • selectionner</lang.systemText>
+
+<lang.systemTextFull>full</lang.systemTextFull>
+<lang.systemTextFull lang="fr">la totale</lang.systemTextFull>
+
+<lang.systemTextLabel>just custom label</lang.systemTextLabel>
+<lang.systemTextLabel lang="fr">juste le label perso</lang.systemTextLabel>
+
 <logoTextColor>ff7b00</logoTextColor>
 <maskDefaultColor>ffffff</maskDefaultColor>
 <maskDarkGreyColor>c4c9c7</maskDarkGreyColor>
@@ -262,6 +271,8 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <v07.audio>false</v07.audio>
 
 </variables>
+
+<include>./_my_label.xml</include>
 
 <subset name="jukebox" displayName="${lang.jukebox}">
 <include name="comixZone" displayName="${lang.comixZone}"/>
@@ -372,6 +383,12 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <subset name="gamelistRatio" displayName="${lang.gamelistRatio}" appliesTo="video">
 <include name="original" displayName="${lang.original}"/>
 <include name="fill" displayName="${lang.fill}"/>
+</subset>
+
+<subset name="systemText" displayName="${lang.systemText}">
+<include name="systemTextFull" displayName="${lang.systemTextFull}"/>
+<include name="systemTextLabel" displayName="${lang.systemTextLabel}"/>
+<include name="no" displayName="${lang.no}"/>
 </subset>
 
 <view name="screen">
@@ -1647,16 +1664,25 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 </image>
 
 <text name="systemText" extra="true">
-<text>${system.fullName}<!--!${system.releaseYear}--></text>
 <origin>1 1</origin>
-<pos>0.97 1.015</pos>
-<!--<pos>0.97 1</pos>-->
-<size>0.5 0.085</size>
 <color>090909</color>
 <fontPath>./_assets/Shaka_Pow.ttf</fontPath>
 <fontSize>0.02</fontSize>
 <alignment>right</alignment>
 <zIndex>500</zIndex>
+<pos>0.97 0.99</pos>
+</text>
+
+<text name="systemText" extra="true" ifSubset="systemText:systemTextFull">
+<text>${label.custom}
+${system.fullName}
+${system.releaseYear}</text>
+<size>0.5 0.085</size>
+</text>
+
+<text name="systemText" extra="true" ifSubset="systemText:systemTextLabel">
+<text>${label.custom}</text>
+<size>0.5 0.03</size>
 </text>
 
 <text name="systemText" extra="true" ifSubset="maskColor:tmnt|themed">
