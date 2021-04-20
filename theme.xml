@@ -1675,8 +1675,11 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 
 <text name="systemText" extra="true" ifSubset="systemText:systemTextFull">
 <text>${label.custom}
-${system.fullName}
-${system.releaseYear}</text>
+manufacturer: ${system.fullName}
+released year: ${system.releaseYear}</text>
+<text lang="fr">${label.custom}
+fabriquant: ${system.fullName}
+année de sortie: ${system.releaseYear}</text>
 <size>0.5 0.085</size>
 </text>
 
