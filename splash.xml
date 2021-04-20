@@ -20,13 +20,13 @@
 	</image>
 
 	<text name="label">
-		<color>121212</color>
+		<color>090909</color>
 		<alignment>center</alignment>
 		<fontPath>./_assets/Shaka_Pow.ttf</fontPath>
 		<pos>0 0.94</pos>
 		<fontSize>0.024</fontSize>
 		<glowSize>1</glowSize>
-		<glowColor>101010</glowColor>
+		<glowColor>808080</glowColor>
 		<glowOffset>0</glowOffset>
 		<zIndex>9</zIndex>
 	</text>

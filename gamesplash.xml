@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<theme>
+	<formatVersion>7</formatVersion>
+
+
+<view name="splash">
+
+<splash name="splash">
+<backgroundColor>040404</backgroundColor>
+</splash>
+
+<image name="paper" extra="true" ifSubset="texture:yes">
+<linearSmooth>true</linearSmooth>
+<path>./_assets/paper.png</path>
+<size>1 1</size>
+<color>1010091a</color>
+<zIndex>5000</zIndex>
+<tile>true</tile>
+</image>
+
+<text name="label">
+<color>ffffff</color>
+<alignment>center</alignment>
+<fontPath>./_assets/Shaka_Pow.ttf</fontPath>
+<pos>0 0.75</pos>
+<fontSize>0.036</fontSize>
+<zIndex>9</zIndex>
+</text>
+
+</view>
+
+</theme>
