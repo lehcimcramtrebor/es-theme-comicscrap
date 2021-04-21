@@ -280,7 +280,7 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <lang.bottomBoxesopenMarquees lang="fr">seulement les boîtes et le logos d'ouverture</lang.bottomBoxesopenMarquees>
 
 <lang.openMarqueescenterMarquees>open marquees and random marquee only</lang.openMarqueescenterMarquees>
-<lang.openMarqueescenterMarquees lang="fr">seulement les logos d'ouverture le logo de jeu aléatoire</lang.openMarqueescenterMarquees>
+<lang.openMarqueescenterMarquees lang="fr">seulement les logos d'ouverture et le logo de jeu aléatoire</lang.openMarqueescenterMarquees>
 
 <logoTextColor>ff7b00</logoTextColor>
 <maskDefaultColor>ffffff</maskDefaultColor>
