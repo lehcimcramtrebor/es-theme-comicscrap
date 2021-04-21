@@ -9,6 +9,14 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <theme defaultView="video">
 <formatVersion>7</formatVersion>
 
+<view name="system">
+
+<image name="sketchBox1a,sketchBox1b,sketchBox1c" ifSubset="sketch:yes" extra="true">
+<visible>false</visible>
+</image>
+
+</view>
+
 <view name="video">
 
 <image name="menu" extra="true">

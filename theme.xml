@@ -261,6 +261,8 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <lang.releasedYear>released year</lang.releasedYear>
 <lang.releasedYear lang="fr">année de sortie</lang.releasedYear>
 
+<lang.sketch>sketchs • display</lang.sketch>
+<lang.sketch lang="fr">sketchs • afficher</lang.sketch>
 
 <logoTextColor>ff7b00</logoTextColor>
 <maskDefaultColor>ffffff</maskDefaultColor>
@@ -395,6 +397,12 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <subset name="systemText" displayName="${lang.systemText}">
 <include name="systemTextFull" displayName="${lang.systemTextFull}"/>
 <include name="systemTextLabel" displayName="${lang.systemTextLabel}"/>
+<include name="no" displayName="${lang.no}"/>
+</subset>
+
+
+<subset name="sketch" displayName="${lang.sketch}">
+<include name="yes" displayName="${lang.yes}"/>
 <include name="no" displayName="${lang.no}"/>
 </subset>
 
@@ -1700,6 +1708,194 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 <text name="systemText" extra="true" ifSubset="maskColor:tmnt|themed">
 <color>ffffff</color>
 </text>
+
+<image name="sketch01" ifSubset="sketch:yes" extra="true">
+<linearSmooth>true</linearSmooth>
+<path>{random:marquee}</path>
+<maxSize>0.28 0.2</maxSize>
+<origin>0.5 0.5</origin>
+<rotation>-10</rotation>
+<y>0.2</y>
+<opacity>0</opacity>
+<zIndex>11</zIndex>
+<storyboard>
+<animation property="x" from="0" to="0.2" duration="300" mode="EaseOut"/>
+<animation property="x" from="0.2" to="0.4" begin="1500" duration="300" mode="EaseIn"/>
+<animation property="opacity" from="0" to="1" duration="150" mode="Linear"/>
+<animation property="opacity" from="1" to="0" begin="1650" duration="35" mode="Linear"/>
+<animation property="y" to="0.201" autoreverse="true" repeat="forever" duration="120" mode="EaseInOut"/>
+</storyboard>
+</image>
+
+<image name="sketch02" ifSubset="sketch:yes" extra="true">
+<linearSmooth>true</linearSmooth>
+<path>{random:marquee}</path>
+<maxSize>0.27 0.17</maxSize>
+<rotation>5</rotation>
+<origin>0.5 0.5</origin>
+<x>0.7</x>
+<opacity>0</opacity>
+<zIndex>11</zIndex>
+<storyboard>
+<animation property="y" from="-0.15" to="0.185" duration="300" mode="EaseOut"/>
+<animation property="y" from="0.185" to="0.385" begin="1500" duration="300" mode="EaseIn"/>
+<animation property="opacity" from="0" to="1" duration="150" mode="Linear"/>
+<animation property="opacity" from="1" to="0" begin="1650" duration="35" mode="Linear"/>
+<animation property="x" to="0.701" autoreverse="true" repeat="forever" duration="120" mode="EaseInOut"/>
+</storyboard>
+</image>
+
+<image name="sketch05" ifSubset="sketch:yes" extra="true">
+<linearSmooth>true</linearSmooth>
+<path>{random:marquee}</path>
+<maxSize>0.25 0.20</maxSize>
+<rotation>-5</rotation>
+<origin>0.5 0.5</origin>
+<x>0.175</x>
+<opacity>0</opacity>
+<zIndex>11</zIndex>
+<storyboard>
+<animation property="y" from="0.99" to="0.79" duration="300" mode="EaseOut"/>
+<animation property="y" from="0.79" to="0.59" begin="1500" duration="300" mode="EaseIn"/>
+<animation property="opacity" from="0" to="1" duration="150" mode="Linear"/>
+<animation property="opacity" from="1" to="0" begin="1650" duration="35" mode="Linear"/>
+<animation property="x" to="0.176" autoreverse="true" repeat="forever" duration="120" mode="EaseInOut"/>
+</storyboard>
+</image>
+
+<image name="sketch06" ifSubset="sketch:yes" extra="true">
+<linearSmooth>true</linearSmooth>
+<path>{random:marquee}</path>
+<maxSize>0.15 0.15</maxSize>
+<rotation>0</rotation>
+<origin>0.5 0.5</origin>
+<y>0.79</y>
+<opacity>0</opacity>
+<zIndex>11</zIndex>
+<storyboard>
+<animation property="x" from="0.26" to="0.46" duration="300" mode="EaseOut"/>
+<animation property="x" from="0.46" to="0.66" begin="1500" duration="300" mode="EaseIn"/>
+<animation property="opacity" from="0" to="0" duration="100" mode="Linear"/>
+<animation property="opacity" from="0" to="1" begin="100" duration="50" mode="Linear"/>
+<animation property="opacity" from="1" to="0" begin="1650" duration="35" mode="Linear"/>
+<animation property="y" to="0.791" autoreverse="true" repeat="forever" duration="120" mode="EaseInOut"/>
+</storyboard>
+</image>
+
+<image name="sketch07" ifSubset="sketch:yes" extra="true">
+<linearSmooth>true</linearSmooth>
+<path>{random:marquee}</path>
+<maxSize>0.25 0.15</maxSize>
+<rotation>10</rotation>
+<origin>0.5 0.5</origin>
+<y>0.79</y>
+<opacity>0</opacity>
+<zIndex>11</zIndex>
+<storyboard>
+<animation property="x" from="1" to="0.8" duration="300" mode="EaseOut"/>
+<animation property="x" from="0.8" to="0.6" begin="1500" duration="300" mode="EaseIn"/>
+<animation property="opacity" from="0" to="1" duration="150" mode="Linear"/>
+<animation property="opacity" from="1" to="0" begin="1650" duration="35" mode="Linear"/>
+<animation property="y" to="0.791" autoreverse="true" repeat="forever" duration="120" mode="EaseInOut"/>
+</storyboard>
+</image>
+
+
+<image name="sketchBox1a,sketchBox1b,sketchBox1c" ifSubset="sketch:yes" extra="true">
+<linearSmooth>true</linearSmooth>
+<path>{random:thumbnail}</path>
+<maxSize>0.15 0.25</maxSize>
+<rotation>-4</rotation>
+<origin>0.5 1</origin>
+<y>1.01</y>
+<colorEnd>ffffff</colorEnd>
+<gradientType>horizontal</gradientType>
+<opacity>0</opacity>
+</image>
+
+<image name="sketchBox1a" ifSubset="sketch:yes" extra="true">
+<color>ffffff</color>
+<zIndex>4999</zIndex>
+<x>0.59</x>
+<storyboard repeat="forever">
+<animation property="x" from="0.69" to="0.59" begin="1650" duration="150" mode="EaseOut"/>
+<animation property="x" from="0.59" to="0.39" begin="3150" duration="300" mode="EaseIn"/>
+<animation property="opacity" from="0" to="1" begin="1650" duration="150" mode="Linear"/>
+<animation property="opacity" from="1" to="0" begin="3150" duration="150" mode="Linear"/>
+<animation property="opacity" from="0" to="0" begin="3300" duration="1700" mode="Linear"/>
+
+</storyboard>
+</image>
+
+<image name="sketchBox1b" ifSubset="sketch:yes" extra="true">
+<color>909090</color>
+<zIndex>4998</zIndex>
+<x>0.66</x>
+<storyboard repeat="forever">
+<animation property="x" from="0.76" to="0.66" begin="1800" duration="150" mode="EaseOut"/>
+<animation property="x" from="0.66" to="0.46" begin="3150" duration="300" mode="EaseIn"/>
+<animation property="opacity" from="0" to="1" begin="1650" duration="150" mode="Linear"/>
+<animation property="opacity" from="1" to="0" begin="3150" duration="150" mode="Linear"/>
+<animation property="opacity" from="0" to="0" begin="3300" duration="1700" mode="Linear"/>
+</storyboard>
+</image>
+
+<image name="sketchBox1c" ifSubset="sketch:yes" extra="true">
+<color>909090</color>
+<zIndex>4997</zIndex>
+<x>0.73</x>
+<storyboard repeat="forever">
+<animation property="x" from="0.83" to="0.73" begin="1950" duration="150" mode="EaseOut"/>
+<animation property="x" from="0.73" to="0.53" begin="3150" duration="300" mode="EaseIn"/>
+<animation property="opacity" from="0" to="1" begin="1650" duration="150" mode="Linear"/>
+<animation property="opacity" from="1" to="0" begin="3150" duration="150" mode="Linear"/>
+<animation property="opacity" from="0" to="0" begin="3300" duration="1700" mode="Linear"/>
+</storyboard>
+</image>
+
+<image name="sketchmarquee01,sketchmarquee02,sketchmarquee03" ifSubset="sketch:yes" extra="true">
+<linearSmooth>true</linearSmooth>
+<path>{random:marquee}</path>
+<maxSize>0.28 0.2</maxSize>
+<origin>0.5 0.5</origin>
+<y>0.25</y>
+<x>0.5</x>
+<opacity>0</opacity>
+<zIndex>4999</zIndex>
+</image>
+
+<image name="sketchmarquee01" ifSubset="sketch:yes" extra="true">
+<rotation>-6</rotation>
+<storyboard repeat="forever">
+<animation property="x" from="0.3" to="0.5" begin="2950" duration="150" mode="EaseOut"/>
+<animation property="x" from="0.5" to="0.7" begin="4450" duration="300" mode="EaseIn"/>
+<animation property="opacity" from="0" to="1" begin="2950" duration="150" mode="Linear"/>
+<animation property="opacity" from="1" to="0" begin="4450" duration="150" mode="Linear"/>
+<animation property="opacity" from="0" to="0" begin="4600" duration="5400" mode="Linear"/>
+</storyboard>
+</image>
+
+<image name="sketchmarquee02" ifSubset="sketch:yes" extra="true">
+<rotation>6</rotation>
+<storyboard repeat="forever">
+<animation property="x" from="0.3" to="0.5" begin="5900" duration="150" mode="EaseOut"/>
+<animation property="x" from="0.5" to="0.7" begin="6900" duration="300" mode="EaseIn"/>
+<animation property="opacity" from="0" to="1" begin="5900" duration="150" mode="Linear"/>
+<animation property="opacity" from="1" to="0" begin="6900" duration="150" mode="Linear"/>
+<animation property="opacity" from="0" to="0" begin="7050" duration="2950" mode="Linear"/>
+</storyboard>
+</image>
+
+<image name="sketchmarquee03" ifSubset="sketch:yes" extra="true">
+<rotation>0</rotation>
+<storyboard repeat="forever">
+<animation property="x" from="0.3" to="0.5" begin="8850" duration="150" mode="EaseOut"/>
+<animation property="x" from="0.5" to="0.7" begin="9650" duration="300" mode="EaseIn"/>
+<animation property="opacity" from="0" to="1" begin="8850" duration="150" mode="Linear"/>
+<animation property="opacity" from="1" to="0" begin="9650" duration="150" mode="Linear"/>
+<animation property="opacity" from="0" to="0" begin="0" duration="8850" mode="Linear"/>
+</storyboard>
+</image>
 
 </view>
 
