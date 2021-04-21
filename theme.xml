@@ -302,14 +302,14 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <include>./_my_label.xml</include>
 
 <subset name="sketch" displayName="${lang.sketch}" appliesTo="video">
-<include name="yes" displayName="${lang.yes}"/>
+<include name="no" displayName="${lang.no}"/>
 <include name="openMarquees" displayName="${lang.openMarquees}"/>
 <include name="bottomBoxes" displayName="${lang.bottomBoxes}"/>
 <include name="centerMarquees" displayName="${lang.centerMarquees}"/>
 <include name="bottomBoxescenterMarquees" displayName="${lang.bottomBoxescenterMarquees}"/>
 <include name="bottomBoxesopenMarquees" displayName="${lang.bottomBoxesopenMarquees}"/>
 <include name="openMarqueescenterMarquees" displayName="${lang.openMarqueescenterMarquees}"/>
-<include name="no" displayName="${lang.no}"/>
+<include name="yes" displayName="${lang.yes}"/>
 </subset>
 
 <subset name="jukebox" displayName="${lang.jukebox}">
