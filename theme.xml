@@ -264,6 +264,24 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <lang.sketch>sketchs • display</lang.sketch>
 <lang.sketch lang="fr">sketchs • afficher</lang.sketch>
 
+<lang.openMarquees>open marquees only</lang.openMarquees>
+<lang.openMarquees lang="fr">seulement les logos d'ouverture</lang.openMarquees>
+
+<lang.bottomBoxes>bottom boxes only</lang.bottomBoxes>
+<lang.bottomBoxes lang="fr">seulement les boîtes</lang.bottomBoxes>
+
+<lang.centerMarquees>random marquee only</lang.centerMarquees>
+<lang.centerMarquees lang="fr">seulement le logo de jeu aléatoire</lang.centerMarquees>
+
+<lang.bottomBoxescenterMarquees>boxes and random marquee only</lang.bottomBoxescenterMarquees>
+<lang.bottomBoxescenterMarquees lang="fr">seulement les boîtes et le logo aléatoire</lang.bottomBoxescenterMarquees>
+
+<lang.bottomBoxesopenMarquees>boxes and open marquees only</lang.bottomBoxesopenMarquees>
+<lang.bottomBoxesopenMarquees lang="fr">seulement les boîtes et le logos d'ouverture</lang.bottomBoxesopenMarquees>
+
+<lang.openMarqueescenterMarquees>open marquees and random marquee only</lang.openMarqueescenterMarquees>
+<lang.openMarqueescenterMarquees lang="fr">seulement les logos d'ouverture le logo de jeu aléatoire</lang.openMarqueescenterMarquees>
+
 <logoTextColor>ff7b00</logoTextColor>
 <maskDefaultColor>ffffff</maskDefaultColor>
 <maskDarkGreyColor>c4c9c7</maskDarkGreyColor>
@@ -282,6 +300,17 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 </variables>
 
 <include>./_my_label.xml</include>
+
+<subset name="sketch" displayName="${lang.sketch}" appliesTo="video">
+<include name="yes" displayName="${lang.yes}"/>
+<include name="openMarquees" displayName="${lang.openMarquees}"/>
+<include name="bottomBoxes" displayName="${lang.bottomBoxes}"/>
+<include name="centerMarquees" displayName="${lang.centerMarquees}"/>
+<include name="bottomBoxescenterMarquees" displayName="${lang.bottomBoxescenterMarquees}"/>
+<include name="bottomBoxesopenMarquees" displayName="${lang.bottomBoxesopenMarquees}"/>
+<include name="openMarqueescenterMarquees" displayName="${lang.openMarqueescenterMarquees}"/>
+<include name="no" displayName="${lang.no}"/>
+</subset>
 
 <subset name="jukebox" displayName="${lang.jukebox}">
 <include name="comixZone" displayName="${lang.comixZone}"/>
@@ -397,12 +426,6 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <subset name="systemText" displayName="${lang.systemText}">
 <include name="systemTextFull" displayName="${lang.systemTextFull}"/>
 <include name="systemTextLabel" displayName="${lang.systemTextLabel}"/>
-<include name="no" displayName="${lang.no}"/>
-</subset>
-
-
-<subset name="sketch" displayName="${lang.sketch}">
-<include name="yes" displayName="${lang.yes}"/>
 <include name="no" displayName="${lang.no}"/>
 </subset>
 
@@ -1709,7 +1732,11 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 <color>ffffff</color>
 </text>
 
-<image name="sketch01" ifSubset="sketch:yes" extra="true">
+<!--------------------------- SKETCHS --------------------------->
+
+<!-- OPEN MARQUEES -->
+
+<image name="sketch01" ifSubset="sketch:yes|openMarquees|bottomBoxesopenMarquees|openMarqueescenterMarquees" extra="true">
 <linearSmooth>true</linearSmooth>
 <path>{random:marquee}</path>
 <maxSize>0.28 0.2</maxSize>
@@ -1727,7 +1754,7 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 </storyboard>
 </image>
 
-<image name="sketch02" ifSubset="sketch:yes" extra="true">
+<image name="sketch02" ifSubset="sketch:yes|openMarquees|bottomBoxesopenMarquees|openMarqueescenterMarquees" extra="true">
 <linearSmooth>true</linearSmooth>
 <path>{random:marquee}</path>
 <maxSize>0.27 0.17</maxSize>
@@ -1745,7 +1772,7 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 </storyboard>
 </image>
 
-<image name="sketch05" ifSubset="sketch:yes" extra="true">
+<image name="sketch05" ifSubset="sketch:yes|openMarquees|bottomBoxesopenMarquees|openMarqueescenterMarquees" extra="true">
 <linearSmooth>true</linearSmooth>
 <path>{random:marquee}</path>
 <maxSize>0.25 0.20</maxSize>
@@ -1763,7 +1790,7 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 </storyboard>
 </image>
 
-<image name="sketch06" ifSubset="sketch:yes" extra="true">
+<image name="sketch06" ifSubset="sketch:yes|openMarquees|bottomBoxesopenMarquees|openMarqueescenterMarquees" extra="true">
 <linearSmooth>true</linearSmooth>
 <path>{random:marquee}</path>
 <maxSize>0.15 0.15</maxSize>
@@ -1782,7 +1809,7 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 </storyboard>
 </image>
 
-<image name="sketch07" ifSubset="sketch:yes" extra="true">
+<image name="sketch07" ifSubset="sketch:yes|openMarquees|bottomBoxesopenMarquees|openMarqueescenterMarquees" extra="true">
 <linearSmooth>true</linearSmooth>
 <path>{random:marquee}</path>
 <maxSize>0.25 0.15</maxSize>
@@ -1800,8 +1827,9 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 </storyboard>
 </image>
 
+<!-- BOTTOM BOXES -->
 
-<image name="sketchBox1a,sketchBox1b,sketchBox1c" ifSubset="sketch:yes" extra="true">
+<image name="sketchBox1a,sketchBox1b,sketchBox1c" ifSubset="sketch:bottomBoxes|bottomBoxescenterMarquees|bottomBoxesopenMarquees" extra="true">
 <linearSmooth>true</linearSmooth>
 <path>{random:thumbnail}</path>
 <maxSize>0.15 0.25</maxSize>
@@ -1813,7 +1841,7 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 <opacity>0</opacity>
 </image>
 
-<image name="sketchBox1a" ifSubset="sketch:yes" extra="true">
+<image name="sketchBox1a" ifSubset="sketch:yes|bottomBoxes|bottomBoxescenterMarquees|bottomBoxesopenMarquees" extra="true">
 <color>ffffff</color>
 <zIndex>4999</zIndex>
 <x>0.59</x>
@@ -1827,7 +1855,7 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 </storyboard>
 </image>
 
-<image name="sketchBox1b" ifSubset="sketch:yes" extra="true">
+<image name="sketchBox1b" ifSubset="sketch:yes|bottomBoxes|bottomBoxescenterMarquees|bottomBoxesopenMarquees" extra="true">
 <color>909090</color>
 <zIndex>4998</zIndex>
 <x>0.66</x>
@@ -1840,7 +1868,7 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 </storyboard>
 </image>
 
-<image name="sketchBox1c" ifSubset="sketch:yes" extra="true">
+<image name="sketchBox1c" ifSubset="sketch:yes|bottomBoxes|bottomBoxescenterMarquees|bottomBoxesopenMarquees" extra="true">
 <color>909090</color>
 <zIndex>4997</zIndex>
 <x>0.73</x>
@@ -1853,7 +1881,9 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 </storyboard>
 </image>
 
-<image name="sketchmarquee01,sketchmarquee02,sketchmarquee03" ifSubset="sketch:yes" extra="true">
+<!-- RANDOM MARQUEE -->
+
+<image name="sketchmarquee01,sketchmarquee02,sketchmarquee03" ifSubset="sketch:yes|centerMarquees||bottomBoxescenterMarquees|openMarqueescenterMarquees" extra="true">
 <linearSmooth>true</linearSmooth>
 <path>{random:marquee}</path>
 <maxSize>0.28 0.2</maxSize>
@@ -1864,7 +1894,7 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 <zIndex>4999</zIndex>
 </image>
 
-<image name="sketchmarquee01" ifSubset="sketch:yes" extra="true">
+<image name="sketchmarquee01" ifSubset="sketch:yes|centerMarquees||bottomBoxescenterMarquees|openMarqueescenterMarquees" extra="true">
 <rotation>-6</rotation>
 <storyboard repeat="forever">
 <animation property="x" from="0.3" to="0.5" begin="2950" duration="150" mode="EaseOut"/>
@@ -1875,7 +1905,7 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 </storyboard>
 </image>
 
-<image name="sketchmarquee02" ifSubset="sketch:yes" extra="true">
+<image name="sketchmarquee02" ifSubset="sketch:yes|centerMarquees||bottomBoxescenterMarquees|openMarqueescenterMarquees" extra="true">
 <rotation>6</rotation>
 <storyboard repeat="forever">
 <animation property="x" from="0.3" to="0.5" begin="5900" duration="150" mode="EaseOut"/>
@@ -1886,7 +1916,7 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 </storyboard>
 </image>
 
-<image name="sketchmarquee03" ifSubset="sketch:yes" extra="true">
+<image name="sketchmarquee03" ifSubset="sketch:yes|centerMarquees||bottomBoxescenterMarquees|openMarqueescenterMarquees" extra="true">
 <rotation>0</rotation>
 <storyboard repeat="forever">
 <animation property="x" from="0.3" to="0.5" begin="8850" duration="150" mode="EaseOut"/>
@@ -1896,6 +1926,8 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 <animation property="opacity" from="0" to="0" begin="0" duration="8850" mode="Linear"/>
 </storyboard>
 </image>
+
+<!--------------------------- END OF SKETCHS --------------------------->
 
 </view>
 

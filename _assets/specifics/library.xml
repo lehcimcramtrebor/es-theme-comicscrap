@@ -11,7 +11,7 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 
 <view name="system">
 
-<image name="sketchBox1a,sketchBox1b,sketchBox1c" ifSubset="sketch:yes" extra="true">
+<image name="sketchBox1a,sketchBox1b,sketchBox1c">
 <visible>false</visible>
 </image>
 
