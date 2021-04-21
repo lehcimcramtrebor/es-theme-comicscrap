@@ -1829,7 +1829,7 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 
 <!-- BOTTOM BOXES -->
 
-<image name="sketchBox1a,sketchBox1b,sketchBox1c" ifSubset="sketch:bottomBoxes|bottomBoxescenterMarquees|bottomBoxesopenMarquees" extra="true">
+<image name="sketchBox1a,sketchBox1b,sketchBox1c" ifSubset="sketch:yes|bottomBoxes|bottomBoxescenterMarquees|bottomBoxesopenMarquees" extra="true">
 <linearSmooth>true</linearSmooth>
 <path>{random:thumbnail}</path>
 <maxSize>0.15 0.25</maxSize>
