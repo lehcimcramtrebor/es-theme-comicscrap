@@ -10,7 +10,7 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <formatVersion>7</formatVersion>
 
 <view name="system">
-<image name="sketchBox1a,sketchBox1b,sketchBox1c">
+<image name="sketchBox1a,sketchBox1b,sketchBox1c,bubblemarquee01,bubblemarquee02,bubblemarquee03">
 <visible>false</visible>
 </image>
 
