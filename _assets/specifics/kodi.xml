@@ -26,6 +26,10 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <path>./../menuBasicTmnt.png</path>
 </image>
 
+<image name="menu" extra="true" ifSubset="maskColor:comix">
+<path>./../menuBasicComix.png</path>
+</image>
+
 <image name="menu" extra="true" ifSubset="maskColor:themed">
 <path>./../themedSkins/menu/defaultBase.png</path>
 <path>./../themedSkins/menu/${system.theme}.png</path>
