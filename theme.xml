@@ -1931,7 +1931,7 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 </image>
 
 <!-- SKETCH CRAZY COMIX -->
-
+<!--
 <image name="bubblemarquee01,bubblemarquee02,bubblemarquee03" ifSubset="sketch:crazyComix" extra="true">
 <linearSmooth>true</linearSmooth>
 <path>./_assets/bubble.png</path>
@@ -1975,7 +1975,7 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 <animation property="opacity" from="0" to="0" begin="0" duration="8850" mode="Linear"/>
 </storyboard>
 </image>
-
+-->
 <image name="sketchTurner" ifSubset="sketch:crazyComix" extra="true">
 <linearSmooth>true</linearSmooth>
 <path>./_assets/sketchTurner.png</path>
