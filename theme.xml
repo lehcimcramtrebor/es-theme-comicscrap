@@ -1940,7 +1940,7 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 <y>0.25</y>
 <x>0.5</x>
 <opacity>0</opacity>
-<zIndex>4997</zIndex>
+<zIndex>190</zIndex>
 </image>
 
 <image name="bubblemarquee01" ifSubset="sketch:crazyComix" extra="true">
