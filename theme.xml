@@ -293,6 +293,9 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <lang.crazyBubbleMarquee>sketchs • display bubbles marquees</lang.crazyBubbleMarquee>
 <lang.crazyBubbleMarquee lang="fr">sketchs • afficher les bulles sous les logos</lang.crazyBubbleMarquee>
 
+<lang.logoAnimation>carousel • anime logos</lang.logoAnimation>
+<lang.logoAnimation lang="fr">caroussel • animer les logos</lang.logoAnimation>
+
 <lang.comix>comix zone</lang.comix>
 
 <logoTextColor>ff7b00</logoTextColor>
@@ -393,6 +396,11 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <include name="logosBackgroundLight" displayName="${lang.logosBackgroundLight}"/>
 <include name="logosBackgroundTransparent" displayName="${lang.logosBackgroundTransparent}"/>
 <include name="logosBackgroundStandard" displayName="${lang.logosBackgroundStandard}"/>
+</subset>
+
+<subset name="logoAnimation" displayName="${lang.logoAnimation}">
+<include name="yes" displayName="${lang.yes}"/>
+<include name="no" displayName="${lang.no}"/>
 </subset>
 
 <subset name="maskColor" displayName="${lang.maskColor}">
@@ -648,6 +656,21 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <color>${logoTextColor}</color>
 <glowColor>000000</glowColor>
 </text>		
+
+<!-- ANIMATIONS LOGOS -->
+
+<image name="logo" ifSubset="logoAnimation:yes,logosBackground:logosBackgroundLight|logosBackgroundTransparent|logosBackgroundStandard">
+<storyboard event="activate" repeatAt="300">
+<animation property="scale" from="0.5" to="1" duration="250" mode="EaseOut"/>
+<animation property="opacity" from="0.5" to="1" duration="300" mode="Linear"/>
+<animation property="origin" from="0.5 0.5" to="0.55 0.5" begin="50" duration="250" mode="EaseInOut"/>
+<animation property="origin" from="0.55 0.5" to="0.45 0.5" begin="300" duration="1000" autoreverse="true" repeat="10" mode="EaseInOut"/>
+<animation property="rotation" to="360" begin="4300" duration="250" mode="EaseInOut"/>
+<animation property="scale" to="1.1" begin="12000" duration="250" autoreverse="true" mode="Bump"/>
+</storyboard>
+</image>
+
+<!-- END OF ANIMATIONS LOGOS -->
 
 <image name="logosBackground" extra="true" ifSubset="logosBackground:logosBackgroundLight">
 <linearSmooth>true</linearSmooth>
