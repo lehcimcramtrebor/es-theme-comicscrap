@@ -290,6 +290,9 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <lang.crazyKowa>crazy kowa bunga</lang.crazyKowa>
 <lang.crazyKowa lang="fr">crazy kowa bunga</lang.crazyKowa>
 
+<lang.crazyCustom>crazy custom(s) animation(s)</lang.crazyCustom>
+<lang.crazyCustom lang="fr">crazy animation(s) personnalisée(s)</lang.crazyCustom>
+
 <lang.crazyBubbleMarquee>sketchs • display bubbles marquees</lang.crazyBubbleMarquee>
 <lang.crazyBubbleMarquee lang="fr">sketchs • afficher les bulles sous les logos</lang.crazyBubbleMarquee>
 
@@ -322,6 +325,7 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <include name="yes" displayName="${lang.yes}"/>
 <include name="crazyComix" displayName="${lang.crazyComix}"/>
 <include name="crazyKowa" displayName="${lang.crazyKowa}"/>
+<include name="crazyCustom" displayName="${lang.crazyCustom}"/>
 <include name="openMarquees" displayName="${lang.openMarquees}"/>
 <include name="bottomBoxes" displayName="${lang.bottomBoxes}"/>
 <include name="centerMarquees" displayName="${lang.centerMarquees}"/>
@@ -330,7 +334,7 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <include name="openMarqueescenterMarquees" displayName="${lang.openMarqueescenterMarquees}"/>
 </subset>
 
-<subset name="crazyBubbleMarquee" displayName="${lang.crazyBubbleMarquee}" appliesTo="video" ifSubset="sketch:crazyComix|crazyKowa">
+<subset name="crazyBubbleMarquee" displayName="${lang.crazyBubbleMarquee}" appliesTo="video" ifSubset="sketch:crazyCustom|crazyComix|crazyKowa">
 <include name="yes" displayName="${lang.yes}"/>
 <include name="no" displayName="${lang.no}"/>
 </subset>
@@ -1789,7 +1793,7 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 
 <!-- OPEN MARQUEES -->
 
-<image name="sketch01" ifSubset="sketch:yes|crazyComix|crazyKowa|openMarquees|bottomBoxesopenMarquees|openMarqueescenterMarquees" extra="true">
+<image name="sketch01" ifSubset="sketch:yes|crazyCustom|crazyComix|crazyKowa|openMarquees|bottomBoxesopenMarquees|openMarqueescenterMarquees" extra="true">
 <linearSmooth>true</linearSmooth>
 <path>{random:marquee}</path>
 <maxSize>0.28 0.2</maxSize>
@@ -1807,7 +1811,7 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 </storyboard>
 </image>
 
-<image name="sketch02" ifSubset="sketch:yes|crazyComix|crazyKowa|openMarquees|bottomBoxesopenMarquees|openMarqueescenterMarquees" extra="true">
+<image name="sketch02" ifSubset="sketch:yes|crazyCustom|crazyComix|crazyKowa|openMarquees|bottomBoxesopenMarquees|openMarqueescenterMarquees" extra="true">
 <linearSmooth>true</linearSmooth>
 <path>{random:marquee}</path>
 <maxSize>0.27 0.17</maxSize>
@@ -1825,7 +1829,7 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 </storyboard>
 </image>
 
-<image name="sketch05" ifSubset="sketch:yes|crazyComix|crazyKowa|openMarquees|bottomBoxesopenMarquees|openMarqueescenterMarquees" extra="true">
+<image name="sketch05" ifSubset="sketch:yes|crazyCustom|crazyComix|crazyKowa|openMarquees|bottomBoxesopenMarquees|openMarqueescenterMarquees" extra="true">
 <linearSmooth>true</linearSmooth>
 <path>{random:marquee}</path>
 <maxSize>0.25 0.20</maxSize>
@@ -1843,7 +1847,7 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 </storyboard>
 </image>
 
-<image name="sketch06" ifSubset="sketch:yes|crazyComix|crazyKowa|openMarquees|bottomBoxesopenMarquees|openMarqueescenterMarquees" extra="true">
+<image name="sketch06" ifSubset="sketch:yes|crazyCustom|crazyComix|crazyKowa|openMarquees|bottomBoxesopenMarquees|openMarqueescenterMarquees" extra="true">
 <linearSmooth>true</linearSmooth>
 <path>{random:marquee}</path>
 <maxSize>0.15 0.15</maxSize>
@@ -1861,7 +1865,7 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 </storyboard>
 </image>
 
-<image name="sketch07" ifSubset="sketch:yes|crazyComix|crazyKowa|openMarquees|bottomBoxesopenMarquees|openMarqueescenterMarquees" extra="true">
+<image name="sketch07" ifSubset="sketch:yes|crazyCustom|crazyComix|crazyKowa|openMarquees|bottomBoxesopenMarquees|openMarqueescenterMarquees" extra="true">
 <linearSmooth>true</linearSmooth>
 <path>{random:marquee}</path>
 <maxSize>0.25 0.15</maxSize>
@@ -1881,7 +1885,7 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 
 <!-- BOTTOM BOXES -->
 
-<image name="sketchBox1a,sketchBox1b,sketchBox1c" ifSubset="sketch:yes|crazyComix|crazyKowa|bottomBoxes|bottomBoxescenterMarquees|bottomBoxesopenMarquees" extra="true">
+<image name="sketchBox1a,sketchBox1b,sketchBox1c" ifSubset="sketch:yes|crazyCustom|crazyComix|crazyKowa|bottomBoxes|bottomBoxescenterMarquees|bottomBoxesopenMarquees" extra="true">
 <linearSmooth>true</linearSmooth>
 <path>{random:thumbnail}</path>
 <maxSize>0.15 0.25</maxSize>
@@ -1893,7 +1897,7 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 <opacity>0</opacity>
 </image>
 
-<image name="sketchBox1a" ifSubset="sketch:yes|crazyComix|crazyKowa|bottomBoxes|bottomBoxescenterMarquees|bottomBoxesopenMarquees" extra="true">
+<image name="sketchBox1a" ifSubset="sketch:yes|crazyCustom|crazyComix|crazyKowa|bottomBoxes|bottomBoxescenterMarquees|bottomBoxesopenMarquees" extra="true">
 <color>ffffff</color>
 <zIndex>4999</zIndex>
 <x>0.59</x>
@@ -1907,7 +1911,7 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 </storyboard>
 </image>
 
-<image name="sketchBox1b" ifSubset="sketch:yes|crazyComix|crazyKowa|bottomBoxes|bottomBoxescenterMarquees|bottomBoxesopenMarquees" extra="true">
+<image name="sketchBox1b" ifSubset="sketch:yes|crazyCustom|crazyComix|crazyKowa|bottomBoxes|bottomBoxescenterMarquees|bottomBoxesopenMarquees" extra="true">
 <color>909090</color>
 <zIndex>4998</zIndex>
 <x>0.66</x>
@@ -1920,7 +1924,7 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 </storyboard>
 </image>
 
-<image name="sketchBox1c" ifSubset="sketch:yes|crazyComix|crazyKowa|bottomBoxes|bottomBoxescenterMarquees|bottomBoxesopenMarquees" extra="true">
+<image name="sketchBox1c" ifSubset="sketch:yes|crazyCustom|crazyComix|crazyKowa|bottomBoxes|bottomBoxescenterMarquees|bottomBoxesopenMarquees" extra="true">
 <color>909090</color>
 <zIndex>4997</zIndex>
 <x>0.73</x>
@@ -1935,7 +1939,7 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 
 <!-- RANDOM MARQUEE -->
 
-<image name="sketchmarquee01,sketchmarquee02,sketchmarquee03" ifSubset="sketch:yes|crazyComix|crazyKowa|centerMarquees||bottomBoxescenterMarquees|openMarqueescenterMarquees" extra="true">
+<image name="sketchmarquee01,sketchmarquee02,sketchmarquee03" ifSubset="sketch:yes|crazyCustom|crazyComix|crazyKowa|centerMarquees||bottomBoxescenterMarquees|openMarqueescenterMarquees" extra="true">
 <linearSmooth>true</linearSmooth>
 <path>{random:marquee}</path>
 <maxSize>0.28 0.2</maxSize>
@@ -1946,7 +1950,7 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 <zIndex>4999</zIndex>
 </image>
 
-<image name="sketchmarquee01" ifSubset="sketch:yes|crazyComix|crazyKowa|centerMarquees||bottomBoxescenterMarquees|openMarqueescenterMarquees" extra="true">
+<image name="sketchmarquee01" ifSubset="sketch:yes|crazyCustom|crazyComix|crazyKowa|centerMarquees||bottomBoxescenterMarquees|openMarqueescenterMarquees" extra="true">
 <rotation>-6</rotation>
 <storyboard repeat="forever">
 <animation property="x" from="0.3" to="0.5" begin="2950" duration="150" mode="EaseOut"/>
@@ -1957,7 +1961,7 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 </storyboard>
 </image>
 
-<image name="sketchmarquee02" ifSubset="sketch:yes|crazyComix|crazyKowa|centerMarquees||bottomBoxescenterMarquees|openMarqueescenterMarquees" extra="true">
+<image name="sketchmarquee02" ifSubset="sketch:yes|crazyCustom|crazyComix|crazyKowa|centerMarquees||bottomBoxescenterMarquees|openMarqueescenterMarquees" extra="true">
 <rotation>6</rotation>
 <storyboard repeat="forever">
 <animation property="x" from="0.3" to="0.5" begin="5900" duration="150" mode="EaseOut"/>
@@ -1968,7 +1972,7 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 </storyboard>
 </image>
 
-<image name="sketchmarquee03" ifSubset="sketch:yes|crazyComix|crazyKowa|centerMarquees||bottomBoxescenterMarquees|openMarqueescenterMarquees" extra="true">
+<image name="sketchmarquee03" ifSubset="sketch:yes|crazyCustom|crazyComix|crazyKowa|centerMarquees||bottomBoxescenterMarquees|openMarqueescenterMarquees" extra="true">
 <rotation>0</rotation>
 <storyboard repeat="forever">
 <animation property="x" from="0.3" to="0.5" begin="8850" duration="150" mode="EaseOut"/>
@@ -1981,7 +1985,7 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 
 <!-- SKETCH CRAZY COMIX -->
 
-<image name="bubblemarquee01,bubblemarquee02,bubblemarquee03" ifSubset="sketch:crazyComix|crazyKowa,crazyBubbleMarquee:yes" extra="true">
+<image name="bubblemarquee01,bubblemarquee02,bubblemarquee03" ifSubset="sketch:crazyCustom|crazyComix|crazyKowa,crazyBubbleMarquee:yes" extra="true">
 <linearSmooth>true</linearSmooth>
 <path>./_assets/bubble.png</path>
 <maxSize>1 0.5</maxSize>
@@ -1996,7 +2000,12 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 <path>./_assets/bubbleKowa.png</path>
 </image>
 
-<image name="bubblemarquee01" ifSubset="sketch:crazyComix|crazyKowa,crazyBubbleMarquee:yes" extra="true">
+<image name="bubblemarquee01,bubblemarquee02,bubblemarquee03" ifSubset="sketch:crazyCustom,crazyBubbleMarquee:yes" extra="true">
+<path>./_assets/customCrazy/bubbles/default.png</path>
+<path>./_assets/customCrazy/bubbles/${system.theme}.png</path>
+</image>
+
+<image name="bubblemarquee01" ifSubset="sketch:crazyCustom|crazyComix|crazyKowa,crazyBubbleMarquee:yes" extra="true">
 <rotation>-6</rotation>
 <storyboard repeat="forever">
 <animation property="x" from="0.3" to="0.5" begin="2950" duration="150" mode="EaseOut"/>
@@ -2007,7 +2016,7 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 </storyboard>
 </image>
 
-<image name="bubblemarquee02" ifSubset="sketch:crazyComix|crazyKowa,crazyBubbleMarquee:yes" extra="true">
+<image name="bubblemarquee02" ifSubset="sketch:crazyCustom|crazyComix|crazyKowa,crazyBubbleMarquee:yes" extra="true">
 <rotation>6</rotation>
 <storyboard repeat="forever">
 <animation property="x" from="0.3" to="0.5" begin="5900" duration="150" mode="EaseOut"/>
@@ -2018,7 +2027,7 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 </storyboard>
 </image>
 
-<image name="bubblemarquee03" ifSubset="sketch:crazyComix|crazyKowa,crazyBubbleMarquee:yes" extra="true">
+<image name="bubblemarquee03" ifSubset="sketch:crazyCustom|crazyComix|crazyKowa,crazyBubbleMarquee:yes" extra="true">
 <rotation>0</rotation>
 <storyboard repeat="forever">
 <animation property="x" from="0.3" to="0.5" begin="8850" duration="150" mode="EaseOut"/>
@@ -2030,7 +2039,7 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 </image>
 
 
-<image name="comixBar" ifSubset="sketch:crazyComix|crazyKowa" extra="true">
+<image name="comixBar" ifSubset="sketch:crazyCustom|crazyComix|crazyKowa" extra="true">
 <linearSmooth>true</linearSmooth>
 <path>./_assets/comixBar.png</path>
 <maxSize>99 1</maxSize>
@@ -2049,8 +2058,11 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 <path>./_assets/kowaBar.png</path>
 </image>
 
+<image name="comixBar" ifSubset="sketch:crazyCustom" extra="true">
+<path>./_assets/customCrazy/bars/default.png</path>
+<path>./_assets/customCrazy/bars/${system.theme}.png</path></image>
 
-<image name="comixBarCharacter" ifSubset="sketch:crazyComix|crazyKowa" extra="true">
+<image name="comixBarCharacter" ifSubset="sketch:crazyCustom|crazyComix|crazyKowa" extra="true">
 <linearSmooth>true</linearSmooth>
 <path>./_assets/turner.png</path>
 <maxSize>99 1</maxSize>
@@ -2069,7 +2081,12 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 <path>./_assets/kowa.png</path>
 </image>
 
-<image name="bubble" ifSubset="sketch:crazyComix|crazyKowa" extra="true">
+<image name="comixBarCharacter" ifSubset="sketch:crazyCustom" extra="true">
+<path>./_assets/customCrazy/characters/default.png</path>
+<path>./_assets/customCrazy/characters/${system.theme}.png</path>
+</image>
+
+<image name="bubble" ifSubset="sketch:crazyCustom|crazyComix|crazyKowa" extra="true">
 <linearSmooth>true</linearSmooth>
 <path>./_assets/bubble.png</path>
 <maxSize>99 1</maxSize>
@@ -2091,7 +2108,12 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 <path>./_assets/bubbleKowa.png</path>
 </image>
 
-<image name="comic" ifSubset="sketch:crazyComix|crazyKowa" extra="true">
+<image name="bubble" ifSubset="sketch:crazyCustom" extra="true">
+<path>./_assets/customCrazy/bubbles/default.png</path>
+<path>./_assets/customCrazy/bubbles/${system.theme}.png</path>
+</image>
+
+<image name="comic" ifSubset="sketch:crazyCustom|crazyComix|crazyKowa" extra="true">
 <linearSmooth>true</linearSmooth>
 <path>./_assets/comic.png</path>
 <maxSize>99 1</maxSize>
@@ -2108,7 +2130,7 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 </storyboard>
 </image>
 
-<image name="scrap" ifSubset="sketch:crazyComix|crazyKowa" extra="true">
+<image name="scrap" ifSubset="sketch:crazyCustom|crazyComix|crazyKowa" extra="true">
 <linearSmooth>true</linearSmooth>
 <path>./_assets/scrap.png</path>
 <maxSize>99 1</maxSize>
@@ -2125,7 +2147,7 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 </storyboard>
 </image>
 
-<image name="character" ifSubset="sketch:crazyComix|crazyKowa" extra="true">
+<image name="character" ifSubset="sketch:crazyCustom|crazyComix|crazyKowa" extra="true">
 <linearSmooth>true</linearSmooth>
 <path>./_assets/turner.png</path>
 <maxSize>99 1</maxSize>
@@ -2145,6 +2167,11 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 
 <image name="character" ifSubset="sketch:crazyKowa" extra="true">
 <path>./_assets/kowa.png</path>
+</image>
+
+<image name="character" ifSubset="sketch:crazyCustom" extra="true">
+<path>./_assets/customCrazy/characters/default.png</path>
+<path>./_assets/customCrazy/characters/${system.theme}.png</path>
 </image>
 
 <!--------------------------- END OF SKETCHS --------------------------->
