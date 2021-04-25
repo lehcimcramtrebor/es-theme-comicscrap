@@ -1819,7 +1819,7 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 <text>${lang.retroachievements}: ${cheevos.username}
 ${lang.manufacturer}: ${system.manufacturer}
 ${lang.releasedYear}: ${system.releaseYear}</text>
-<text ifCheevos="false">${lang.retroachievements} : ${cheevos.username} (${lang.cheevosFalse})
+<text ifCheevos="false">${lang.retroachievements} (${lang.cheevosFalse}) : ${cheevos.username}
 ${lang.manufacturer}: ${system.fullName}
 ${lang.releasedYear}: ${system.releaseYear}</text>
 <size>0.5 0.085</size>
