@@ -484,13 +484,9 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <subset name="systemText" displayName="${lang.systemText}">
 <include name="systemTextStandard" displayName="${lang.systemTextStandard}"/>
 <include name="systemTextFull" displayName="${lang.systemTextFull}"/>
-<!--
 <include name="systemTextFullCheevos" displayName="${lang.systemTextFullCheevos}"/>
--->
 <include name="systemTextLabel" displayName="${lang.systemTextLabel}"/>
-<!--
 <include name="systemTextCheevos" displayName="${lang.systemTextCheevos}"/>
--->
 <include name="justManufacturer" displayName="${lang.justManufacturer}"/>
 <include name="justYear" displayName="${lang.justYear}"/>
 <include name="notDisplay" displayName="${lang.notDisplay}"/>
@@ -1819,7 +1815,7 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 <text>${lang.retroachievements}: ${cheevos.username}
 ${lang.manufacturer}: ${system.manufacturer}
 ${lang.releasedYear}: ${system.releaseYear}</text>
-<text ifCheevos="false">${lang.retroachievements} (${lang.cheevosFalse}) : ${cheevos.username}
+<text ifCheevos="false">${lang.retroachievements} (${lang.cheevosFalse}) : need login
 ${lang.manufacturer}: ${system.fullName}
 ${lang.releasedYear}: ${system.releaseYear}</text>
 <size>0.5 0.085</size>
