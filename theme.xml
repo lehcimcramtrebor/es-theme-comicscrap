@@ -267,7 +267,7 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <lang.systemTextCheevos lang="fr">juste le pseudo succès rétro (toujours)</lang.systemTextCheevos>
 
 <lang.cheevosFalse>not supported</lang.cheevosFalse>
-<lang.cheevosFalse lang="fr">non supporté</lang.cheevosFalse>
+<lang.cheevosFalse lang="fr">non supportés</lang.cheevosFalse>
 
 <lang.manufacturer>manufacturer</lang.manufacturer>
 <lang.manufacturer lang="fr">fabricant</lang.manufacturer>
@@ -1815,7 +1815,7 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 <text>${lang.retroachievements}: ${cheevos.username}
 ${lang.manufacturer}: ${system.manufacturer}
 ${lang.releasedYear}: ${system.releaseYear}</text>
-<text ifCheevos="false">${lang.retroachievements} (${lang.cheevosFalse}) : need login
+<text ifCheevos="false">${lang.retroachievements} ${lang.cheevosFalse}
 ${lang.manufacturer}: ${system.fullName}
 ${lang.releasedYear}: ${system.releaseYear}</text>
 <size>0.5 0.085</size>
