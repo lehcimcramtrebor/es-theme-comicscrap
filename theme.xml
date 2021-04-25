@@ -2305,7 +2305,7 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 </textlist>
 
 <image name="logosClassics" extra="true">
-<linearSmooth>true</linearSmooth>
+<linearSmooth>false</linearSmooth>
 <path>./_assets/logosClassic/${system.theme}.png</path>
 <path>./_assets/logosClassic/${system.theme}.svg</path>
 <path>./_assets/logosClassic/${system.theme}-${lang}.png</path>
@@ -2314,6 +2314,19 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 <maxSize>0.12 0.08</maxSize>
 <origin>0.5 0.5</origin>
 <zIndex>76</zIndex>
+</image>
+
+<image name="logosClassicsShadow" extra="true">
+<linearSmooth>true</linearSmooth>
+<path>./_assets/logosClassic/${system.theme}.png</path>
+<path>./_assets/logosClassic/${system.theme}.svg</path>
+<path>./_assets/logosClassic/${system.theme}-${lang}.png</path>
+<path>./_assets/logosClassic/${system.theme}-${lang}.svg</path>
+<pos>0.9185 0.0843</pos>
+<maxSize>0.12 0.08</maxSize>
+<origin>0.5 0.5</origin>
+<color>00000033</color>
+<zIndex>75</zIndex>
 </image>
 
 <image name="md_marquee">
@@ -2667,7 +2680,7 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 <animation property="rotation" from="0" to="0" begin="3200" duration="4800" mode="EaseIn"/></storyboard>
 </image>
 
-<image name="logosClassics" extra="true" ifSubset="sketch:yes|crazyCustom|crazyComix|crazyKowa|bottomBoxes|bottomBoxescenterMarquees|openMarquees|centerMarquees|openMarqueescenterMarquees|bottomBoxesopenMarquees">
+<image name="logosClassics,logosClassicsShadow" extra="true" ifSubset="sketch:yes|crazyCustom|crazyComix|crazyKowa|bottomBoxes|bottomBoxescenterMarquees|openMarquees|centerMarquees|openMarqueescenterMarquees|bottomBoxesopenMarquees">
 <storyboard repeat="forever">
 <animation property="rotation" from="0" to="-4" duration="50" mode="EaseOut"/>
 <animation property="rotation" from="-4" to="4" begin="50" duration="100" mode="EaseInOut"/>
