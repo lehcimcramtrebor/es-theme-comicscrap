@@ -251,17 +251,41 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <lang.systemText>info • select</lang.systemText>
 <lang.systemText lang="fr">informations • selectionner</lang.systemText>
 
-<lang.systemTextFull>full</lang.systemTextFull>
-<lang.systemTextFull lang="fr">la totale</lang.systemTextFull>
+<lang.systemTextFull>custom label, manufacturer and year</lang.systemTextFull>
+<lang.systemTextFull lang="fr">label personnalisé, fabricant et année</lang.systemTextFull>
+
+<lang.systemTextStandard>manufacturer and year</lang.systemTextStandard>
+<lang.systemTextStandard lang="fr">fabricant et année</lang.systemTextStandard>
+
+<lang.systemTextFullCheevos>retroachievements, manufacturer and year</lang.systemTextFullCheevos>
+<lang.systemTextFullCheevos lang="fr">succès rétro, fabricant et année</lang.systemTextFullCheevos>
 
 <lang.systemTextLabel>just custom label</lang.systemTextLabel>
-<lang.systemTextLabel lang="fr">juste le label perso</lang.systemTextLabel>
+<lang.systemTextLabel lang="fr">juste le label personnalisé</lang.systemTextLabel>
+
+<lang.systemTextCheevos>just retroachievements pseudo (always)</lang.systemTextCheevos>
+<lang.systemTextCheevos lang="fr">juste le pseudo succès rétro (toujours)</lang.systemTextCheevos>
+
+<lang.cheevosFalse>not supported</lang.cheevosFalse>
+<lang.cheevosFalse lang="fr">pas supporté</lang.cheevosFalse>
 
 <lang.manufacturer>manufacturer</lang.manufacturer>
 <lang.manufacturer lang="fr">fabricant</lang.manufacturer>
 
 <lang.releasedYear>released year</lang.releasedYear>
 <lang.releasedYear lang="fr">année de sortie</lang.releasedYear>
+
+<lang.justManufacturer>manufacturer only</lang.justManufacturer>
+<lang.justManufacturer lang="fr">juste le fabricant</lang.justManufacturer>
+
+<lang.justYear>year only (if useful)</lang.justYear>
+<lang.justYear lang="fr">juste l'année (si utile)</lang.justYear>
+
+<lang.notDisplay>not display</lang.notDisplay>
+<lang.notDisplay lang="fr">ne rien afficher</lang.notDisplay>
+
+<lang.retroachievements>retroachievements</lang.retroachievements>
+<lang.retroachievements lang="fr">succès</lang.retroachievements>
 
 <lang.sketch>sketchs • select</lang.sketch>
 <lang.sketch lang="fr">sketchs • selectionner</lang.sketch>
@@ -458,9 +482,18 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 </subset>
 
 <subset name="systemText" displayName="${lang.systemText}">
+<include name="systemTextStandard" displayName="${lang.systemTextStandard}"/>
 <include name="systemTextFull" displayName="${lang.systemTextFull}"/>
+<!--
+<include name="systemTextFullCheevos" displayName="${lang.systemTextFullCheevos}"/>
+-->
 <include name="systemTextLabel" displayName="${lang.systemTextLabel}"/>
-<include name="no" displayName="${lang.no}"/>
+<!--
+<include name="systemTextCheevos" displayName="${lang.systemTextCheevos}"/>
+-->
+<include name="justManufacturer" displayName="${lang.justManufacturer}"/>
+<include name="justYear" displayName="${lang.justYear}"/>
+<include name="notDisplay" displayName="${lang.notDisplay}"/>
 </subset>
 
 <view name="screen">
@@ -1766,15 +1799,27 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <alignment>right</alignment>
 <zIndex>500</zIndex>
 <pos>0.975 0.99</pos>
-<storyboard>
-<animation property="opacity" from="0" to="0" duration="1000" mode="Linear"/>
-<animation property="opacity" from="0" to="1" begin="1000" duration="150" mode="Linear"/>
-<animation property="x" from="0.9775" begin="1000" duration="150" mode="Linear"/>
-</storyboard>
 </text>
 
 <text name="systemText" extra="true" ifSubset="systemText:systemTextFull">
 <text>${label.custom}
+${lang.manufacturer}: ${system.manufacturer}
+${lang.releasedYear}: ${system.releaseYear}</text>
+<size>0.5 0.085</size>
+</text>
+
+<text name="systemText" extra="true" ifSubset="systemText:systemTextStandard">
+<text>
+${lang.manufacturer}: ${system.manufacturer}
+${lang.releasedYear}: ${system.releaseYear}</text>
+<size>0.5 0.085</size>
+</text>
+
+<text name="systemText" extra="true" ifSubset="systemText:systemTextFullCheevos">
+<text>${lang.retroachievements}: ${cheevos.username}
+${lang.manufacturer}: ${system.manufacturer}
+${lang.releasedYear}: ${system.releaseYear}</text>
+<text ifCheevos="false">${lang.retroachievements} : ${lang.cheevosFalse}
 ${lang.manufacturer}: ${system.fullName}
 ${lang.releasedYear}: ${system.releaseYear}</text>
 <size>0.5 0.085</size>
@@ -1782,6 +1827,21 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 
 <text name="systemText" extra="true" ifSubset="systemText:systemTextLabel">
 <text>${label.custom}</text>
+<size>0.5 0.03</size>
+</text>
+
+<text name="systemText" extra="true" ifSubset="systemText:systemTextCheevos">
+<text>${cheevos.username}</text>
+<size>0.5 0.03</size>
+</text>
+
+<text name="systemText" extra="true" ifSubset="systemText:justManufacturer">
+<text>${system.manufacturer}</text>
+<size>0.5 0.03</size>
+</text>
+
+<text name="systemText" extra="true" ifSubset="systemText:justYear">
+<text>${system.releaseYearOrNull}</text>
 <size>0.5 0.03</size>
 </text>
 
