@@ -2579,7 +2579,7 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 
 <!-- SKETCHS VIDEO VIEW -->
 
-<control name="md_marquee" ifSubset="sketch:yes|crazyCustom|crazyComix|crazyKowa|bottomBoxes|bottomBoxescenterMarquees|bottomBoxesopenMarquees">
+<control name="md_marquee" ifSubset="sketch:yes|crazyCustom|crazyComix|crazyKowa|bottomBoxes|bottomBoxescenterMarquees|openMarquees|centerMarquees|openMarqueescenterMarquees|bottomBoxesopenMarquees">
 <storyboard event="open">
 <animation property="opacity" from="0" to="1" duration="400" mode="easeIn"/>
 </storyboard>
@@ -2599,7 +2599,7 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 </storyboard>
 </control>
 
-<control name="md_video" ifSubset="sketch:yes|crazyCustom|crazyComix|crazyKowa|bottomBoxes|bottomBoxescenterMarquees|bottomBoxesopenMarquees">
+<control name="md_video" ifSubset="sketch:yes|crazyCustom|crazyComix|crazyKowa|bottomBoxes|bottomBoxescenterMarquees|openMarquees|centerMarquees|openMarqueescenterMarquees|bottomBoxesopenMarquees">
 <storyboard event="open">
 <animation property="opacity" from="0" to="1" duration="400" mode="easeIn"/>
 </storyboard>
@@ -2619,7 +2619,7 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 </storyboard>
 </control>
 
-<control name="md_thumbnail" ifSubset="sketch:yes|crazyCustom|crazyComix|crazyKowa|bottomBoxes|bottomBoxescenterMarquees|bottomBoxesopenMarquees">
+<control name="md_thumbnail" ifSubset="sketch:yes|crazyCustom|crazyComix|crazyKowa|bottomBoxes|bottomBoxescenterMarquees|openMarquees|centerMarquees|openMarqueescenterMarquees|bottomBoxesopenMarquees">
 <storyboard event="open">
 <animation property="opacity" from="0" to="1" duration="400" mode="easeIn"/>
 </storyboard>
@@ -2639,7 +2639,7 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 </storyboard>
 </control>
 
-<control name="md_description" ifSubset="sketch:yes|crazyCustom|crazyComix|crazyKowa|bottomBoxes|bottomBoxescenterMarquees|bottomBoxesopenMarquees">
+<control name="md_description" ifSubset="sketch:yes|crazyCustom|crazyComix|crazyKowa|bottomBoxes|bottomBoxescenterMarquees|openMarquees|centerMarquees|openMarqueescenterMarquees|bottomBoxesopenMarquees">
 <storyboard event="open">
 <animation property="opacity" from="0" to="1" duration="400" mode="easeIn"/>
 </storyboard>
@@ -2659,7 +2659,7 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 </storyboard>
 </control>
 
-<image name="logoComics" extra="true" ifSubset="sketch:yes|crazyCustom|crazyComix|crazyKowa|bottomBoxes|bottomBoxescenterMarquees|bottomBoxesopenMarquees">
+<image name="logoComics" extra="true" ifSubset="sketch:yes|crazyCustom|crazyComix|crazyKowa|bottomBoxes|bottomBoxescenterMarquees|openMarquees|centerMarquees|openMarqueescenterMarquees|bottomBoxesopenMarquees">
 <storyboard repeat="forever">
 <animation property="rotation" from="0" to="-4" begin="3000" duration="50" mode="EaseOut"/>
 <animation property="rotation" from="-4" to="4" begin="3050" duration="100" mode="EaseInOut"/>
@@ -2667,7 +2667,7 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 <animation property="rotation" from="0" to="0" begin="3200" duration="4800" mode="EaseIn"/></storyboard>
 </image>
 
-<image name="logosClassics" extra="true" ifSubset="sketch:yes|crazyCustom|crazyComix|crazyKowa|bottomBoxes|bottomBoxescenterMarquees|bottomBoxesopenMarquees">
+<image name="logosClassics" extra="true" ifSubset="sketch:yes|crazyCustom|crazyComix|crazyKowa|bottomBoxes|bottomBoxescenterMarquees|openMarquees|centerMarquees|openMarqueescenterMarquees|bottomBoxesopenMarquees">
 <storyboard repeat="forever">
 <animation property="rotation" from="0" to="-4" duration="50" mode="EaseOut"/>
 <animation property="rotation" from="-4" to="4" begin="50" duration="100" mode="EaseInOut"/>
