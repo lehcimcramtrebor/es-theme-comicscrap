@@ -536,6 +536,17 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <zIndex>5000</zIndex>
 <tile>true</tile>
 </image>
+
+<image name="scanlines" extra="true" ifSubset="staticEffectApply:screenApply">
+<size>1 1</size>
+<pos>0.5 0.5</pos>
+<origin>0.5 0.5</origin>
+<zIndex>6000</zIndex>
+</image>
+
+<image name="scanlines" extra="true" ifSubset="staticEffectApply:artworksApply">
+<visible>false</visible>
+</image>
 	
 </view>
 	
@@ -1783,10 +1794,6 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <zIndex>20</zIndex>
 </image>
 
-<image name="scanlines" extra="true" ifSubset="staticEffectApply:screenApply">
-<zIndex>6000</zIndex>
-</image>
-
 <text name="systemText" extra="true">
 <origin>1 1</origin>
 <color>090909</color>
@@ -2374,13 +2381,6 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 <zIndex>91</zIndex>
 </image>
 
-<image name="scanlines" extra="true" ifSubset="staticEffectApply:screenApply">
-<size>1 1</size>
-<pos>0.5 0.5</pos>
-<origin>0.5 0.5</origin>
-<zIndex>6000</zIndex>
-</image>
-
 <image name="md_thumbnail">
 <zIndex>90</zIndex>
 <origin>0.5 0</origin>
@@ -2694,37 +2694,8 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 
 <view name="system,video">
 
-<image name="scanlines" extra="true" ifSubset="staticEffect:scanlines|scanlinesFine|scanlinesVertical|scanlinesVerticalFine|crt|phosphore|phosphorePlus">
-<tile>true</tile>
-</image>
-
-<image name="scanlines" extra="true" ifSubset="staticEffect:scanlines">
-<path>./_assets/scanlines.png</path>
-</image>
-
-<image name="scanlines" extra="true" ifSubset="staticEffect:scanlinesFine">
-<path>./_assets/scanlinesFine.png</path>
-</image>
-
-<image name="scanlines" extra="true" ifSubset="staticEffect:scanlinesVertical">
-<path>./_assets/scanlinesVertical.png</path>
-</image>
-
-<image name="scanlines" extra="true" ifSubset="staticEffect:scanlinesVerticalFine">
-<path>./_assets/scanlinesVerticalFine.png</path>
-</image>
-
-<image name="scanlines" extra="true" ifSubset="staticEffect:crt">
-<path>./_assets/crt.png</path>
-<color>ffffff90</color>
-</image>
-
-<image name="scanlines" extra="true" ifSubset="staticEffect:phosphore">
-<path>./_assets/phosphore.png</path>
-</image>
-
-<image name="scanlines" extra="true" ifSubset="staticEffect:phosphorePlus">
-<path>./_assets/phosphorePlus.png</path>
+<image name="scanlines" extra="true" ifSubset="staticEffectApply:screenApply">
+<visible>false</visible>
 </image>
 
 <image name="white" extra="true">
@@ -2780,6 +2751,43 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 <backgroundColor>606060</backgroundColor>
 <lineSpacing>1.2</lineSpacing>
 </menuGroup>	
+
+</view>
+
+<view name="screen,system,video">
+
+<image name="scanlines" extra="true" ifSubset="staticEffect:scanlines|scanlinesFine|scanlinesVertical|scanlinesVerticalFine|crt|phosphore|phosphorePlus">
+<tile>true</tile>
+</image>
+
+<image name="scanlines" extra="true" ifSubset="staticEffect:scanlines">
+<path>./_assets/scanlines.png</path>
+</image>
+
+<image name="scanlines" extra="true" ifSubset="staticEffect:scanlinesFine">
+<path>./_assets/scanlinesFine.png</path>
+</image>
+
+<image name="scanlines" extra="true" ifSubset="staticEffect:scanlinesVertical">
+<path>./_assets/scanlinesVertical.png</path>
+</image>
+
+<image name="scanlines" extra="true" ifSubset="staticEffect:scanlinesVerticalFine">
+<path>./_assets/scanlinesVerticalFine.png</path>
+</image>
+
+<image name="scanlines" extra="true" ifSubset="staticEffect:crt">
+<path>./_assets/crt.png</path>
+<color>ffffff90</color>
+</image>
+
+<image name="scanlines" extra="true" ifSubset="staticEffect:phosphore">
+<path>./_assets/phosphore.png</path>
+</image>
+
+<image name="scanlines" extra="true" ifSubset="staticEffect:phosphorePlus">
+<path>./_assets/phosphorePlus.png</path>
+</image>
 
 </view>
 
