@@ -569,6 +569,7 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <defaultTransition>fade</defaultTransition>
 <zIndex>200</zIndex>
 <scrollSound>./_assets/scroll.wav</scrollSound>
+<maxLogoCount>3</maxLogoCount>
 </carousel>
 
 <carousel name="systemcarousel" ifSubset="logosBackground:logosBackgroundStandard">
