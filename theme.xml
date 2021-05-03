@@ -2816,9 +2816,9 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 
 <helpsystem name="help" ifSubset="helpIcons:arcadeIcons">
 <iconColor>ffffff</iconColor>
-<iconUpDown>./../_assets/icons/icon_arcade_updown.png</iconUpDown>
-<iconLeftRight>./../_assets/icons/icon_arcade_leftright.png</iconLeftRight>
-<iconUpDownLeftRight>./../_assets/icons/icon_arcade_all.png</iconUpDownLeftRight>
+<iconUpDown>./_assets/icons/icon_arcade_updown.png</iconUpDown>
+<iconLeftRight>./_assets/icons/icon_arcade_leftright.png</iconLeftRight>
+<iconUpDownLeftRight>./_assets/icons/icon_arcade_all.png</iconUpDownLeftRight>
 <iconA>./_assets/icons/icon_arcade_a.png</iconA>
 <iconB>./_assets/icons/icon_arcade_b.png</iconB>
 <iconX>./_assets/icons/icon_arcade_x.png</iconX>
@@ -2831,9 +2831,9 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 
 <helpsystem name="help" ifSubset="helpIcons:psxIcons">
 <iconColor>ffffff</iconColor>
-<iconUpDown>./../_assets/icons/icon_psx_updown.png</iconUpDown>
-<iconLeftRight>./../_assets/icons/icon_psx_leftright.png</iconLeftRight>
-<iconUpDownLeftRight>./../_assets/icons/icon_psx_all.png</iconUpDownLeftRight>
+<iconUpDown>./_assets/icons/icon_psx_updown.png</iconUpDown>
+<iconLeftRight>./_assets/icons/icon_psx_leftright.png</iconLeftRight>
+<iconUpDownLeftRight>./_assets/icons/icon_psx_all.png</iconUpDownLeftRight>
 <iconA>./_assets/icons/icon_psx_a.png</iconA>
 <iconB>./_assets/icons/icon_psx_b.png</iconB>
 <iconX>./_assets/icons/icon_psx_x.png</iconX>
@@ -2846,9 +2846,9 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 
 <helpsystem name="help" ifSubset="helpIcons:snesIcons">
 <iconColor>ffffff</iconColor>
-<iconUpDown>./../_assets/icons/icon_snes_updown.png</iconUpDown>
-<iconLeftRight>./../_assets/icons/icon_snes_leftright.png</iconLeftRight>
-<iconUpDownLeftRight>./../_assets/icons/icon_snes_all.png</iconUpDownLeftRight>
+<iconUpDown>./_assets/icons/icon_snes_updown.png</iconUpDown>
+<iconLeftRight>./_assets/icons/icon_snes_leftright.png</iconLeftRight>
+<iconUpDownLeftRight>./_assets/icons/icon_snes_all.png</iconUpDownLeftRight>
 <iconA>./_assets/icons/icon_snes_a.png</iconA>
 <iconB>./_assets/icons/icon_snes_b.png</iconB>
 <iconX>./_assets/icons/icon_snes_x.png</iconX>
@@ -2861,9 +2861,9 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 
 <helpsystem name="help" ifSubset="helpIcons:snesAltIcons">
 <iconColor>ffffff</iconColor>
-<iconUpDown>./../_assets/icons/icon_snesalt_updown.png</iconUpDown>
-<iconLeftRight>./../_assets/icons/icon_snesalt_leftright.png</iconLeftRight>
-<iconUpDownLeftRight>./../_assets/icons/icon_snesalt_all.png</iconUpDownLeftRight>
+<iconUpDown>./_assets/icons/icon_snesalt_updown.png</iconUpDown>
+<iconLeftRight>./_assets/icons/icon_snesalt_leftright.png</iconLeftRight>
+<iconUpDownLeftRight>./_assets/icons/icon_snesalt_all.png</iconUpDownLeftRight>
 <iconA>./_assets/icons/icon_snesalt_a.png</iconA>
 <iconB>./_assets/icons/icon_snesalt_b.png</iconB>
 <iconX>./_assets/icons/icon_snesalt_x.png</iconX>
@@ -2876,8 +2876,8 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 
 <helpsystem name="help" ifSubset="helpIcons:xboxIcons">
 <iconColor>ffffff</iconColor>
-<iconUpDown>./../_assets/icons/icon_xbox_updown.png</iconUpDown>
-<iconLeftRight>./../_assets/icons/icon_xbox_leftright.png</iconLeftRight>
+<iconUpDown>./_assets/icons/icon_xbox_updown.png</iconUpDown>
+<iconLeftRight>./_assets/icons/icon_xbox_leftright.png</iconLeftRight>
 <iconUpDownLeftRight>./../_assets/icons/icon_xbox_all.png</iconUpDownLeftRight>
 <iconA>./_assets/icons/icon_xbox_a.png</iconA>
 <iconB>./_assets/icons/icon_xbox_b.png</iconB>
@@ -2891,8 +2891,8 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 
 <helpsystem name="help" ifSubset="helpIcons:xboxoneIcons">
 <iconColor>ffffff</iconColor>
-<iconUpDown>./../_assets/icons/icon_xboxone_updown.png</iconUpDown>
-<iconLeftRight>./../_assets/icons/icon_xboxone_leftright.png</iconLeftRight>
+<iconUpDown>./_assets/icons/icon_xboxone_updown.png</iconUpDown>
+<iconLeftRight>./_assets/icons/icon_xboxone_leftright.png</iconLeftRight>
 <iconUpDownLeftRight>./../_assets/icons/icon_xboxone_all.png</iconUpDownLeftRight>
 <iconA>./_assets/icons/icon_xboxone_a.png</iconA>
 <iconB>./_assets/icons/icon_xboxone_b.png</iconB>
