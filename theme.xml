@@ -2507,6 +2507,7 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 <datetime name="md_releasedate">
 <zIndex>90</zIndex>
 <fontSize>0.02</fontSize>
+<x>0.6225</x>
 <y>0.625</y>
 <color>000000</color>
 <fontPath>./_assets/Shaka_Pow.ttf</fontPath>
@@ -2526,6 +2527,7 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 <zIndex>90</zIndex>
 <color>000000</color>
 <fontPath>./_assets/Shaka_Pow.ttf</fontPath>
+<x>0.6225</x>
 <y>0.652</y>
 </text>
 
@@ -2543,6 +2545,7 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 <zIndex>90</zIndex>
 <color>000000</color>
 <fontPath>./_assets/Shaka_Pow.ttf</fontPath>
+<x>0.6225</x>
 <y>0.679</y>
 </text>
 
@@ -2561,6 +2564,7 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 <zIndex>90</zIndex>
 <color>000000</color>
 <fontPath>./_assets/Shaka_Pow.ttf</fontPath>
+<x>0.85</x>
 <y>0.625</y>
 </text>
 		
@@ -2587,6 +2591,7 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 <color>000000</color>
 <fontPath>./_assets/Shaka_Pow.ttf</fontPath>
 <zIndex>90</zIndex>
+<x>0.97</x>
 <y>0.678</y>
 </text>
 
