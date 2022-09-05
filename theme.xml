@@ -661,6 +661,14 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <color>ffffff</color>
 </text>
 
+<image name="fadelogo" ifSubset="logos:classic" extra="true">
+<linearSmooth>true</linearSmooth>
+<path>./_assets/fadelogo.png</path>
+<color>00000080</color>
+<size>1 1</size>
+<zIndex>199</zIndex>
+</image>
+
 <image name="logo" ifSubset="logos:comic">
 <linearSmooth>true</linearSmooth>
 <path>./_assets/logos/${system.theme}.png</path>
