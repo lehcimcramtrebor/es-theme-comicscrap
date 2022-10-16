@@ -345,13 +345,13 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <include>./_my_label.xml</include>
 
 <subset name="sketch" displayName="${lang.sketch}" appliesTo="video">
+<include name="bottomBoxes" displayName="${lang.bottomBoxes}"/>
 <include name="no" displayName="${lang.no}"/>
 <include name="yes" displayName="${lang.yes}"/>
 <include name="crazyComix" displayName="${lang.crazyComix}"/>
 <include name="crazyKowa" displayName="${lang.crazyKowa}"/>
 <include name="crazyCustom" displayName="${lang.crazyCustom}"/>
 <include name="openMarquees" displayName="${lang.openMarquees}"/>
-<include name="bottomBoxes" displayName="${lang.bottomBoxes}"/>
 <include name="centerMarquees" displayName="${lang.centerMarquees}"/>
 <include name="bottomBoxescenterMarquees" displayName="${lang.bottomBoxescenterMarquees}"/>
 <include name="bottomBoxesopenMarquees" displayName="${lang.bottomBoxesopenMarquees}"/>
@@ -371,9 +371,9 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 </subset>
 
 <subset name="randomVideos" displayName="${lang.randomVideos}" appliesTo="video">
+<include name="5upDown" displayName="${lang.5upDown}"/>
 <include name="no" displayName="${lang.no}"/>
 <include name="yes" displayName="${lang.all}"/>
-<include name="5upDown" displayName="${lang.5upDown}"/>
 <include name="4corners" displayName="${lang.4corners}"/>
 <include name="3smallestThan" displayName="${lang.3smallestThan}"/>
 <include name="3biggerThan" displayName="${lang.3biggerThan}"/>
@@ -415,14 +415,14 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 </subset>
 
 <subset name="logos" displayName="${lang.logos}">
-<include name="comic" displayName="${lang.comic}"/>
 <include name="classic" displayName="${lang.classic}"/>
+<include name="comic" displayName="${lang.comic}"/>
 <include name="text" displayName="${lang.text}"/>
 </subset>
 
 <subset name="logosBackground" displayName="${lang.logosBackground}">
-<include name="logosBackgroundLight" displayName="${lang.logosBackgroundLight}"/>
 <include name="logosBackgroundTransparent" displayName="${lang.logosBackgroundTransparent}"/>
+<include name="logosBackgroundLight" displayName="${lang.logosBackgroundLight}"/>
 <include name="logosBackgroundStandard" displayName="${lang.logosBackgroundStandard}"/>
 </subset>
 
@@ -451,14 +451,14 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 </subset>
 
 <subset name="staticEffect" displayName="${lang.staticEffect}">
-<include name="no" displayName="${lang.no}"/>
+<include name="crt" displayName="${lang.crt}"/>
 <include name="scanlines" displayName="${lang.scanlines}"/>
 <include name="scanlinesFine" displayName="${lang.scanlinesFine}"/>
 <include name="scanlinesVertical" displayName="${lang.scanlinesVertical}"/>
 <include name="scanlinesVerticalFine" displayName="${lang.scanlinesVerticalFine}"/>
-<include name="crt" displayName="${lang.crt}"/>
 <include name="phosphore" displayName="${lang.phosphore}"/>
 <include name="phosphorePlus" displayName="${lang.phosphorePlus}"/>
+<include name="no" displayName="${lang.no}"/>
 </subset>
 
 <subset name="staticEffectApply" displayName="${lang.staticEffectApply}" ifSubset="staticEffect:scanlines|scanlinesFine|scanlinesVertical|scanlinesVerticalFine|crt|phosphore|phosphorePlus">
@@ -576,6 +576,8 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <carousel name="systemcarousel" ifSubset="logosBackground:logosBackgroundStandard">
 <color>ffffff4d</color>
 <colorEnd>ffffffcc</colorEnd>
+<color ifSubset="logos:classic">10101080</color>
+<colorEnd ifSubset="logos:classic">00000080</colorEnd>
 </carousel>
 
 <carousel name="systemcarousel" ifSubset="logosBackground:logosBackgroundTransparent|logosBackgroundLight">
@@ -681,6 +683,7 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <path>./_assets/logosClassic/${system.theme}.svg</path>
 <path>./_assets/logosClassic/${system.theme}-${lang}.png</path>
 <path>./_assets/logosClassic/${system.theme}-${lang}.svg</path>
+<saturation>1.4</saturation>
 </image>
 
 <image name="logo" region="eu"></image>
@@ -717,7 +720,7 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <scale>0.5</scale>
 <storyboard event="activate" repeatAt="300">
 <animation property="scale" from="0.5" to="1" duration="250" mode="EaseOut"/>
-<animation property="opacity" from="0.5" to="1" duration="300" mode="Linear"/>
+<animation property="opacity" from="1" to="1" duration="300" mode="Linear"/>
 <animation property="origin" from="0.5 0.5" to="0.55 0.5" begin="50" duration="250" mode="EaseInOut"/>
 <animation property="origin" from="0.55 0.5" to="0.45 0.5" begin="300" duration="1000" autoreverse="true" repeat="10" mode="EaseInOut"/>
 <animation property="rotation" to="360" begin="4300" duration="250" mode="EaseInOut"/>
@@ -725,12 +728,12 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 </storyboard>
 <storyboard event="scroll">
 <animation property="scale" from="0.5" to="0.5" duration="1" mode="EaseOut"/>
-<animation property="opacity" from="0.5" to="0.5" duration="1" mode="Linear"/>
+<animation property="opacity" from="1" to="1" duration="1" mode="Linear"/>
 
 </storyboard>
 <storyboard event="deactivate">
 <animation property="scale" from="1" to="0.5" duration="1" mode="EaseOut"/>
-<animation property="opacity" from="1" to="0.5" duration="1" mode="Linear"/>
+<animation property="opacity" from="1" to="1" duration="1" mode="Linear"/>
 </storyboard>
 </image>
 
@@ -740,6 +743,7 @@ inspired by ComicBook theme by TMNTturtleguy at https://github.com/TMNTturtleguy
 <linearSmooth>true</linearSmooth>
 <path>./_assets/logosBackground.png</path>
 <zIndex>110</zIndex>
+<color ifSubset="logos:classic">00000033</color>
 </image>
 
 <image name="logosLight" extra="true" ifSubset="logosBackground:logosBackgroundLight">
